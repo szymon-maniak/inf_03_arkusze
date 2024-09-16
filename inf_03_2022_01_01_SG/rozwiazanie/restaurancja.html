@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl_1.css">
+    <title>Restauracja Wszystkie Smaki</title>
+</head>
+<body>
+    <div id="kontener">
+
+        <div id="baner">
+            <h1>Witamy w restauracji "Wszystkie Smaki"</h1>
+        </div>
+
+        <div id="panel_lewy">
+            <img src="menu.jpg" alt="Nasze danie">
+        </div>
+
+        <div id="panel_prawy">
+            <h4>U nas dobrze zjesz!</h4>
+            <ol>
+                <li>Obiady od 40zł</li>
+                <li>Przekąski od 10zł</li>
+                <li>Kolacje od 20zł</li>
+            </ol>
+        </div>
+        <div style="clear: both;"></div>
+
+        <div id="dolny">
+            <h2>Zarezerwuj stolik on-line</h2>
+            <form action="rezerwacja.php" method="post">
+                Data (format rrrr-mm-dd):<br>
+                <input type="date" id="data"><br>
+                Ile osób?:<br>
+                <input type="number" id="osoby"><br>
+                Twój numer telefonu:<br>
+                <input type="text" id="telefon"><br>
+                <input type="checkbox" id="zgadzam_sie"> Zgadzam sie na przetwarzanie moich danych osobowych<br>
+                <input type="reset" value="WYCZYŚĆ"><input type="submit" value="REZERWUJ">
+            </form>
+        </div>
+
+        <div id="stopka">
+            Stronę internetową opracował: <i>Myszon</i>
+        </div>
+    </div>
+</body>
+</html>
