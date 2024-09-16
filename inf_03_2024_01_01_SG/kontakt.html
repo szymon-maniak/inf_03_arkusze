@@ -23,37 +23,58 @@
         </div>
         <div class="glowny">
             <h2>Kontakt</h2>
-            <table>
-                <tr>
-                    <td>Imię</td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>Nazwisko</td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>E-mail</td>
-                    <td><input type="email" name="" id=""></td>
-                </tr>
-                <tr>
-                    <td>Zgłoszenie</td>
-                    <td><textarea name="" id="" cols="40" rows="10"></textarea></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="checkbox" name="" id="">Zapoznałam/em się z regulaminem</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="reset" value="Resetuj"><input type="submit" value=""></td>
-                </tr>
-            </table>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Imię</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Zgłoszenie</td>
+                        <td><textarea name="" id="zgloszenie" cols="40" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="" id="zgadzam_sie">Zapoznałam/em się z regulaminem</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Resetuj"><input type="submit" value="Prześlij" onclick="przeslij()"></td>
+                    </tr>
+                </table>
+            </form>
             <hr>
+            <p id="wynik"></p>
         </div>
         <div class="stopka">
-            <p>Autor strony: <strong>Myszon</strong></p>
+            Autor strony: <strong>Myszon</strong>
         </div>
     </div>
+    <script>
+        function przeslij(){
+            let imie = document.getElementById("imie").value;
+            let nazwisko = document.getElementById("nazwisko").value;
+            let email = document.getElementById("email").value;
+            let zgloszenie = document.getElementById("zgloszenie").value;
+            let zgadzam_sie = document.getElementById("zgadzam_sie").checked;
+            
+            if(zgadzam_sie){
+                document.getElementById("wynik").innerHTML.style.color = navy;
+                document.getElementById("wynik").innerHTML = imie+" "+nazwisko+"<br>"+"Treść Twojej sprawy: "+zgloszenie;
+            }
+            else{
+                document.getElementById("wynik").innerHTML.style.color = red;
+                document.getElementById("wynik").innerHTML = "Musisz zapoznać się z regulaminem";
+            }
+        }
+    </script>
 </body>
 </html>
