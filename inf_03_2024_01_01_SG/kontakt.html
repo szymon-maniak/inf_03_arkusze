@@ -6,6 +6,25 @@
     <link rel="stylesheet" href="styl.css">
     <link rel="shortcut icon" href="logo.png" type="image/png">
     <title>Firma IT</title>
+
+    <script>
+        function przeslij(){
+            let imie = document.getElementById("imie").value;
+            let nazwisko = document.getElementById("nazwisko").value;
+            let email = document.getElementById("email").value;
+            let zgloszenie = document.getElementById("zgloszenie").value;
+            let zgadzam_sie = document.getElementById("zgadzam_sie").checked;
+            
+            if(zgadzam_sie){
+                document.getElementById("wynik").style.color = "navy";
+                document.getElementById("wynik").innerHTML = imie+" "+nazwisko+"<br>"+"Treść Twojej sprawy: "+zgloszenie;
+            }
+            else{
+                document.getElementById("wynik").style.color = "red";
+                document.getElementById("wynik").innerHTML = "Musisz zapoznać się z regulaminem";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="kontener">
@@ -39,15 +58,15 @@
                     </tr>
                     <tr>
                         <td>Zgłoszenie</td>
-                        <td><textarea name="" id="zgloszenie" cols="40" rows="10"></textarea></td>
+                        <td><textarea id="zgloszenie" cols="40" rows="10"></textarea></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><input type="checkbox" name="" id="zgadzam_sie">Zapoznałam/em się z regulaminem</td>
+                        <td><input type="checkbox" id="zgadzam_sie">Zapoznałam/em się z regulaminem</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><input type="reset" value="Resetuj"><input type="submit" value="Prześlij" onclick="przeslij()"></td>
+                        <td><input type="reset" value="Resetuj"><input type="button" value="Prześlij" onclick="przeslij()"></td>
                     </tr>
                 </table>
             </form>
@@ -58,23 +77,5 @@
             Autor strony: <strong>Myszon</strong>
         </div>
     </div>
-    <script>
-        function przeslij(){
-            let imie = document.getElementById("imie").value;
-            let nazwisko = document.getElementById("nazwisko").value;
-            let email = document.getElementById("email").value;
-            let zgloszenie = document.getElementById("zgloszenie").value;
-            let zgadzam_sie = document.getElementById("zgadzam_sie").checked;
-            
-            if(zgadzam_sie){
-                document.getElementById("wynik").innerHTML.style.color = navy;
-                document.getElementById("wynik").innerHTML = imie+" "+nazwisko+"<br>"+"Treść Twojej sprawy: "+zgloszenie;
-            }
-            else{
-                document.getElementById("wynik").innerHTML.style.color = red;
-                document.getElementById("wynik").innerHTML = "Musisz zapoznać się z regulaminem";
-            }
-        }
-    </script>
 </body>
 </html>
