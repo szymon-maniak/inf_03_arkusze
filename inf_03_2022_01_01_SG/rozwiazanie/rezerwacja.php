@@ -1,6 +1,6 @@
 <?php
-    $laczenie = mysqli_connect('localhost', 'root', ' ', 'baza');
-    if(!$laczenie){
+    $conn = mysqli_connect('localhost','root','','baza');
+    if(!$conn){
         exit();
     }
     else{
@@ -10,10 +10,10 @@
 
 
         $polecenie = "INSERT INTO `rezerwacje`(`data_rez`, `liczba_osob`, `telefon`) VALUES ('$data','$osoby','$telefon');";
-        mysqli_query($laczenie,$polecenie);
+        mysqli_query($conn,$polecenie);
 
         echo "Dodano rezerwację do bazy";
     }
 
-    mysqli_close($laczenie);
+    mysqli_close($conn);
 ?>
