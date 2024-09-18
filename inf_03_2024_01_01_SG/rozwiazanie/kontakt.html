@@ -4,27 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <link rel="shortcut icon" href="logo.png" type="image/png">
     <title>Firma IT</title>
-
-    <script>
-        function przeslij(){
-            let imie = document.getElementById("imie").value;
-            let nazwisko = document.getElementById("nazwisko").value;
-            let email = document.getElementById("email").value;
-            let zgloszenie = document.getElementById("zgloszenie").value;
-            let zgadzam_sie = document.getElementById("zgadzam_sie").checked;
-            
-            if(zgadzam_sie){
-                document.getElementById("wynik").style.color = "navy";
-                document.getElementById("wynik").innerHTML = imie+" "+nazwisko+"<br>"+"Treść Twojej sprawy: "+zgloszenie;
-            }
-            else{
-                document.getElementById("wynik").style.color = "red";
-                document.getElementById("wynik").innerHTML = "Musisz zapoznać się z regulaminem";
-            }
-        }
-    </script>
 </head>
 <body>
     <div class="kontener">
