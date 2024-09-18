@@ -1,15 +1,54 @@
+*{
+    font-family: Verdana, sans-serif;
+}
+
 #lewy{
     float: left;
+    background-color: seagreen;
+    color: white;
+    height: 260px;
+    font-size: 160%;
+    width: 75%;
+    line-height: 150px;
 }
 
 #prawy{
     float: left;
+    background-color: seagreen;
+    color: white;
+    height: 260px;
+    font-size: 160%;
+    width: 25%;
+    text-align: right;
+    line-height: 150px;
 }
 
-#stopka_1{
-    float: left;
+#glowny{
+    background-color: mintcream;
+    padding: 80px;
 }
 
-#stopka_2{
+#stopka_1, #stopka_2{
     float: left;
+    background-color: seagreen;
+    color: white;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+}
+
+input[type="number"], input[type="date"], input[type="text"], input[type="reset"], input[type="submit"]{
+    margin-bottom: 20px;
+}
+
+img{
+    box-shadow: 15px dimgray;
+}
+
+a{
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;
 }
