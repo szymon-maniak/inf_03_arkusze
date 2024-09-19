@@ -2,14 +2,21 @@
     font-family: Cambria, serif;
 }
 
-#maly_lewy_1{
+aside{
     float: left;
-    background-color: #E1BEE7;
     width: 25%;
+    background-color: #E1BEE7;
+}
+
+#maly_lewy_1{
     height: 400px;
 }
 
-#maly_prawy_1{
+#maly_lewy_2{
+    height: 330px;
+}
+
+header{
     float: left;
     width: 75%;
     font-size: 170%;
@@ -20,14 +27,7 @@
     letter-spacing: 5px;
 }
 
-#maly_lewy_2{
-    float: left;
-    background-color: #E1BEE7;
-    width: 25%;
-    height: 330px;
-}
-
-#maly_prawy_2{
+main{
     float: left;
     width: 75%;
     font-size: 170%;
