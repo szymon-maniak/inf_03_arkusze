@@ -1,7 +1,15 @@
-#lewy{
+#maly_lewy_1{
     float: left;
 }
 
-#prawy{
+#maly_prawy_1{
+    float: left;
+}
+
+#maly_lewy_2{
+    float: left;
+}
+
+#maly_prawy_2{
     float: left;
 }
