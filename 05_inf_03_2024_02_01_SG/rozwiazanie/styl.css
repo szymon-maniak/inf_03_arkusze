@@ -1,3 +1,19 @@
 #glowny_1, #glowny_2, #glowny_3{
     float: left;
 }
+
+body{
+    background-color: #E0F7FA;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#kontener{
+    width: 95%;
+    margin: auto;
+}
+
+#baner{
+    background-color: #00838F;
+    height: 200px;
+}
