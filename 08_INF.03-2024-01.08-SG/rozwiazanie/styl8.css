@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+body{
+    margin: 0;
+}
+
 #lewy_1{
     float: left;
     background-color: #795548;
