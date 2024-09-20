@@ -19,16 +19,16 @@ main{
 
 aside{
     float: left;
+    width: 28%;
+    background-color: #BCAAA4;
 }
 
 #prawy_1, #prawy_2{
-    background-color: #BCAAA4;
     color: #795548;
     height: 400px;
-    width: 28%;
 }
 
-#stopka{
+footer{
     background-color: #795548;
     color: white;
     padding: 20px;
