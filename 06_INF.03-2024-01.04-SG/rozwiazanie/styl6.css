@@ -17,15 +17,17 @@
     width: 70%;
 }
 
-.kalendarz{
+#glowny div{
     background-color: #9FA8DA;
     width: 160px;
     height: 85px;
     margin: 5px;
     border: 1px solid #6F79A8;
+    overflow: hidden;
+    float: left;
 }
 
-.kalendarz:hover{
+#glowny div:hover{
     background-color: #6F79A8;
     color: white;
 }
