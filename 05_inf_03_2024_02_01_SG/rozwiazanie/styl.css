@@ -42,7 +42,7 @@ ul{
     text-align: left;
 }
 
-input[type="reset"], input[type="submit"]{
+input[type="reset"], input[type="button"]{
     background-color: #00838F;
     color: white;
 }

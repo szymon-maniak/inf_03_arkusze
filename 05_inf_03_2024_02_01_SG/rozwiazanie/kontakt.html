@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="skrypt.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <title>Komputery</title>
 </head>
 <body>
@@ -19,40 +20,43 @@
         <div id="glowny_1"></div>
         <div id="glowny_2">
             <h2>Kontakt</h2>
-            <table>
-                <tr>
-                    <td>Imię:</td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>Nazwisko:</td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>E-mail:</td>
-                    <td><input type="email"></td>
-                </tr>
-                <tr>
-                    <td>Zgłoszenie:</td>
-                    <td>
-                        <select>
-                            <option value="">naprawa komputerów</option>
-                            <option value="">odzyskiwanie danych</option>
-                            <option value="">wirusy</option>
-                            <option value="">konfiguracja LAN</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="checkbox" checked>Wyślij kopię wiadomości</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="reset" value="Czyść"><input type="submit" value="Wyślij" onclick=""></td>
-                </tr>
-            </table>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td>Zgłoszenie:</td>
+                        <td>
+                            <select id="usluga">
+                                <option value="naprawa komputerów">naprawa komputerów</option>
+                                <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                                <option value="wirusy">wirusy</option>
+                                <option value="konfiguracja LAN">konfiguracja LAN</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" checked>Wyślij kopię wiadomości</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Czyść"><input type="button" value="Wyślij" onclick="wyslij()"></td>
+                    </tr>
+                </table>
+            </form>
             <hr>
+            <p id="wynik"></p>
         </div>
         <div id="glowny_3"></div>
         <div style="clear: both;"></div>
