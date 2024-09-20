@@ -9,8 +9,10 @@ main{
 }
 
 #lewy_1{
+    float: left;
     background-color: #795548;
     font-size: 170%;
+    width: 100%;
 }
 
 #lewy_2{
