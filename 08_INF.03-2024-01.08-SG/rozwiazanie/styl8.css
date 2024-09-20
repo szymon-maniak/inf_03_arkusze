@@ -3,31 +3,30 @@
     text-align: center;
 }
 
-main{
-    float: left;
-    width: 72%;
-}
-
 #lewy_1{
     float: left;
     background-color: #795548;
     font-size: 170%;
-    width: 100%;
+    width: 72%;
 }
 
 #lewy_2{
+    float: left;
     height: 400px;
+    width: 72%;
 }
 
-aside{
+#lewy_3{
     float: left;
-    width: 28%;
-    background-color: #BCAAA4;
+    width: 72%;
 }
 
 #prawy_1, #prawy_2{
     color: #795548;
     height: 400px;
+    float: right;
+    width: 28%;
+    background-color: #BCAAA4;
 }
 
 footer{
