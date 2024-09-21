@@ -2,6 +2,10 @@
     font-family: Cambria, serif;
 }
 
+body{
+    margin: 0;
+}
+
 #lewy{
     float: left;
     background-color: #e1bee7;
