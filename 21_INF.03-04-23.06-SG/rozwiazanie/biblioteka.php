@@ -13,9 +13,27 @@
     <div id="lewy">
         <h3>Polecamy dzieła autorów</h3>
         <ol>
-            <li></li>
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'biblioteka');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT `imie`, `nazwisko` FROM `autorzy` ORDER BY nazwisko;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    $text = "";
+                    while($row = mysqli_fetch_array($odpowiedz)){
+                        $text .= '<li>';
+                        $text .= $row['imie'];
+                        $text .= " ";
+                        $text .= $row['nazwisko'];
+                        $text .= '</li>';
+                    }
+                    echo $text;
+                }
+                mysqli_close($polaczenie);
+            ?>
         </ol>
-        <!-- skrypt1 -->
     </div>
     <div id="srodkowy">
         <h3>ul. Czytelnicza 25, Ksiąkowice&nbsp;Wielkie</h3>
@@ -25,14 +43,31 @@
     <div id="prawy_1">
         <h3>Dodaj czytelnika</h3>
         <form action="biblioteka.php" method="post">
-            imię: <input type="text" name="imie" id=""><br>
-            nazwisko: <input type="text" name="nazwisko" id=""><br>
-            symbol: <input type="number" name="symbol" id=""><br>
+            imię: <input type="text" name="imie"><br>
+            nazwisko: <input type="text" name="nazwisko"><br>
+            symbol: <input type="number" name="symbol"><br>
             <input type="submit" value="DODAJ">
         </form>
     </div>
     <div id="prawy_2">
-        <!-- skrypt2 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'biblioteka');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                @$imie = $_POST["imie"];
+                @$nazwisko = $_POST["nazwisko"];
+                @$symbol = $_POST["symbol"];
+                if(isset($imie)&&isset($nazwisko)&&isset($symbol)){
+                    echo "Czytelnik ".$imie." ".$nazwisko." został(a) dodany do bazy danych";
+
+                    $zapytanie = "INSERT INTO `czytelnicy`(`imie`, `nazwisko`, `kod`) VALUES ('$imie','$nazwisko','$symbol');";
+                    mysqli_query($polaczenie, $zapytanie);
+                }
+            }
+            mysqli_close($polaczenie);
+        ?>
     </div>
     <div style="clear: both;"></div>
     <div id="stopka">
