@@ -6,13 +6,10 @@
     float: left;
 }
 
-#prawy{
-    float: right;
-    width: 40%;
-}
-
 #prawy_1, #prawy_2{
     height: 250px;
+    float: right;
+    width: 40%;
 }
 
 #prawy_1{

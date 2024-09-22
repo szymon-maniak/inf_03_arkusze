@@ -22,19 +22,17 @@
         <a href="mailto:sekretariat@biblioteka.pl"><p>Napisz do nas</p></a>
         <img src="biblioteka.png" alt="książki">
     </div>
-    <div id="prawy">
-        <div id="prawy_1">
-            <h3>Dodaj czytelnika</h3>
-            <form action="biblioteka.php" method="post">
-                imię: <input type="text" name="imie" id=""><br>
-                nazwisko: <input type="text" name="nazwisko" id=""><br>
-                symbol: <input type="number" name="symbol" id=""><br>
-                <input type="submit" value="DODAJ">
-            </form>
-        </div>
-        <div id="prawy_2">
-            <!-- skrypt2 -->
-        </div>
+    <div id="prawy_1">
+        <h3>Dodaj czytelnika</h3>
+        <form action="biblioteka.php" method="post">
+            imię: <input type="text" name="imie" id=""><br>
+            nazwisko: <input type="text" name="nazwisko" id=""><br>
+            symbol: <input type="number" name="symbol" id=""><br>
+            <input type="submit" value="DODAJ">
+        </form>
+    </div>
+    <div id="prawy_2">
+        <!-- skrypt2 -->
     </div>
     <div style="clear: both;"></div>
     <div id="stopka">
