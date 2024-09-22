@@ -29,7 +29,22 @@
     </div>
     <div id="srodkowy">
         <h2>W tym roku jedziemy do...</h2>
-        <!-- skrypt1 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'pozdroze');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                $zapytanie = "SELECT `nazwaPliku`, `podpis` FROM `zdjecia` ORDER BY `podpis`;";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                $text = "";
+                while($row = mysqli_fetch_array($odpowiedz)){
+                    $text .= "<img src='$row[nazwaPliku]' alt='$row[podpis]' title='$row[podpis]'>";
+                }
+                echo $text;
+            }
+            mysqli_close($polaczenie);
+        ?>
     </div>
     <div id="prawy">
         <h2>Kontakt</h2>
@@ -40,7 +55,24 @@
     <div id="dane">
         <h3>W poprzednich latach byliśmy...</h3>
         <ol>
-            <!-- skrypt2 -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'pozdroze');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT `cel`, `dataWyjazdu` FROM `wycieczki` WHERE `dostepna` = 0;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    $text = "";
+                    while($row = mysqli_fetch_array($odpowiedz)){
+                        $text .= "<li>";
+                        $text .= "Dnia $row[dataWyjazdu] pojechaliśmy do $row[cel]";
+                        $text .= "</li>";
+                    }
+                    echo $text;
+                }
+                mysqli_close($polaczenie);
+            ?>
         </ol>
     </div>
     <div id="stopka">
