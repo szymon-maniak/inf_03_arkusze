@@ -2,6 +2,17 @@
     font-family: Cambria, serif;
 }
 
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #c2185b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
 main{
     background-image: url(ck-tulipany.jpg);
     height: 500px;
@@ -12,6 +23,7 @@ footer{
     background-color: #c2185b;
     color: white;
     width: 25%;
+    height: 240px;
 }
 
 #blok_1, #blok_2, #blok_3{
