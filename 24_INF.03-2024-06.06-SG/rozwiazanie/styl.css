@@ -36,7 +36,7 @@ footer{
 }
 
 #blok_2, #blok_3{
-    display: none;
+    visibility: hidden;
 }
 
 p{
@@ -53,7 +53,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     margin: 10px;
 }
 
-button{
+input[type="button"]{
     background-color: #c2185b;
     color: white;
     margin-top: 50px;

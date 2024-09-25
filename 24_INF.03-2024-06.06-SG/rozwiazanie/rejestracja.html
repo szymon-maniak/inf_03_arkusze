@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Rejestracja</title>
 </head>
 <body>
@@ -14,21 +15,21 @@
         <form action="">
             <div id="blok_1">
                 <h2>Dane osobowe</h2>
-                <input type="text" name="" id="" value="Wpisz imię..." required>
-                <input type="text" name="" id="" value="Wpisz Nazwisko..." required>
-                <button>Następna karta</button>
+                <input type="text" id="imie" value="Wpisz imię..." required>
+                <input type="text" id="nazwisko" value="Wpisz Nazwisko..." required>
+                <input type="button" value="Następna karta" onclick="blok_1()">
             </div>
             <div id="blok_2">
                 <h2>Dane kontaktowe</h2>
-                <input type="email" name="" id="" value="Twój e-mail..">
-                <input type="tel" name="" id="" value="Twój numer telefonu...">
-                <button>Następna karta</button>
+                <input type="email" id="email" value="Twój e-mail..">
+                <input type="tel" id="telefon" value="Twój numer telefonu...">
+                <input type="button" value="Następna karta" onclick="blok_2()">
             </div>
             <div id="blok_3">
                 <h2>Hasło do logowania</h2>
-                <input type="password" name="" id="" value="Podaj hasło">
-                <input type="password" name="" id="" value="Powtórz hasło">
-                <button>Zatwierdź</button>
+                <input type="password" id="pass_1" value="Podaj hasło">
+                <input type="password" id="pass_2" value="Powtórz hasło">
+                <input type="button" value="Zatwierdź" onclick="blok_3()">
             </div>
         </form>
     </main>
