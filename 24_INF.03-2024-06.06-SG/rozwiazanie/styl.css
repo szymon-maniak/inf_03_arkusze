@@ -1,7 +1,56 @@
-footer{
-    float: left;
-}
-
 *{
     font-family: Cambria, serif;
+}
+
+main{
+    background-image: url(ck-tulipany.jpg);
+    height: 500px;
+}
+
+footer{
+    float: left;
+    background-color: #c2185b;
+    color: white;
+    width: 25%;
+}
+
+#blok_1, #blok_2, #blok_3{
+    float: left;
+    background-color: #fce4ec;
+    width: 25%;
+    height: 300px;
+    margin: 25px;
+    padding: 16px;
+}
+
+#blok_2, #blok_3{
+    display: none;
+}
+
+p{
+    padding-top: 20px;
+}
+
+a{
+    color: white;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"]{
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+}
+
+button{
+    background-color: #c2185b;
+    color: white;
+    margin-top: 50px;
+    margin-left: 60%;
+    padding: 20px;
+    border: none;
+}
+
+video{
+    height: 100%;
+    width: 100%;
 }
