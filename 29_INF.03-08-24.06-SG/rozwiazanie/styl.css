@@ -74,10 +74,11 @@ button:hover{
     margin-bottom: 10px;
 }
 
-#postep section{
+#postep div{
     background-color: navy;
     width: 4%;
     height: 30px;
+    float: left;
 }
 
 table{

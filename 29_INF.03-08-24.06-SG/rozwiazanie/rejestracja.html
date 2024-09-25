@@ -30,34 +30,34 @@
         <h1>Zarejestruj się w sklepie</h1>
     </header>
     <main>
-        <button>Klient</button>
-        <button>Adres</button>
-        <button>Kontakt</button>
+        <button onclick="aktywacja(1)" id="przycisk_klient">Klient</button>
+        <button onclick="aktywacja(2)" id="przycisk_adres">Adres</button>
+        <button onclick="aktywacja(3)" id="przycisk_kontakt">Kontakt</button>
         <div id="blok_1">
             <p>Imię</p>
-            <input type="text" name="" id="" value="Wpisz dane...">
+            <input type="text" id="imie" value="Wpisz dane..." onfocusout="pasek()">
             <p>Nazwisko</p>
-            <input type="text" name="" id="">
+            <input type="text" id="nazwisko" onfocusout="pasek()">
             <p>Data urodzenia</p>
-            <input type="date" name="" id="">
+            <input type="date" id="data_urodzenia" onfocusout="pasek()">
         </div>
         <div id="blok_2">
             <p>Ulica</p>
-            <input type="text" name="" id="">
+            <input type="text" id="ulica" onfocusout="pasek()">
             <p>Numer</p>
-            <input type="number" name="" id="">
+            <input type="number" id="numer" onfocusout="pasek()">
             <p>Miasto</p>
-            <input type="text" name="" id="">
+            <input type="text" id="miasto" onfocusout="pasek()">
         </div>
         <div id="blok_3">
             <p>Numer komórkowy</p>
-            <input type="tel" name="" id="">
-            <input type="checkbox" name="" id="">Akceptuję RODO
-            <button onclick="">Zatwierdź dane</button>
+            <input type="tel" id="tel" onfocusout="pasek()">
+            <input type="checkbox" id="rodo" onfocusout="pasek()">Akceptuję RODO<br>
+            <button onclick="zatwierdzajaca()">Zatwierdź dane</button>
         </div>
     </main>
     <section id="postep">
-        <section></section>
+        <div id="pasek"></div>
     </section>
     <footer>
         <h4>Rejestrację do sklepu wykonał: Szymon Maniak 5TI</h4>
