@@ -1,3 +1,7 @@
 footer{
     float: left;
 }
+
+*{
+    font-family: Cambria, serif;
+}
