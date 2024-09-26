@@ -5,3 +5,63 @@ section{
 main{
     clear: both;
 }
+
+body{
+    font-family: Georgia, serif;
+}
+
+header{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#gorny_1, #gorny_2{
+    background-color: #a26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+}
+
+#gorny_3{
+    background-color: #a26475;
+    color: white;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+}
+
+main{
+    background-color: #f0eae2;
+    padding: 50px;
+}
+
+footer{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+table, td, th{
+    border: 2px solid #69283a;
+    padding: 7px;
+    border-collapse: collapse;
+}
+
+ul{
+    list-style-type: square;
+}
+
+#czerwony{
+    background-color: red;
+}
+
+#zielony{
+    background-color: green;
+}
+
+#niebieski{
+    background-color: blue;
+}
