@@ -18,7 +18,24 @@
             symbol: <input type="number" name="symbol"><br>
             <input type="submit" value="AKCEPTUJ">
         </form>
-        <!-- skrypt 1 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '' , 'biblioteka');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                @$imie = $_POST['imie'];
+                @$nazwisko = $_POST['nazwisko'];
+                @$symbol = $_POST['symbol'];
+
+                if(isset($imie)&&isset($nazwisko)&&isset($symbol)){
+                    echo "Dodano czytelnika ".$imie." ".$nazwisko;
+                    $zapytanie = "INSERT INTO `czytelnicy`(`imie`, `nazwisko`, `kod`) VALUES ('$imie','$nazwisko','$symbol');";   
+                    mysqli_query($polaczenie, $zapytanie);   
+                }
+            }
+            mysqli_close($polaczenie);
+        ?>
     </main>
     <main id="srodkowy">
         <img src="biblioteka.png" alt="biblioteka">
@@ -27,9 +44,28 @@
     </main>
     <main id="prawy">
         <h4>Nasi czytelnicy:</h4>
-        <ul>
-            <!-- skrypt 2 -->
-        </ul>
+        <ol>
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'biblioteka');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT imie, nazwisko FROM `czytelnicy` ORDER BY nazwisko ASC;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    $text = " ";
+                    while($tablica = mysqli_fetch_array($odpowiedz)){
+                        $text .= "<li>";
+                        $text .= $tablica['imie'];
+                        $text .= " ";
+                        $text .= $tablica['nazwisko'];
+                        $text .= "</li>";
+                    }
+                    echo $text;
+                }
+                mysqli_close($polaczenie);
+            ?>
+        </ol>
     </main>
     <footer>
         <p>Projekt witryny: Szymon Maniak 5TI</p>   
