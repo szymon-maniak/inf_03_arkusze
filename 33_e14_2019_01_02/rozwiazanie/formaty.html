@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl2.css">
+    <script src="skrypt.js"></script>
     <title>Formatowanie</title>
 </head>
 <body>
@@ -51,18 +52,18 @@
         <img src="napisy" alt="technologia web">
     </section>
     <main>
-        <p>Podaj rozmiar teksty w procentach: <input type="number" id="">%</p>
+        <p>Podaj rozmiar teksty w procentach: <input type="number" id="rozmiar">%</p>
         <p>
-            <select name="" id="">
-                <option value="">prosty</option>
-                <option value="">kursywa</option>
+            <select id="typ">
+                <option value="normal">prosty</option>
+                <option value="italic">kursywa</option>
             </select>
         </p>
         <p>Jakim kolorem sformatować tekst? Wybierz przycisk</p>
-        <button onclick="czerwony()" id="czerwony"></button>
-        <button onclick="zielony()" id="zielony"></button>
-        <button onclick="niebieski()" id="niebieski"></button>
-        <p>To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript</p>
+        <button onclick="funkcja('red')" id="czerwony"></button>
+        <button onclick="funkcja('green')" id="zielony"></button>
+        <button onclick="funkcja('blue')" id="niebieski"></button>
+        <p id="paragraf">To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript</p>
     </main>
     <footer>
         <p>Formatowaniem tekstu zajmował się: <i>Szymon Maniak 5TI</i></p>
