@@ -38,11 +38,11 @@ h4{
     text-align: center;
 }
 
-input[type="text"], input[type="number"]{
+input{
     margin: 5px;
 }
 
-li{
+li:hover{
     background-color: sienna;
     color: white;
 }
