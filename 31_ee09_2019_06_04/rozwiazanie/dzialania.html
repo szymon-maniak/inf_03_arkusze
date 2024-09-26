@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Działania matematyczne</title>
 </head>
 <body>
@@ -21,12 +22,14 @@
     </header>
     <main id="lewy">
         <h3>Proste działania</h3>
-        liczba A: <input type="text" name="liczba_A"><br>
-        liczba B: <input type="text" name="liczba_B"><br>
+        liczba A: <input type="text" id="liczba_A"><br>
+        liczba B: <input type="text" id="liczba_B"><br>
         <button onclick="dodawanie()">+</button>
         <button onclick="odejmowanie()">-</button>
         <button onclick="mnozenie()">*</button>
-        <button onabort="dzielenie()">/</button>
+        <button onclick="dzielenie()">/</button>
+        <button onclick="potegowanie()">^</button>
+        <p id="wynik"></p>
     </main>
     <main id="prawy">
         <ul>

@@ -1,10 +1,11 @@
-main{
+main, header{
     float: left;
 }
 
 body{
     font-family: Tahoma, sans-serif;
     color: white;
+    margin: 0;
 }
 
 #pierwszy, #trzeci, #czwarty{
@@ -33,6 +34,7 @@ body{
 }
 
 footer{
+    clear: both;
     background-color: #983713;
     text-align: right;
 }
