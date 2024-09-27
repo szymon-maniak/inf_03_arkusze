@@ -1,0 +1,48 @@
+aside, nav{
+    float: left;
+}
+
+main{
+    clear: both;
+}
+
+body{
+    background-color: #f6e5dc;
+    font-family: Tahoma, sans-serif;
+}
+
+header{
+    background-color: #2f180c;
+    text-align: center;
+    color: white;
+    height: 60px;
+}
+
+aside{
+    width: 60%;
+}
+
+nav{
+    font-size: 200%;
+    padding: 50px;
+}
+
+main{
+    background-color: #d0b6a8;
+    text-align: center;
+    padding: 30px;
+}
+
+footer{
+    background-color: #2f180c;
+    color: white;
+    height: 60px;
+}
+
+img{
+    height: 400px;
+}
+
+ul{
+    list-style-type: circle;
+}
