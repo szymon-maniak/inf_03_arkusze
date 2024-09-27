@@ -1,0 +1,7 @@
+aside, main{
+    float: inline-start;
+}
+
+footer{
+    clear: both;
+}
