@@ -50,7 +50,13 @@
     </main>
     <footer id="stopka_1">
         <?php
-            
+            if(isset($_COOKIE['ciasteczko'])){
+                echo "<p><i>Witaj ponownie na stronie lotnisko</i></p>";
+            }
+            else{
+                setcookie('ciasteczko', 1, time() + 7200 );
+                echo "<p><i>Dzień dobry! Strona lotnisko używa ciasteczek</i></p>";
+            }
         ?>
     </footer>
     <footer id="stopka_2">
