@@ -42,6 +42,7 @@ footer{
     padding: 5px;
     width: 226px;
     height: 280px;
+    float: left;
 }
 
 h3{
