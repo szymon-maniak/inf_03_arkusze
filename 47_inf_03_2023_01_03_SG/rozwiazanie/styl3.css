@@ -5,3 +5,50 @@ nav, main{
 footer{
     clear: both;
 }
+
+*{
+    font-family: Georgia, serif;
+}
+
+header, footer{
+    background-color: #c75b39;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav{
+    background-color: #ff8a65;
+    width: 25%;
+    height: 500px;
+    padding-top: 50px;
+}
+
+main{
+    background-color: snow;
+    width: 75%;
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+img{
+    width: 25%;
+    padding: 10px;
+    box-shadow: 15px 15px 10px dimgray;
+}
+
+li{
+    margin: 5px;
+}
+
+li::marker{
+    color: snow;
+}
+
+h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
+}
