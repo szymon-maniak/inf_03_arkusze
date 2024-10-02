@@ -53,25 +53,25 @@
         ?>
         <h2>Polecamy do sosów</h2>
         <!-- skrypt 3 -->
-        <ol>
-            <?php
-                $polaczenie = mysqli_connect('localhost', 'root', '', 'dane2');
-                if(!$polaczenie){
-                    exit();
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'dane2');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                $zapytanie = "SELECT grzyby.nazwa, grzyby.potoczna, rodzina.nazwa FROM `grzyby` JOIN rodzina ON grzyby.rodzina_id = rodzina.id WHERE grzyby.potrawy_id = 1;";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                echo "<ol>";
+                while($tablica = mysqli_fetch_row($odpowiedz)){
+                    $nazwa_grzyba = $tablica[0];
+                    $nazwa_potoczna = $tablica[1];
+                    $nazwa_rodziny = $tablica[2];
+                    echo "<li>$nazwa_grzyba($nazwa_potoczna), rodzina: $nazwa_rodziny</li>";
                 }
-                else{
-                    $zapytanie = "SELECT grzyby.nazwa, grzyby.potoczna, rodzina.nazwa FROM `grzyby` JOIN rodzina ON grzyby.rodzina_id = rodzina.id WHERE grzyby.potrawy_id = 1;";
-                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
-                    while($tablica = mysqli_fetch_row($odpowiedz)){
-                        $nazwa_grzyba = $tablica[0];
-                        $nazwa_potoczna = $tablica[1];
-                        $nazwa_rodziny = $tablica[2];
-                        echo "<li>$nazwa_grzyba($nazwa_potoczna), rodzina: $nazwa_rodziny</li>";
-                    }
-                }
-                mysqli_close($polaczenie);
-            ?>
-        </ol>
+                echo "</ol>";
+            }
+            mysqli_close($polaczenie);
+            ?>        
     </main>
     <footer>
         <p>Autor: Szymon Maniak 5TI</p>
