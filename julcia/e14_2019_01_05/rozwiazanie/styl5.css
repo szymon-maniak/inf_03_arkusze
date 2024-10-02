@@ -5,3 +5,48 @@ header, main{
 footer{
     clear: both;
 }
+
+body{
+    font-family: Verdana, sans-serif;
+}
+
+#miniatura{
+    background-color: sienna;
+    height: 100px;
+    width: 20%;
+}
+
+#tytulowe{
+    background-color: sienna;
+    color: orange;
+    height: 100px;
+    width: 80%;
+}
+
+#lewy{
+    background-color: burlywood;
+    height: 700px;
+    width: 70%;
+}
+
+#prawy{
+    background-color: burlywood;
+    height: 700px;
+    width: 30%;
+}
+
+footer{
+    background-color: sienna;
+    color: orange;
+    text-align: center;
+}
+
+img{
+    margin: 7px;
+    padding: 5px;
+    border: 1px solid rosybrown;
+}
+
+img:hover{
+    border-color: maroon;
+}
