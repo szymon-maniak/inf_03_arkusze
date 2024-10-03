@@ -1,0 +1,7 @@
+#gorna_lewy, #gorna_prawy, #lewy, #prawy{
+    float: left;
+}
+
+#baner, #stopka{
+    clear: both;
+}
