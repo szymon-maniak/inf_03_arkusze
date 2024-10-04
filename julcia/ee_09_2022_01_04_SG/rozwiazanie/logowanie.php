@@ -19,7 +19,7 @@
             login: <input type="text" name="login"><br>
             hasło: <input type="password" name="haslo"><br>
             powtórz hasło: <input type="password" name="powtorz_haslo"><br>
-            <button type="button">Zapisz</button>
+            <button>Zapisz</button>
         </form>
         <!-- skrypt php -->
         <?php
@@ -32,14 +32,14 @@
                     $login = $_POST['login'];
                     $haslo = $_POST['haslo'];
                     $powtorz_haslo = $_POST['powtorz_haslo'];
-
                     $blad = false;
 
-                    if($login == "" || $haslo == "" || $powtorz_haslo == ""){
-                        echo "Wypełnij wszystkie dane";
+                    if(empty($login) || empty($haslo) || empty($powtorz_haslo)){
+                        echo "<p>Wypełnij wszystkie dane</p>";
                         $blad = true;
                     }
                 }
+                
             }
             mysqli_close($polaczenie);
         ?>
