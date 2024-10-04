@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Uslugi kosmetyczne</title>
 </head>
 <body>
     <nav>
         <h2>W ofercie</h2>
-        <ol>
+        <ul>
             <li>
                 <a href="twarz.html">Zabiegi na twarz</a>
-                <ul>
+                <ol>
                     <li>Piling</li>
                     <li>Maska</li>
                     <li>Regulacja brwi</li>
-                </ul>
+                </ol>
             </li>
-        </ol>
+        </ul>
         <a href="index.html">Do strony głównej</a>
     </nav>
     <header>
         <h1>Salon Kosmetyczny</h1>
     </header>
-    <aside>
-        <img src="obraz1.jpg" alt="Kosmetyczka">
-    </aside>
     <main>
         <h2>Sprawdź cenę swojej wizyty</h2>
         <input type="checkbox" id="piling">Piling<br>
         <input type="checkbox" id="maska">Maska<br>
         <input type="checkbox" id="masaz_twarzy">Masaż twarzy<br>
         <input type="checkbox" id="regulacja_brwi">Regulacja brwi<br>
-        <button type="button">Sprawdź cenę</button>
+        <button type="button" onclick="oblicz()">Sprawdź cenę</button>
         <p id="wynik"></p>
     </main>
+    <aside>
+        <img src="obraz1.jpg" alt="Kosmetyczka">
+    </aside>
     <footer>
         <p>Autor: Szymon Maniak 5TI</p>
     </footer>
