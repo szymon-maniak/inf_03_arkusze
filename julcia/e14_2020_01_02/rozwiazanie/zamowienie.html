@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl9.css">
+    <script src="skrypt.js"></script>
     <title>Fabryka żelków</title>
 </head>
 <body>
     <div id="gorna_lewy">
-        <a href="index.html"><img src="" alt="logo fabryki"></a>
+        <a href="index.html"><img src="cukierki2.png" alt="logo fabryki"></a>
     </div>
     <div id="gorna_prawy">
         <a href="zamowienie.html">Zamówienie</a>
@@ -44,14 +45,14 @@
     </div>
     <div id="prawy">
         Podaj numer kształtu:<br>
-        <input type="number" name="" id=""><br>
+        <input type="number" id="ksztalt"><br>
         skomponuj swój kolor, podaj RGB:<br>
-        R: <input type="number" name="" id="">
-        G: <input type="number" name="" id="">
-        B: <input type="number" name="" id=""><br>
-        <input type="button" value="Zamów" onclick="">
+        R: <input type="number" id="litera_R">
+        G: <input type="number" id="litera_G">
+        B: <input type="number" id="litera_B"><br>
+        <input type="button" value="Zamów" onclick="zamowienie()">
         <p id="wynik">Wybrany kształt:</p>
-        <button type="button">Wybrany kolor</button>
+        <button type="button" id="przycisk">Wybrany kolor</button>
     </div>
     <div id="stopka">
         <p>Autor strony: <i>Szymon Maniak 5TI</i></p>
