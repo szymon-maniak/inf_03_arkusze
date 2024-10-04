@@ -1,11 +1,58 @@
-nav, aside{
-    float: left;
+body{
+    font-family: garamond;
+    margin: 0;
 }
 
-header, main{
+nav{
+    float: left;
+    width: 25%;
+    height: 500px;
+    background-color: lavender;
+}
+
+aside{
+    float: left;
+    width: 25%;
+    height: 300px;
+    background-color: lavender;
+}
+
+header{
     float: right;
+    height: 150px;
+    width: 75%;
+    background-color: indigo;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+}
+
+main{
+    float: right;
+    height: 650px;
+    width: 75%;
+    background-color: lavender;
+    font-size: 200%;
+    text-align: center;
 }
 
 footer{
     clear: both;
+    background-color: indigo;
+    color: white;
+    text-align: right;
+}
+
+ol{
+    list-style-type: square;
+}
+
+img{
+    padding: 5px;
+    margin: 10px;
+}
+
+img:hover{
+    padding: 4px;
+    border: 1px solid indigo;
 }
