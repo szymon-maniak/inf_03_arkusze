@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT nazwa, cena FROM `uslugi` WHERE cena < 30;
+Zapytanie 2: SELECT SUM(cena) FROM `uslugi` WHERE rodzaj = 1;
+Zapytanie 3: CREATE USER 'kosmetyczka'@'localhost' IDENTIFIED BY 'Kosmet34';
+Zapytanie 4: GRANT SELECT, INSERT ON `egzamin1`.`uslugi` TO 'kosmetyczka'@'localhost';
