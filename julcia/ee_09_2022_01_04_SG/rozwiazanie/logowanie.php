@@ -38,8 +38,30 @@
                         echo "<p>Wypełnij wszystkie dane</p>";
                         $blad = true;
                     }
+
+                    $zapytanie = "SELECT login FROM `uzytkownicy`";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tablica = mysqli_fetch_array($odpowiedz)){
+                        $login_baza = $tablica['login'];
+                        if($login == $login_baza){
+                            echo "<p>login wystepuje w bazie danych, konto nie zostało dodane</p>";
+                            $blad = true;
+                        }
+                    }
+
+                    if($haslo != $powtorz_haslo){
+                        echo "<p>hasła nie są takie same, konto nie zostało dodane</p>";
+                        $blad = true;
+                    }
+
+                    if($blad == false){
+                        $szyfr = sha1($haslo);
+                        $zapytanie = "INSERT INTO `uzytkownicy`(`login`, `haslo`) VALUES ('$login','$szyfr');";
+                        mysqli_query($polaczenie, $zapytanie);
+
+                        echo "<p>Konto zostało dodane</p>";
+                    }
                 }
-                
             }
             mysqli_close($polaczenie);
         ?>
