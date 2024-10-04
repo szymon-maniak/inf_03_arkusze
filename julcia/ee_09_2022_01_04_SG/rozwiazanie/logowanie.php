@@ -19,9 +19,30 @@
             login: <input type="text" name="login"><br>
             hasło: <input type="password" name="haslo"><br>
             powtórz hasło: <input type="password" name="powtorz_haslo"><br>
-            <input type="submit" value="Zapisz">
+            <button type="button">Zapisz</button>
         </form>
         <!-- skrypt php -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'psy');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                if(isset($_POST['login']) && isset($_POST['haslo']) && isset($_POST['powtorz_haslo'])){
+                    $login = $_POST['login'];
+                    $haslo = $_POST['haslo'];
+                    $powtorz_haslo = $_POST['powtorz_haslo'];
+
+                    $blad = false;
+
+                    if($login == "" || $haslo == "" || $powtorz_haslo == ""){
+                        echo "Wypełnij wszystkie dane";
+                        $blad = true;
+                    }
+                }
+            }
+            mysqli_close($polaczenie);
+        ?>
     </main>
     <nav>
         <h2>Zapraszamy wszystkich</h2>
