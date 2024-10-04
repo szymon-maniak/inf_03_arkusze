@@ -1,0 +1,11 @@
+aside{
+    float: left;
+}
+
+main, nav{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
