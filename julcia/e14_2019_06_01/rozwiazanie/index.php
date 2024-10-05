@@ -12,22 +12,56 @@
     </header>
     <section id="lewy">
         <h3>Promocja 15% obejmuje artykuły:</h3>
-        <ol>
+        <ul>
             <!-- skrypt 1 -->
-        </ol>
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'sklep');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT nazwa FROM `towary` WHERE promocja = 1;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tablica = mysqli_fetch_array($odpowiedz)){
+                        $nazwa = $tablica['nazwa'];
+                        echo "<li>$nazwa</li>";
+                    }
+                }
+                mysqli_close($polaczenie);
+            ?>
+        </ul>
     </section>
     <section id="srodkowy">
         <h3>Cena wybranego artykułu w promocji</h3>
-        <form action="" method="post">
-            <select name="" id="">
-                <option value="">Gumka do mazania</option>
-                <option value="">Cienkopis</option>
-                <option value="">Pisaki 60 szt.</option>
-                <option value="">Markery 4 szt.</option>
-                <input type="submit" value="Wybierz">
+        <form action="index.php" method="post">
+            <select name="lista">
+                <option value="Gumka do mazania">Gumka do mazania</option>
+                <option value="Cienkopis">Cienkopis</option>
+                <option value="Pisaki 60 szt.">Pisaki 60 szt.</option>
+                <option value="Markery 4 szt.">Markery 4 szt.</option>
             </select>
+            <input type="submit" value="Wybierz">
         </form>
         <!-- skrypt 2 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'sklep');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                if(!empty($_POST['lista'])){
+                    $lista = $_POST['lista'];
+                    $zapytanie = "SELECT cena FROM `towary` WHERE nazwa LIKE '$lista';";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tablica = mysqli_fetch_array($odpowiedz)){
+                        $cena_zapytanie = $tablica['cena'];
+                        $cena = round($cena_zapytanie*0.85, 2);
+                        echo $cena;
+                    }
+                }
+            }
+            mysqli_close($polaczenie);
+        ?>
     </section>
     <section id="prawy">
         <h3>Kontakt</h3>
