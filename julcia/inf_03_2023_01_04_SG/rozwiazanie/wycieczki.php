@@ -14,6 +14,24 @@
         <h3>Wycieczki, na które są wolne miejsca</h3>
         <ul>
             <!-- skrypt 1 -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'biuro');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT id, dataWyjazdu, cel, cena FROM `wycieczki` WHERE dostepna = 1;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tablica = mysqli_fetch_array($odpowiedz)){
+                        $id = $tablica['id'];
+                        $dataWyjazdu = $tablica['dataWyjazdu'];
+                        $cel = $tablica['cel'];
+                        $cena = $tablica['cena'];
+                        echo "<li>$id. dnia $dataWyjazdu jedziemy do $cel, cena: $cena<br></li>";
+                    }
+                }
+                mysqli_close($polaczenie);
+            ?>
         </ul>
     </section>
     <aside>
@@ -36,6 +54,22 @@
     <main>
         <h2>Nasze zdjęcia</h2>
         <!-- skrypt 2 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'biuro');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                $zapytanie = "SELECT nazwaPliku, podpis FROM `zdjecia` ORDER BY `zdjecia`.`podpis` DESC;";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                while($tablica = mysqli_fetch_array($odpowiedz)){
+                    $nazwaPliku = $tablica['nazwaPliku'];
+                    $podpis = $tablica['podpis'];
+                    echo "<img src='$nazwaPliku' alt='$podpis'>";
+                }
+            }
+            mysqli_close($polaczenie);
+        ?>
     </main>
     <nav>
         <h2>Skontaktuj się</h2>
