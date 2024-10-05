@@ -13,7 +13,6 @@
     <section id="lewy">
         <h3>Promocja 15% obejmuje artykuły:</h3>
         <ul>
-            <!-- skrypt 1 -->
             <?php
                 $polaczenie = mysqli_connect('localhost', 'root', '', 'sklep');
                 if(!$polaczenie){
@@ -42,7 +41,6 @@
             </select>
             <input type="submit" value="Wybierz">
         </form>
-        <!-- skrypt 2 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'sklep');
             if(!$polaczenie){
