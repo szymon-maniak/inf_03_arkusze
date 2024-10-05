@@ -5,3 +5,60 @@ aside, main, nav{
 footer{
     clear: both;
 }
+
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+header, footer{
+    background-color: #b3bc6d;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+section{
+    background-color: #ffffce;
+    color: olive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+aside, nav{
+    background-color: #e6ee9c;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+}
+
+main{
+    background-color: #ffffce;
+    width: 50%;
+    height: 450px;
+}
+
+table{
+    border: 1px solid olive;
+    margin: auto;
+    width: 70%;
+}
+
+h2{
+    text-align: center;
+}
+
+h2::first-letter{
+    font-size: 150%;
+    color: olive;
+}
+
+img{
+    height: 100px;
+    padding: 7px;
+}
+
+img:hover{
+    background-color: #b3bc6d;
+}
