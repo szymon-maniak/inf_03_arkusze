@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl2.css">
+    <script src="skrypt.js"></script>
     <title>Galeria</title>
 </head>
 <body>
@@ -30,14 +31,14 @@
     </section>
     <section id="prawy">
         <button onclick="prev()">prev</button>
-        <img src="1.jpg" alt="galeria" class="zamiana">
+        <img src="1.jpg" alt="galeria" class="zamiana" id="glowne">
         <button onclick="next()">next</button>
         <hr>
-        <img src="1.jpg" alt="miniatura" onclick="zamiana()">
-        <img src="2.jpg" alt="miniatura" onclick="zamiana()">
-        <img src="3.jpg" alt="miniatura" onclick="zamiana()">
-        <img src="4.jpg" alt="miniatura" onclick="zamiana()">
-        <img src="5.jpg" alt="miniatura" onclick="zamiana()">
+        <img src="1.jpg" alt="miniatura" onclick="zamiana('1.jpg', 1)">
+        <img src="2.jpg" alt="miniatura" onclick="zamiana('2.jpg', 2)">
+        <img src="3.jpg" alt="miniatura" onclick="zamiana('3.jpg', 3)">
+        <img src="4.jpg" alt="miniatura" onclick="zamiana('4.jpg', 4)">
+        <img src="5.jpg" alt="miniatura" onclick="zamiana('5.jpg', 5)">
     </section>
     <footer>
         <a href="http://pixabay.com" target="_blank">Więcej obrazów</a>
