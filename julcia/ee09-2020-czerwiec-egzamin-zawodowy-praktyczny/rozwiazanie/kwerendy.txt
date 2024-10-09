@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT dataZadania, miesiac, wpis FROM `zadania` WHERE miesiac LIKE "sierpien";
 Zapytanie 2: SELECT miesiac, rok FROM `zadania` WHERE dataZadania LIKE "2020-08-01";
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 3: SELECT DISTINCT wpis FROM `zadania` WHERE wpis LIKE "%o";
+Zapytanie 4: UPDATE `zadania` SET `wpis`='Wycieczka: Karkonosze' WHERE dataZadania LIKE "2020-08-27";
