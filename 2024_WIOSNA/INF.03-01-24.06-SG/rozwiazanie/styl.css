@@ -1,0 +1,11 @@
+main{
+    float: left;
+}
+
+section{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
