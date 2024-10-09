@@ -9,3 +9,11 @@ section{
 footer{
     clear: both;
 }
+
+*{
+    font-family: Verdana, sans-serif;
+}
+
+img[src="motor.png"]{
+    display: inline-block;
+}
