@@ -24,6 +24,7 @@ body{
 }
 
 .dzien{
+    float: left;
     background-color: #ffdab9;
     width: 170px;
     height: 90px;
@@ -32,6 +33,7 @@ body{
 }
 
 footer{
+    clear: both;
     background-color: #3cb371;
     color: white;
 }

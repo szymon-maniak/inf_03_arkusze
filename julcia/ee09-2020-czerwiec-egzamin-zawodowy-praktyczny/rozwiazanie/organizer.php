@@ -42,7 +42,18 @@
                 exit();
             }
             else{
+                $zapytanie = "SELECT dataZadania, miesiac, wpis FROM `zadania` WHERE miesiac LIKE 'sierpien';";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                while($tablica = mysqli_fetch_array($odpowiedz)){
+                    $dataZadania = $tablica['dataZadania'];
+                    $miesiac = $tablica['miesiac'];
+                    $wpis =  $tablica['wpis'];
 
+                    echo "<div class='dzien'>
+                    <h6>$dataZadania, $miesiac</h6>
+                    <p>$wpis</p>
+                    </div>";
+                }
             }
             mysqli_close($polaczenie);
         ?>
@@ -55,7 +66,14 @@
                 exit();
             }
             else{
+                $zapytanie = "SELECT miesiac, rok FROM `zadania` WHERE dataZadania LIKE '2020-08-01';";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                while($tablica = mysqli_fetch_array($odpowiedz)){
+                    $miesiac = $tablica['miesiac'];
+                    $rok = $tablica['rok'];
 
+                    echo "<h1>miesiąc: $miesiac, rok: $rok</h1>";
+                }
             }
             mysqli_close($polaczenie);
         ?>
