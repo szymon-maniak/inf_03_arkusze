@@ -15,5 +15,62 @@ footer{
 }
 
 img[src="motor.png"]{
-    display: inline-block;
+    display: block;
+    margin-left: 15%;
+    width: 70%;
+    position: absolute;
+    z-index: 0;
+}
+
+header{
+    background-color: rgba(60, 120, 160, 0.9);
+    z-index: 1;
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+
+#lewy{
+    background-color: rgba(0, 100, 0, 0.6);
+    margin: 2%;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    overflow: auto;
+    box-shadow: 10px 10px 7px dimgray;
+    position: relative;
+    z-index: 1;
+}
+
+section{
+    background-color: rgba(0, 100, 0, 0.6);
+    margin: 1%;
+    width: 15%;
+    height: 300px;
+    box-shadow: 10px 10px 7px dimgray;
+    position: relative;
+    z-index: 1;
+}
+
+footer{
+    background-color: rgba(60, 120, 160, 0.9);
+    color: white;
+    padding: 10px;
+}
+
+h1, h2{
+    text-align: center;
+    font-style: italic;
+}
+
+a, dt{
+    color: white;
+}
+
+li, dl{
+    padding: 1%;
+}
+
+dl:hover{
+    background-color: lightgreen;
 }
