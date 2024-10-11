@@ -2,6 +2,10 @@ header, main{
     float: left;
 }
 
+body{
+    margin: 0;
+}
+
 nav, footer{
     clear: both;
 }
