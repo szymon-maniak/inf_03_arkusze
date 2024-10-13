@@ -2,6 +2,10 @@ section{
     float: left;
 }
 
+body{
+    margin: 0;
+}
+
 #blok_3, footer{
     clear: both;
 }
