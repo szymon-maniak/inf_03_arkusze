@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT nazwa FROM `marki`;
+Zapytanie 2: SELECT model, rocznik, przebieg, paliwo, cena, zdjecie FROM `samochody` WHERE id = 10;
+Zapytanie 3: SELECT marki.nazwa, samochody.model, samochody.rocznik, samochody.cena, samochody.zdjecie FROM `marki` JOIN samochody ON samochody.marki_id = marki.id WHERE samochody.wyrozniony LIKE 1;
+Zapytanie 4: SELECT samochody.model, samochody.cena, samochody.zdjecie FROM `samochody` JOIN marki ON samochody.marki_id = marki.id WHERE marki.nazwa LIKE "Audi";
