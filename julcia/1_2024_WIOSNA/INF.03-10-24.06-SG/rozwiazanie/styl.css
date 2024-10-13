@@ -2,12 +2,20 @@ header{
     float: left;
 }
 
+main{
+    clear: both;
+}
+
 footer{
     clear: both;
 }
 
 *{
     font-family: 'Bookman Old Style', serif;
+}
+
+body{
+    margin: 0;
 }
 
 header{
@@ -24,6 +32,7 @@ footer{
 }
 
 .pracownicy{
+    float: left;
     background-color: azure;
     width: 30%;
     margin: 1%;
