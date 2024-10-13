@@ -1,0 +1,7 @@
+section{
+    float: left;
+}
+
+#blok_3, footer{
+    clear: both;
+}
