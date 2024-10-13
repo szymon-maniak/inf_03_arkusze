@@ -12,20 +12,98 @@
     </header>
     <article>
         <!-- skrypt 1 -->
+        <?php
+            $polaczenie =  mysqli_connect('localhost', 'root', '', 'kupauto');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                $zapytanie = "SELECT model, rocznik, przebieg, paliwo, cena, zdjecie FROM `samochody` WHERE id = 10;";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                $text = " ";
+                while($tablica = mysqli_fetch_array($odpowiedz)){
+                    $model = $tablica['model'];
+                    $rocznik = $tablica['rocznik'];
+                    $przebieg = $tablica['przebieg'];
+                    $paliwo = $tablica['paliwo'];
+                    $cena = $tablica['cena'];
+                    $zdjecie = $tablica['zdjecie'];
+
+                    $text .= "<img src='$zdjecie' alt='oferta dnia'>";
+                    $text .= "<h4>Oferta dnia: Toyota $model</h4>";
+                    $text .= "<p>Rocznik: $rocznik, przebieg: $przebieg, rodzaj paliwo: $paliwo</p>";
+                    $text .= "<h4>Cena: $cena</h4>";
+                }
+                echo $text;
+            }
+            mysqli_close($polaczenie);
+        ?>
     </article>
     <main>
         <h2>Oferty Wyróżnione</h2>
         <!-- skrypt 2 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'kupauto');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                $zapytanie = "SELECT marki.nazwa, samochody.model, samochody.rocznik, samochody.cena, samochody.zdjecie FROM `marki` JOIN samochody ON samochody.marki_id = marki.id WHERE samochody.wyrozniony LIKE 1 LIMIT 4;";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                $text = " ";
+                while($tablica = mysqli_fetch_array($odpowiedz)){
+                    $nazwa = $tablica['nazwa'];
+                    $model = $tablica['model'];
+                    $rocznik = $tablica['rocznik'];
+                    $cena = $tablica['cena'];
+                    $zdjecie = $tablica['zdjecie'];
+
+                    $text .= "<div class='oferta'>";
+                    $text .= "<img src='$zdjecie' alt='$model'>";
+                    $text .= "<h4>$nazwa $model</h4>";
+                    $text .= "<p>Rocznik: $rocznik</p>";
+                    $text .= "<h4>Cena: $cena</h4>";
+                    $text .= "</div>";
+                }
+                echo $text;
+            }
+            mysqli_close($polaczenie);
+        ?>
     </main>
     <nav>
         <h2>Wybierz markę</h2>
         <form action="" method="post">
             <select name="" id="">
                 <!-- skrypt 3 -->
+                <?php
+                    $polaczenie = mysqli_connect('localhost', 'root', '', 'kupauto');
+                    if(!$polaczenie){
+                        exit();
+                    }
+                    else{
+                        $zapytanie = "SELECT nazwa FROM `marki`;";
+                        $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                        while($tablica = mysqli_fetch_array($odpowiedz)){
+                            $nazwa = $tablica['nazwa'];
+                            echo "<option value='$nazwa'>$nazwa</option>";
+                        }
+                    }
+                    mysqli_close($polaczenie);
+                ?>
                 <input type="submit" value="Wyszukaj">
             </select>
         </form>
         <!-- skrypt 4 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'kupauto');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+
+            }
+            mysqli_close($polaczenie);
+        ?>
     </nav>
     <footer>
         <p>Stronę wykonał: Szymon Maniak 5TI</p>
