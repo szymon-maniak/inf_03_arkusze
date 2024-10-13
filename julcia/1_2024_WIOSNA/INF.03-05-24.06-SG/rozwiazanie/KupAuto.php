@@ -73,7 +73,7 @@
     <nav>
         <h2>Wybierz markę</h2>
         <form action="" method="post">
-            <select name="" id="">
+            <select name="opcja">
                 <!-- skrypt 3 -->
                 <?php
                     $polaczenie = mysqli_connect('localhost', 'root', '', 'kupauto');
@@ -100,7 +100,24 @@
                 exit();
             }
             else{
+                if(!empty($_POST['opcja'])){
+                    $opcja = $_POST['opcja'];
+                    $zapytanie = "SELECT samochody.model, samochody.cena, samochody.zdjecie FROM `samochody` JOIN marki ON samochody.marki_id = marki.id WHERE marki.nazwa LIKE '$opcja';";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    $text = " ";
+                    while($tablica = mysqli_fetch_array($odpowiedz)){
+                        $model = $tablica['model'];
+                        $cena = $tablica['cena'];
+                        $zdjecie = $tablica['zdjecie'];
 
+                        $text .= "<div class='oferta'>";
+                        $text .= "<img src='$zdjecie' alt='$model'>";
+                        $text .= "<h4>$opcja $model</h4>";
+                        $text .= "<h4>Cena: $cena</h4>";
+                        $text .= "</div>";
+                    }
+                    echo $text;
+                }
             }
             mysqli_close($polaczenie);
         ?>
