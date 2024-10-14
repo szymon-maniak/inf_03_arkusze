@@ -9,6 +9,7 @@ header{
 }
 
 .rozgrywki{
+    float: left;
     color: white;
     text-align: center;
     width: 200px;
@@ -22,6 +23,7 @@ header{
 }
 
 main{
+    clear: both;
     background-color: whitesmoke;
     height: 50px;
 }
