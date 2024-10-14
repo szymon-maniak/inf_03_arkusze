@@ -45,7 +45,7 @@
     <section id="lewy">
         <p>Podaj pozycję zawodników (1-bramkarze, 2-obrońcy, 3-pomocnicy, 4-napastnicy):</p>
         <form action="futbol.php" method="post">
-            <input type="number" name="" id="">
+            <input type="number" name="pole">
             <input type="submit" value="Sprawdź">
             <ul>
                 <!-- skrypt 2 -->
@@ -55,7 +55,19 @@
                         exit();
                     }
                     else{
+                        if(!empty($_POST['pole'])){
+                            $pole = $_POST['pole'];
+                            $zapytanie = "SELECT imie, nazwisko FROM zawodnik WHERE pozycja_id = $pole;";
+                            $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                            $text = " ";
+                            while($tablica = mysqli_fetch_array($odpowiedz)){
+                                $imie = $tablica['imie'];
+                                $nazwisko = $tablica['nazwisko'];
 
+                                $text .= "<li><p>$imie $nazwisko</p></li>";
+                            }
+                            echo $text;
+                        }
                     }
                     mysqli_close($polaczenie);
                 ?>
