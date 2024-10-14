@@ -65,6 +65,6 @@ tr:hover{
     background-color: #80c683;
 }
 
-tr:nth-last-child(){
+tbody tr:last-child{
     background-color: red;
 }
