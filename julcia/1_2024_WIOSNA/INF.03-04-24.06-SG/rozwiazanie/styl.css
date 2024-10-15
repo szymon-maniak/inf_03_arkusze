@@ -41,34 +41,43 @@ img{
     float: left;
     width: 46%;
     margin: 2%;
-    position: absolute;
-}
-
-h3, p, a{
-    opacity: 0;
     position: relative;
 }
 
-h3{
-    margin-top: 5%;
+.zdjecie>h3{
+    opacity: 0;
+    position: absolute;
+    top: 5%;
 }
 
-p{
-    margin-top: 30%;
+.zdjecie>p{
+    opacity: 0;
+    position: absolute;
+    top: 30%;
 }
 
-a{
-    margin-top: 70%;
-    margin-left: 70%;
+.zdjecie>a{
+    opacity: 0;
+    position: absolute;
+    top: 70%;
+    left: 70%;
     background-color: sienna;
     padding: 15px;
 }
 
-.zdjecie:hover img{
+.zdjecie>img:hover{
     opacity: 0.3;
     transition: opacity 0.5 ease;
 }
 
-.zdjecie:hover h3, p, a{
+.zdjecie:hover h3{
+    opacity: 1;
+} 
+
+.zdjecie:hover p{
+    opacity: 1;
+} 
+
+.zdjecie:hover a{
     opacity: 1;
 } 
