@@ -5,3 +5,70 @@ main{
 footer{
     clear: both;
 }
+
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header, footer{
+    background-color: sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#lewy, #prawy{
+    background-color: navajowhite;
+    width: 15%;
+    height: 700px;
+}
+
+#srodkowy{
+    width: 70%;
+    height: 700px;
+    overflow: scroll;
+}
+
+img{
+    width: 100%;
+}
+
+.zdjecie{
+    float: left;
+    width: 46%;
+    margin: 2%;
+    position: absolute;
+}
+
+h3, p, a{
+    opacity: 0;
+    position: relative;
+}
+
+h3{
+    margin-top: 5%;
+}
+
+p{
+    margin-top: 30%;
+}
+
+a{
+    margin-top: 70%;
+    margin-left: 70%;
+    background-color: sienna;
+    padding: 15px;
+}
+
+.zdjecie:hover img{
+    opacity: 0.3;
+    transition: opacity 0.5 ease;
+}
+
+.zdjecie:hover h3, p, a{
+    opacity: 1;
+} 
