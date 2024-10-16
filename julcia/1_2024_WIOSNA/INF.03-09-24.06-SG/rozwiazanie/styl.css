@@ -1,7 +1,3 @@
-section{
-    float: left;
-}
-
 #miniatura{
     clear: both;
 }
@@ -22,6 +18,7 @@ header, footer{
 }
 
 #lewy, #srodkowy, #prawy{
+    float: left;
     background-color: lightsalmon;
     height: 527px;
 }
