@@ -33,5 +33,5 @@ header, footer{
 img{
     padding: 3px;
     margin: 15px;
-    border: 2px dotted #3cb371;
+    border: 2px dashed #3cb371;
 }
