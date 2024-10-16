@@ -1,0 +1,70 @@
+section, header{
+    float: left;
+}
+
+footer{
+    clear: both;
+}
+
+*{
+    font-family: Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #519657;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
+
+#pierwszy{
+    width: 70%;
+}
+
+#drugi{
+    width: 30%;
+}
+
+section{
+    background-color: #e1e1e1;
+    height: 450px;
+}
+
+#lewy, #prawy{
+    width: 25%;
+}
+
+#srodkowy{
+    width: 50%;
+    overflow: auto;
+}
+
+footer{
+    background-color: #80c683;
+    text-align: center;
+}
+
+img[src="obraz2.jpg"]{
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+
+table{
+    border: 1px solid #80c683;
+}
+
+td{
+    padding: 2px;
+}
+
+tr:hover{
+    background-color: #80c683;
+}
+
+tbody tr:last-child{
+    background-color: red;
+}
