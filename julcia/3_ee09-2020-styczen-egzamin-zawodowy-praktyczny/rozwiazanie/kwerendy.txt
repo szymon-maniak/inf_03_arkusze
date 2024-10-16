@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT id, nazwa FROM `ryby` WHERE styl_zycia LIKE 2;
+Zapytanie 2: SELECT akwen, wojewodztwo FROM `lowisko` WHERE rodzaj LIKE 2 OR rodzaj LIKE 3;
+Zapytanie 3: SELECT ryby.nazwa FROM `ryby` JOIN okres_ochronny ON ryby.id = okres_ochronny.Ryby_id WHERE okres_ochronny.wymiar_ochronny LIKE 0;
+Zapytanie 4: CREATE TABLE wedkarze( id int unsigned NOT null, imie text, nazwisko text, punkty int );
