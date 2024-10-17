@@ -25,9 +25,28 @@
                 <th>OPIS</th>
                 <th>CENA</th>
             </tr>
-            <tr>
-                <!-- skrypt -->
-            </tr>
+            <!-- skrypt -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'sklep');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT id, nazwa, opis, cena FROM `podzespoly` WHERE cena < 1000;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    $text = " ";
+                    while($tab = mysqli_fetch_row($odpowiedz)){
+                        $text .= "<tr>";
+                        $text .= "<td>$tab[0]</td>";
+                        $text .= "<td>$tab[1]</td>";
+                        $text .= "<td>$tab[2]</td>";
+                        $text .= "<td>$tab[3]</td>";
+                        $text .= "</tr>";
+                    }
+                    echo $text;
+                }
+                mysqli_close($polaczenie);
+            ?>
         </table>
     </main>
     <footer id="pierwszy">
