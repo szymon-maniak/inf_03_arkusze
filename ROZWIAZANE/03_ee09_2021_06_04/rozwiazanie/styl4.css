@@ -5,3 +5,31 @@ section{
 footer{
     clear: both;
 }
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+header, footer{
+    background-color: #af4448;
+    color: white;
+    text-align: center;
+    height: 20px;
+}
+
+section{
+    background-color: #ffa4a2;
+    height: 650px;
+    width: 50%;
+}
+
+h4{
+    margin: 0px;
+}
+
+input[type="submit"]{
+    background-color: #af4448;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
