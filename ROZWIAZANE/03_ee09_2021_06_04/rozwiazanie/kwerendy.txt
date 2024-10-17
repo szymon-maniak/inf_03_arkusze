@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT id, imie, nazwisko, rok_urodzenia, zdjecie FROM `osoby` LIMIT 30;
+Zapytanie 2: SELECT osoby.imie, osoby.nazwisko, osoby.rok_urodzenia, osoby.opis, osoby.zdjecie FROM `osoby` JOIN hobby ON osoby.Hobby_id = hobby.id WHERE osoby.id LIKE 10;
+Zapytanie 3: SELECT AVG(rok_urodzenia), MIN(rok_urodzenia), MAX(rok_urodzenia) FROM `osoby` WHERE 1;
+Zapytanie 4: UPDATE `osoby` SET `opis`='film' WHERE Hobby_id LIKE 4;
