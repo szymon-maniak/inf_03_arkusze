@@ -5,3 +5,47 @@ header, footer{
 main{
     clear: both;
 }
+
+body{
+    font-family: Georgia, serif;
+}
+
+header{
+    background-color: #63ac74;
+    color: orange;
+    height: 140px;
+    width: 50%;
+    text-align: right;
+    font-size: 160%;
+}
+
+main{
+    background-color: #e3f637;
+    height: 500px;
+    padding: 20px;
+}
+
+footer{
+    background-color: #63ac74;
+    height: 150px;
+    width: 25%;
+}
+
+a{
+    color: orange;
+    margin: 15px;
+}
+
+table{
+    width: 100%;
+    border: 2px solid green;
+}
+
+th{
+    background-color: #63ac74;
+    color: white;
+}
+
+td:last-child{
+    text-align: right;
+}
