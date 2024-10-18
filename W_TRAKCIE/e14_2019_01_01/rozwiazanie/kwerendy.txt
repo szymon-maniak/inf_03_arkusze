@@ -1,4 +1,4 @@
-Zapytanie 1:
-Zapytanie 2:
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 1: INSERT INTO `filmy`(`id`, `gatunki_id`, `rezyserzy_id`, `tytul`, `rok`, `ocena`) VALUES ('null','null','null','Suburbicon','2017','5');
+Zapytanie 2: SELECT filmy.tytul, gatunki.nazwa FROM `filmy` JOIN gatunki ON filmy.gatunki_id = gatunki.id WHERE filmy.ocena LIKE 5;
+Zapytanie 3: SELECT tytul, rok FROM `filmy` WHERE gatunki_id LIKE 3 AND ocena LIKE 5;
+Zapytanie 4: CREATE TABLE aktorzy( id int NOT null, imie text, nazwisko text );
