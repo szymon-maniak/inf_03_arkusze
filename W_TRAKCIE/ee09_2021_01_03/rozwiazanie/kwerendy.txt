@@ -1,4 +1,4 @@
-Zapytanie 1: SELECT wart_min, wart_max FROM `bmi` WHERE 1;
+Zapytanie 1: SELECT informacja, wart_min, wart_max FROM `bmi` WHERE 1;
 Zapytanie 2: INSERT INTO `wynik`(`bmi_id`, `data_pomiaru`, `wynik`) VALUES ('3','2020-05-10','27');
 Zapytanie 3: SELECT wynik.wynik, wynik.data_pomiaru, bmi.informacja FROM `wynik` JOIN bmi ON wynik.bmi_id = bmi.id;
 Zapytanie 4: SELECT wart_min, wart_max FROM `bmi` WHERE informacja LIKE "nadwaga";

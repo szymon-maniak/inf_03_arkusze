@@ -58,7 +58,7 @@ table{
     border: 1px double white;
 }
 
-td:hover{
+tr:hover{
     background-color: #d3d3d3;
     color: black;
 }
