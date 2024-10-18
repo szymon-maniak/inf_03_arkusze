@@ -9,3 +9,54 @@
 footer{
     clear: both;
 }
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+#lewy{
+    background-color: navy;
+    color: white;
+    height: 700px;
+    width: 25%;
+}
+
+#prawy_1{
+    background-color: royalblue;
+    height: 100px;
+    width: 75%;
+    text-align: center;
+}
+
+#prawy_2{
+    background-color: steelblue;
+    text-align: center;
+    height: 300px;
+    width: 75%;
+}
+
+#prawy_3{
+    background-color: royalblue;
+    height: 300px;
+    width: 75%;
+    text-align: center;
+}
+
+footer{
+    background-color: steelblue;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+form{
+    margin: 30px;
+    line-height: 3;
+}
+
+form:hover{
+    background-color: deepskyblue;
+}
