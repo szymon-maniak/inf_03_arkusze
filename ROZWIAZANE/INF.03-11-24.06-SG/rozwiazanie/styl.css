@@ -1,0 +1,66 @@
+nav{
+    float: left;
+}
+
+main{
+    float: left;
+}
+
+section{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
+
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+header, footer{
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+nav{
+    background-color: peru;
+    width: 80%;
+    height: 40px;
+    padding-top: 20px;
+}
+
+main{
+    width: 80%;
+    height: 700px;
+    font-family: 120%;
+    overflow: auto;
+}
+section{
+    background-color: peru;
+    color: white;
+    width: 20%;
+    height: 760px;
+}
+
+a{
+    color: #ddd;
+    padding-left: 90px;
+    font-size: 140%;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+img{
+    float: left;
+    margin: 30px;
+}
+
+body{
+    margin: 0;
+}
