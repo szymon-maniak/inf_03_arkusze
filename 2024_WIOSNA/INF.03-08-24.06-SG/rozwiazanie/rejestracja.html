@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Sklep - rejestracja</title>
 </head>
 <body>
@@ -29,9 +30,9 @@
         <h1>Zarekestruj się w sklepie</h1>
     </header>
     <main>
-        <button onclick="klient()">Klient</button>
-        <button onclick="adres()">Adres</button>
-        <button onclick="kontakt()">Kontakt</button>
+        <button onclick="aktywuj(1)">Klient</button>
+        <button onclick="aktywuj(2)">Adres</button>
+        <button onclick="aktywuj(3)">Kontakt</button>
         <div id="pierwszy">
             <p>Imię</p>
             <input type="text" id="imie" placeholder="Wpisz dane..." onfocusout="zwiekszPasek()">
@@ -50,13 +51,13 @@
         </div>
         <div id="trzeci">
             <p>Numer komórkowy</p>
-            <input type="tel" id="telefon" onfocusout="zwiekszPasek()">
+            <input type="tel" id="nr_telefonu" onfocusout="zwiekszPasek()"><br>
             <input type="checkbox" id="RODO">Akceptacja RODO<br>
-            <button type="button" onclick="zatwiedzenie()">Zatwierdź dane</button>
+            <button type="button" onclick="zatwierdzenie()">Zatwierdź dane</button>
         </div>
     </main>
     <section id="pasek">
-        <section></section>
+        <section id="pusty"></section>
     </section>
     <footer>
         <h4>Rejestrację do sklepu wykonał: Szymon Maniak 5TI</h4>
