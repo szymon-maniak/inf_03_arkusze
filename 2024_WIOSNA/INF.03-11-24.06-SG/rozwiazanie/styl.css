@@ -1,0 +1,15 @@
+nav{
+    float: left;
+}
+
+main{
+    float: left;
+}
+
+section{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
