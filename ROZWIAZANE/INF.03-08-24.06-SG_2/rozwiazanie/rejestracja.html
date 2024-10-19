@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+    <title>Sklep - rejestracja</title>
+</head>
+<body>
+    <aside>
+        <img src="obraz.png" alt="promocje">
+        <h2>Sprawdź promocje</h2>
+        <table>
+            <tr>
+                <th>co?</th>
+                <th>ile taniej?</th>
+            </tr>
+            <tr>
+                <td>ubrania</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>buty</td>
+                <td>25%</td>
+            </tr>
+        </table>
+    </aside>
+    <header>
+        <h1>Zarekestruj się w sklepie</h1>
+    </header>
+    <main>
+        <button onclick="aktywuj(1)">Klient</button>
+        <button onclick="aktywuj(2)">Adres</button>
+        <button onclick="aktywuj(3)">Kontakt</button>
+        <div id="pierwszy">
+            <p>Imię</p>
+            <input type="text" id="imie" placeholder="Wpisz dane..." onfocusout="zwiekszPasek()">
+            <p>Nazwisko</p>
+            <input type="text" id="nazwisko" onfocusout="zwiekszPasek()">
+            <p>Data urodzenia</p>
+            <input type="date" id="data_urodzenia" onfocusout="zwiekszPasek()">
+        </div>
+        <div id="drugi">
+            <p>Ulica</p>
+            <input type="text" id="ulica" onfocusout="zwiekszPasek()">
+            <p>Numer</p>
+            <input type="number" id="numer" onfocusout="zwiekszPasek()">
+            <p>Miasto</p>
+            <input type="text" id="miasto" onfocusout="zwiekszPasek()">
+        </div>
+        <div id="trzeci">
+            <p>Numer komórkowy</p>
+            <input type="tel" id="nr_telefonu" onfocusout="zwiekszPasek()"><br>
+            <input type="checkbox" id="RODO">Akceptacja RODO<br>
+            <button type="button" onclick="zatwierdzenie()">Zatwierdź dane</button>
+        </div>
+    </main>
+    <section id="pasek">
+        <section id="pusty"></section>
+    </section>
+    <footer>
+        <h4>Rejestrację do sklepu wykonał: Szymon Maniak 5TI</h4>
+    </footer>
+</body>
+</html>
