@@ -32,28 +32,28 @@
         <button onclick="klient()">Klient</button>
         <button onclick="adres()">Adres</button>
         <button onclick="kontakt()">Kontakt</button>
-        <section id="pierwszy">
+        <div id="pierwszy">
             <p>Imię</p>
             <input type="text" id="imie" placeholder="Wpisz dane..." onfocusout="zwiekszPasek()">
             <p>Nazwisko</p>
             <input type="text" id="nazwisko" onfocusout="zwiekszPasek()">
             <p>Data urodzenia</p>
             <input type="date" id="data_urodzenia" onfocusout="zwiekszPasek()">
-        </section>
-        <section id="drugi">
+        </div>
+        <div id="drugi">
             <p>Ulica</p>
             <input type="text" id="ulica" onfocusout="zwiekszPasek()">
             <p>Numer</p>
             <input type="number" id="numer" onfocusout="zwiekszPasek()">
             <p>Miasto</p>
             <input type="text" id="miasto" onfocusout="zwiekszPasek()">
-        </section>
-        <section id="trzeci">
+        </div>
+        <div id="trzeci">
             <p>Numer komórkowy</p>
             <input type="tel" id="telefon" onfocusout="zwiekszPasek()">
             <input type="checkbox" id="RODO">Akceptacja RODO<br>
             <button type="button" onclick="zatwiedzenie()">Zatwierdź dane</button>
-        </section>
+        </div>
     </main>
     <section id="pasek">
         <section></section>
