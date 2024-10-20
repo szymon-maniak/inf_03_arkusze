@@ -1,0 +1,60 @@
+section{
+    float: left;
+}
+
+footer{
+    clear: both;
+}
+
+body{
+    background-color: #99ffcc;
+}
+
+main{
+    width: 1000px;
+    margin: auto;
+}
+
+header{
+    background-color: #99ff66;
+    height: 200px;
+}
+
+nav{
+    background-color: #66ccff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section{
+    width: 310px;
+    padding: 10px;
+}
+
+footer{
+    background-color: #66ccff;
+    color: #006666;
+    text-align: right;
+    height: 30px;
+    padding: 20px;
+}
+
+nav a{
+    color: #006666;
+    padding: 50px;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+button[type="reset"]{
+    background-color: #ff0000;
+}
+
+button[type="button"]{
+    background-color: #00ff00;
+}
