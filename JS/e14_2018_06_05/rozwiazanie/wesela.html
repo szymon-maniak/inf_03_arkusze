@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl5.css">
+    <script src="skrypt.js"></script>
     <title>Dom Weselny</title>
 </head>
 <body>
@@ -31,9 +32,9 @@
     </section>
     <main>
         <h2>Ile będzie kosztowało moje wesele?</h2>
-        Podaj liczbę gości: <input type="number" name="" id=""><br>
-        <input type="checkbox" name="" id=""> Wesele z poprawinami?<br>
-        <button type="button" onclick="">Oblicz koszt</button>
+        Podaj liczbę gości: <input type="number" id="ilosc_gosci"><br>
+        <input type="checkbox" id="poprawiny"> Wesele z poprawinami?<br>
+        <button type="button" onclick="oblicz_koszt()">Oblicz koszt</button>
         <p id="wynik"></p>
     </main>
     <footer>
