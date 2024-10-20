@@ -91,3 +91,7 @@ button{
 input[type="text"]{
     width: 500px;
 }
+
+body{
+    margin: 0;
+}
