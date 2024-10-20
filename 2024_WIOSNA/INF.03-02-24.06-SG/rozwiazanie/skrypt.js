@@ -11,13 +11,7 @@ let odp_krzysia = [
 
 function wyslij(){
     let wiadomosc = document.getElementById('wiadomosc').value;
-    let  jolka = " ";
-    
-    jolka += "<div class='jolanta'>";
-    jolka += "<img src='Jolka.jpg'>";
-    jolka += "<p>" + wiadomosc + "</p>";
-    jolka += "</div>";
-    document.getElementById('czat').innerHTML += jolka;
+    document.getElementById('czat').innerHTML += "<div class='jolanta'>" + "<img src='Jolka.jpg'>" + "<p>" + wiadomosc + "</p>" + "</div>";
     document.getElementById('czat').scrollTop = document.getElementById('czat').scrollHeight;
 }
 
