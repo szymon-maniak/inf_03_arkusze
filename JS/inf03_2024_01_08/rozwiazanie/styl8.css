@@ -1,0 +1,11 @@
+header , main{
+    float: left;
+}
+
+aside{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
