@@ -5,3 +5,48 @@
 #stopka{
     clear: both;
 }
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+#baner, #stopka{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+#glowny{
+    background-color: rgb(176, 196, 222);
+    padding: 50px;
+    text-align: center;
+}
+
+#lewy{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 80%;
+}
+
+#prawy{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 20%;
+}
+
+#glowny img{
+    padding: 3px;
+    border: 1px dotted blue;
+    border-radius: 10px;
+}
+
+#lewy img{
+    height: 40%;
+}
+
+#lewy img:hover{
+    border: 1px solid white;
+}
