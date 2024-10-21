@@ -50,3 +50,7 @@ body{
 #lewy img:hover{
     border: 1px solid white;
 }
+
+body, h2{
+    margin: 0;
+}
