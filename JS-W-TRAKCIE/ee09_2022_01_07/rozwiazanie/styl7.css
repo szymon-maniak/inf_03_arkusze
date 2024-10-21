@@ -1,0 +1,7 @@
+#lewy, #prawy{
+    float: left;
+}
+
+#stopka{
+    clear: both;
+}
