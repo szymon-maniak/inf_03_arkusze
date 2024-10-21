@@ -62,3 +62,7 @@ blockquote{
 #cytat_2, #cytat_3{
     display: none;
 }
+
+body{
+    margin: 0;
+}
