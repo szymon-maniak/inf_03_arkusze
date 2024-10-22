@@ -1,4 +1,4 @@
-function suma(){
+function cena(){
     let piling = document.getElementById('piling').checked;
     let maska = document.getElementById('maska').checked;
     let masaz_twarzy = document.getElementById('masaz_twarzy').checked;
