@@ -64,3 +64,7 @@ a{
 #prawy_2 img:hover{
     border-color: gray;
 }
+
+body, h1{
+    margin: 0;
+}
