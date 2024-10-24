@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl5.css">
+    <script src="skrypt.js"></script>
     <title>Galeria zdjęć</title>
 </head>
 <body>
@@ -23,12 +24,12 @@
     </div>
     <div id="prawy_1">
         <h1>Wybierz zdjęcie</h1>
-        <img src="pies1.jpg" alt="pies1" onclick="" onmouseover="" onmouseout="">
-        <img src="pies2.jpg" alt="pies2" onclick="" onmouseover="" onmouseout="">
-        <img src="pies3.jpg" alt="pies3" onclick="" onmouseover="" onmouseout="">
+        <img src="pies1.jpg" alt="pies1" id="pies1" onclick="klik('pies1', 'pies1.jpg')" onmouseover="najechanie('pies1', 'pies1-szary.jpg')" onmouseout="opuszczenie('pies1', 'pies1.jpg')">
+        <img src="pies2.jpg" alt="pies2" id="pies2" onclick="klik('pies2', 'pies2.jpg')" onmouseover="najechanie('pies2', 'pies2-szary.jpg')" onmouseout="opuszczenie('pies2', 'pies2.jpg')">
+        <img src="pies3.jpg" alt="pies3" id="pies3" onclick="klik('pies3', 'pies3.jpg')" onmouseover="najechanie('pies3', 'pies3-szary.jpg')" onmouseout="opuszczenie('pies3', 'pies3.jpg')">
     </div>
     <div id="prawy_2">
-        <p><img src="pies1.jpg" alt="pies-duży"></p>
+        <p><img src="pies1.jpg" id="duzy" alt="pies-duży"></p>
     </div>
     <footer>
         Galerię zdjęć opracował: Szymon Maniak 5TI
