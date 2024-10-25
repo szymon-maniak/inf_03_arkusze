@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <script src="skrypt.js"></script>
     <title>Uslugi informatyczne</title>
 </head>
 <body>
@@ -22,35 +23,38 @@
         </section>
         <article>
             <hr>
-            <table>
-                <tr>
-                    <td>Imię:</td>
-                    <td><input type="text" id="imie"></td>
-                </tr>
-                <tr>
-                    <td>Nazwisko:</td>
-                    <td><input type="text" id="nazwisko"></td>
-                </tr>
-                <tr>
-                    <td>E-mail:</td>
-                    <td><input type="text" id="e-mail"></td>
-                </tr>
-                <tr>
-                    <td>Usługa:</td>
-                    <td><textarea id="usluga"></textarea></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="checkbox" id="zgoda">Zapoznałam/em się z regulaminem</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <button type="reset">Resetuj</button>
-                        <button type="button" onclick="">Prześlij</button>
-                    </td>
-                </tr>
-            </table>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="text" id="e-mail"></td>
+                    </tr>
+                    <tr>
+                        <td>Usługa:</td>
+                        <td><textarea id="usluga"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" id="zgoda">Zapoznałam/em się z regulaminem</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="reset">Resetuj</button>
+                            <button type="button" onclick="formularz()">Prześlij</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p id="wynik"></p>
             <hr>
         </article>
         <footer>
