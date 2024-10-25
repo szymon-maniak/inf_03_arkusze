@@ -5,3 +5,58 @@ header{
 #baner{
     clear: both;
 }
+
+body{
+    background-color: #eeeeee;
+}
+
+main{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+header, footer{
+    background-color: #c0c0c0;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#logo{
+    width: 400px;
+}
+
+#menu{
+    width: 600px;
+}
+
+#baner{
+    background-color: #dddddd;
+    height: 200px;
+}
+
+article{
+    margin: 50px;
+}
+
+footer{
+    text-align: right;
+}
+
+header a{
+    color: #555555;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+hr{
+    background-color: #c0c0c0;
+    width: 70%;
+    height: 2px;
+}
+
+table{
+    text-align: left;
+}
