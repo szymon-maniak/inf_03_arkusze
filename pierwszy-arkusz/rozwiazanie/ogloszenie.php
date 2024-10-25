@@ -42,6 +42,16 @@
     <div id="prawy">
         <h2>Ogłoszenia kategorii książki</h2>
         <!-- skrypt -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'ogloszenia');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+
+            }
+            mysqli_close($polaczenie);
+        ?>
     </div>
     <footer>
         Portal ogłoszeniowy opracował: Szymon Maniak 5TI
