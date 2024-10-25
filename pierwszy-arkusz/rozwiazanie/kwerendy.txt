@@ -1,4 +1,4 @@
-Zapytanie 1:
-Zapytanie 2:
-Zapytanie 3:
-Zapytanie 4:
+Zapytanie 1: SELECT id, tytul, tresc FROM `ogloszenie` WHERE kategoria LIKE 1;
+Zapytanie 2: SELECT uzytkownik.telefon FROM `ogloszenie` JOIN uzytkownik ON ogloszenie.uzytkownik_id = uzytkownik.id WHERE ogloszenie.id LIKE 1;
+Zapytanie 3: CREATE USER 'moderator'@'localhost' IDENTIFIED BY 'qwerty';
+Zapytanie 4: GRANT SELECT, DELETE ON `ogloszenia`.`ogloszenie` TO 'moderator'@'localhost';
