@@ -48,7 +48,16 @@
                 exit();
             }
             else{
-
+                $zapytanie1 = "SELECT id, tytul, tresc FROM `ogloszenie` WHERE kategoria LIKE 1;";
+                $zapytanie2 = "SELECT uzytkownik.telefon FROM `ogloszenie` JOIN uzytkownik ON ogloszenie.uzytkownik_id = uzytkownik.id WHERE ogloszenie.id;";
+                $odpowiedz1 = mysqli_query($polaczenie, $zapytanie1);
+                $odpowiedz2 = mysqli_query($polaczenie, $zapytanie2);
+                while($tablica1 = mysqli_fetch_row($odpowiedz1)){
+                    $tablica2 = mysqli_fetch_row($odpowiedz2);
+                    echo "<h3>$tablica1[0] $tablica1[1]</h3>";
+                    echo "<p>$tablica1[2]</p>";
+                    echo "<p>telefon kontaktowy: $tablica2[0]</p>";
+                }
             }
             mysqli_close($polaczenie);
         ?>
