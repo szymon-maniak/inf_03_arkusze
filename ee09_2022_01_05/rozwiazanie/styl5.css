@@ -1,4 +1,4 @@
-header, #lewwy, #prawy{
+header, #lewy, #prawy{
     float: left;
 }
 
@@ -59,4 +59,8 @@ footer{
 
 #wizytowka button:hover{
     background-color: #004c40;
+}
+
+body{
+    margin: 0;
 }
