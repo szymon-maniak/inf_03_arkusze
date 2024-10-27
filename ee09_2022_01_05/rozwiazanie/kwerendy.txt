@@ -1,4 +1,4 @@
 Zapytanie 1: SELECT haslo FROM `uzytkownicy` WHERE login LIKE "Justyna";
 Zapytanie 2: SELECT COUNT(*) FROM `dane` WHERE 1;
-Zapytanie 3: SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM `uzytkownicy` JOIN dane ON uzytkownicy.id = dane.id;
+Zapytanie 3: SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM `uzytkownicy` JOIN dane ON uzytkownicy.id = dane.id WHERE uzytkownicy.login = "Justyna";
 Zapytanie 4: ALTER TABLE dane ADD COLUMN stanowisko text;
