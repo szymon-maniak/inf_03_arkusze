@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl2.css">
+    <script src="skrypt.js"></script>
     <title>Usługi fryzjerskie</title>
 </head>
 <body>
@@ -31,11 +32,11 @@
     </div>
     <div id="lewy_2">
         <h3>Dziś promocja na strzyżenie włosów</h3>
-        <input type="radio" id="krotkie">Krótkie<br>
-        <input type="radio" id="srednie">Średnie<br>
-        <input type="radio" id="poldlugie">Półdługie<br>
-        <input type="radio" id="dlugie">Długie<br>
-        <button type="button">Odkryj promocję</button>
+        <input type="radio" name="fryzura" id="krotkie">Krótkie<br>
+        <input type="radio" name="fryzura" id="srednie">Średnie<br>
+        <input type="radio" name="fryzura" id="poldlugie">Półdługie<br>
+        <input type="radio" name="fryzura" id="dlugie">Długie<br>
+        <button type="button" onclick="oblicz()">Odkryj promocję</button>
         <p id="wynik"></p>
     </div>
     <div id="prawy_3">

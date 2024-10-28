@@ -12,6 +12,7 @@ footer{
 
 body{
     font-family: Helvetica, sans-serif;
+    margin: 0;
 }
 
 #lewy_1{
@@ -22,11 +23,10 @@ body{
 }
 
 #lewy_2{
-    height: 150px;
-    width: 30%;
-    background-color: steelblue;
-    color: white;
-    text-align: center;
+    height: 400px;
+    width: 70%;
+    background-color: snow;
+    font-size: 150%;
 }
 
 #prawy_1{
