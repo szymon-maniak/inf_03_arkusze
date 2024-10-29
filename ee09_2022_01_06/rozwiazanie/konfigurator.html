@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl6.css">
+    <script src="skrypt.js"></script>
     <title>Style w JavaScript</title>
 </head>
 <body>
     <div id="lewy">
         <h1>Konfigurator stylu</h1>
         <p>Podaj kolor tła</p>
-            <button id="Indigo">Indigo</button>
-            <button id="SteelBlue">SteelBlue</button>
-            <button id="Olive">Olive</button>
+            <button id="Indigo" onclick="kolor_tla('Indigo')">Indigo</button>
+            <button id="SteelBlue" onclick="kolor_tla('SteelBlue')">SteelBlue</button>
+            <button id="Olive" onclick="kolor_tla('Olive')">Olive</button>
         <p>Podaj kolor czcionki</p>
-            <select name="" id="czcionka">
-                <option value="white">White</option>
-                <option value="tan">Tan</option>
-                <option value="bisque">Bisque</option>
-                <option value="plum">Plum</option>
+            <select id="czcionka_kolor" onchange="kolor_czcionki()">
+                <option value="White">White</option>
+                <option value="Tan">Tan</option>
+                <option value="Bisque">Bisque</option>
+                <option value="Plum">Plum</option>
             </select>
         <p>Podaj rozmiar czcionki w procentach, np.200%</p>
             <label>
-                <input type="text" value="100">
+                <input type="text" id="czcionka_rozmiar" value="100" onblur="rozmiar_czcionki()">
             </label>
         <p>Czy rysunek ma mieć ramkę?</p>
-            <label for="">
-                <input type="checkbox" name="" id="" checked>Rysuj ramkę
+            <label>
+                <input type="checkbox" id="obramowanie" checked onchange="obramowanie_obrazu()">Rysuj ramkę
             </label>
         <p>Jaki jest typ punktora listy?</p>
             <label>
-                <input type="radio" name="" id="" checked>dysk<br>
+                <input type="radio" name="punktor" checked onclick="formatowanie_punktora(1)">dysk<br>
             </label>
             <label>
-                <input type="radio" name="" id="">kwadrat<br>
+                <input type="radio" name="punktor" onclick="formatowanie_punktora(2)">kwadrat<br>
             </label>
             <label>
-                <input type="radio" name="" id="">okrąg<br>
+                <input type="radio" name="punktor" onclick="formatowanie_punktora(3)">okrąg<br>
             </label>
     </div>
     <div id="prawy">
-        <img src="gibraltar.jpg" alt="półwysep Gibraltar">
-        <ul>
+        <img src="gibraltar.jpg" alt="półwysep Gibraltar" id="obraz">
+        <ul id="punktor">
             <li>element 1</li>
             <li>element 2</li>
             <li>element 3</li>
