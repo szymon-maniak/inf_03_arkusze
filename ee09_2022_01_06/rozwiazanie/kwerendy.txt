@@ -1,0 +1,4 @@
+Zapytanie 1: CREATE USER 'Agnieszka' IDENTIFIED BY 'haslo4';
+Zapytanie 2: SELECT AVG(rocznik) FROM `samochody` WHERE marka LIKE "opel";
+Zapytanie 3: SELECT samochody.marka, klienci.imie FROM `wypozyczenia` JOIN samochody ON wypozyczenia.samochody_id = samochody.id JOIN klienci ON wypozyczenia.klienci_id = klienci.id;
+Zapytanie 4: ALTER TABLE klasa DROP COLUMN klasa;
