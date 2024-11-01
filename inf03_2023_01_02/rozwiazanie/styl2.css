@@ -1,0 +1,7 @@
+#lewy, #srodkowy, #prawy{
+    float: left;
+}
+
+footer{
+    clear: both;
+}
