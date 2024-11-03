@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT nazwa, ilosc, opis, cena, zdjecie FROM `produkty` WHERE Rodzaje_id IN(1,2);
+Zapytanie 2: SELECT produkty.nazwa, producenci.nazwa FROM `produkty` JOIN producenci ON produkty.Producenci_id = producenci.id WHERE Rodzaje_id LIKE 1 AND ilosc < 10;
+Zapytanie 3: CREATE USER 'anna' IDENTIFIED BY '@nna23';
+Zapytanie 4: INSERT INTO produkty VALUES (NULL, 1, 4, 'owoc1', 10, '', 9.99, 'owoce.jpg');
