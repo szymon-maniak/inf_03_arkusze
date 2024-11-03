@@ -50,6 +50,7 @@ h2{
 }
 
 .produkt{
+    float: left;
     margin: 10px;
     border: 1px solid #00600f;
     width: 300px;
