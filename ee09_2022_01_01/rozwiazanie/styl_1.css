@@ -1,3 +1,41 @@
 section{
     float: left;
 }
+
+body{
+    font-family: Georgia, serif;
+}
+
+header{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    background-color: lightblue;
+    padding: 100px;
+}
+
+#lewy{
+    background-color: dodgerblues;
+    color: white;
+    width: 20%;
+    height: 220px;
+}
+
+#srodkowy, #prawy{
+    background-color: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 220px;
+    text-align: center;
+}
+
+a{
+    border: 1px dotted dimgray;
+    background-color: gold;
+    color: darkred;
+    padding: 10px;
+}
