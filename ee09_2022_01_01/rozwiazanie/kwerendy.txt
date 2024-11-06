@@ -1,0 +1,4 @@
+Zapytanie 1: INSERT INTO `karty_wedkarskie`(`imie`, `nazwisko`, `adres`, `data_zezwolenia`, `punkty`) VALUES ('Grzegorz','Niemczyk','Gdynia, Batorego 14/5','2018-02-23','0');
+Zapytanie 2: SELECT imie, nazwisko FROM `karty_wedkarskie` WHERE punkty > 20;
+Zapytanie 3: SELECT akwen FROM `lowisko` JOIN zawody_wedkarskie ON lowisko.id = zawody_wedkarskie.Lowisko_id WHERE zawody_wedkarskie.sedzia LIKE "Krzysztof Dobrowolski";
+Zapytanie 4: CREATE USER 'anna'@'localhost' IDENTIFIED BY 'anna123';
