@@ -4,6 +4,7 @@ section{
 
 body{
     font-family: Georgia, serif;
+    margin: 0;
 }
 
 header{
@@ -19,7 +20,7 @@ main{
 }
 
 #lewy{
-    background-color: dodgerblues;
+    background-color: dodgerblue;
     color: white;
     width: 20%;
     height: 220px;
