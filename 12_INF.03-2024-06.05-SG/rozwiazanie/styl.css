@@ -34,15 +34,21 @@ header{
     margin: 1%;
     text-align: center;
     border: 1px solid crimson;
+    float: left;
+}
+
+section{
+    clear: both;
 }
 
 footer{
+    clear: both;
     background-color: crimson;
     color: white;
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
 h4{
