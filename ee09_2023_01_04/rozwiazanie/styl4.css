@@ -5,6 +5,7 @@ footer{
 body{
     font-family: Arial, sans-serif;
     background-color: antiquewhite;
+    margin: 0;
 }
 
 header{
@@ -46,6 +47,7 @@ main img{
 
 h1{
     font-weight: 300;
+    margin: 0;
 }
 
 input[type="submit"], input[type="number"]{
