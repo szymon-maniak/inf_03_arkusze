@@ -22,11 +22,11 @@
                 exit();
             }
             else{
-                $id = $_POST['przycisk'];
-                $zapytanie = "SELECT id, imie, nazwisko, adres, miasto FROM `pracownicy` WHERE id LIKE $id;";
+                @$id = $_POST['przycisk'];
+                $zapytanie = "SELECT id, imie, nazwisko, adres, miasto FROM `pracownicy` WHERE id LIKE '$id';";
                 $odpowiedz = mysqli_query($polaczenie, $zapytanie);
                 while($tablica = mysqli_fetch_array($odpowiedz)){
-                    echo "<img src='$tablica[0]' alt='pracownik'>";
+                    echo "<img src='$tablica[0].jpg' alt='pracownik'>";
                     echo "<h2>$tablica[1] $tablica[2]</h2>";
                     echo "<h4>Adres:</h4>";
                     echo "<p>$tablica[3], $tablica[4]</p>";
