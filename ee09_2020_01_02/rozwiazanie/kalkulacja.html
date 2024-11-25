@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl4.css">
     <title>Nasza stacja paliw</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -19,11 +20,12 @@
     </section>
     <main>
         <h2>Oblicz, ile litrów musisz zatankować:</h2>
-        dystanns do przejechania w km:<br>
+        dystans do przejechania w km:<br>
         <input type="number" id="dystans"><br>
         spalanie samochodu w 1/100km:<br>
         <input type="number" id="spalanie"><br>
-        <input type="submit" value="OBLICZ">
+        <input type="submit" value="OBLICZ" onclick="oblicz()">
+        <p id="wynik"></p>
     </main>
     <footer id="lewa_stopka">
         <p>Stronę opracował: Szymon Maniak 5TI</p>
