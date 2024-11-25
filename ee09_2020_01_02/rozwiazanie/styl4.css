@@ -1,0 +1,7 @@
+section, footer{
+    float: left;
+}
+
+main{
+    clear: both;
+}
