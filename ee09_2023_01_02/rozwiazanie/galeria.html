@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl2.css">
+    <script src="skrypt.js"></script>
     <title>Galeria</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
         <h1>Galeria obrazów</h1>
     </header>
     <section id="lewy">
-        <img src="zdjecie.jpg" alt="zdjęcie dnia" id="zdjecie">
+        <img src="zdjecie.jpg" alt="zdjęcie dnia">
         <h3>Zdjęcia opublikowali</h3>
         <table>
             <tr>
@@ -30,14 +31,14 @@
     </section>
     <section id="prawy">
         <button type="button" onclick="prev()">prev</button>
-        <img src="1.jpg" alt="galeria">
+        <img src="1.jpg" alt="galeria" id="zdjecie">
         <button type="button" onclick="next()">next</button>
         <hr>
-        <img src="1.jpg" alt="miniatura" onclick="zmiana(1)">
-        <img src="2.jpg" alt="miniatura" onclick="zmiana(2)">
-        <img src="3.jpg" alt="miniatura" onclick="zmiana(3)">
-        <img src="4.jpg" alt="miniatura" onclick="zmiana(4)">
-        <img src="5.jpg" alt="miniatura" onclick="zmiana(5)">
+        <img src="1.jpg" alt="miniatura" onclick="zmiana(1)" class="miniatura">
+        <img src="2.jpg" alt="miniatura" onclick="zmiana(2)" class="miniatura">
+        <img src="3.jpg" alt="miniatura" onclick="zmiana(3)" class="miniatura">
+        <img src="4.jpg" alt="miniatura" onclick="zmiana(4)" class="miniatura">
+        <img src="5.jpg" alt="miniatura" onclick="zmiana(5)" class="miniatura">
     </section>
     <footer>
         <a href="http://pixabay.com" target="_blank">Więcej obrazów</a>
