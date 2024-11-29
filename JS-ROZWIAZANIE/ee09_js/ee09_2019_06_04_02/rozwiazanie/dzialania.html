@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+    <title>Działania matematyczne</title>
+</head>
+<body>
+    <header id="pierwszy">
+        <img src="logo.jpg" alt="matematyka">
+    </header>
+    <header id="drugi">
+        <h1>Pomocnik Matematyczny</h1>
+    </header>
+    <header id="trzeci">
+        <a href="dzialania.html"><h4>Działania</h4></a>
+    </header>
+    <header id="czwarty">
+        <a href="mnozenie.html"><h4>Tabliczka mnożenia</h4></a>
+    </header>
+    <section id="lewy">
+        <h3>Proste działania</h3>
+        liczba A: <input type="text" id="liczba_A"><br>
+        liczba B: <input type="text" id="liczba_B"><br>
+        <button type="button" onclick="wybor(1)">+</button>
+        <button type="button" onclick="wybor(2)">-</button>
+        <button type="button" onclick="wybor(3)">*</button>
+        <button type="button" onclick="wybor(4)">/</button>
+        <button type="button" onclick="wybor(5)">A^B</button>
+        <p id="wynik"></p>
+    </section>
+    <section id="prawy">
+        <ol>
+            <li>dodawanie</li>
+            <li>odejmowanie</li>
+            <li>mnożenie</li>
+            <li>dzielenie</li>
+            <li>potęgowanie</li>
+        </ol>
+    </section>
+    <footer>
+        <p>Autor: Szymon Maniak 5TI</p>
+    </footer>
+</body>
+</html>
