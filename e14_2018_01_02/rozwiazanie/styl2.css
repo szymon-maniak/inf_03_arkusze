@@ -1,0 +1,52 @@
+section{
+    float: left;
+}
+
+footer{
+    clear: both;
+}
+
+header{
+    background-color: #5a9089;
+    color: white;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    height: 100px;
+}
+
+#lewy{
+    background-color: #bad2cf;
+    width: 55%;
+    height: 600px;
+}
+
+#prawy{
+    background-color: #88afaa;
+    width: 45%;
+    height: 600px;
+}
+
+footer{
+    background-color: #5a9089;
+    color: white;
+    text-align: right;
+}
+
+table, td{
+    border: 1px dotted green;
+    width: 400px;
+    margin: 15px;
+    text-align: center;
+}
+
+img{
+    padding: 25px;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+body, h2{
+    margin: 0;
+}
