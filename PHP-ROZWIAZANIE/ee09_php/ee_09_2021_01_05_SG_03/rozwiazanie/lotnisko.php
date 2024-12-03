@@ -49,6 +49,15 @@
     </div>
     <footer id="footer1">
         <!-- skrypt 2 -->
+        <?php
+            if(!isset($_COOKIE['ciasteczko'])){
+                setcookie('ciasteczko', 1, time() + 7200);
+                echo "<p><b>Dzień dobry! Strona lotniska używa ciasteczek</b></p>";
+            }
+            else{
+                echo "<p><i>Witaj ponownie na stronie lotniska</i></p>";
+            }
+        ?>
     </footer>
     <footer id="footer2">
         Autor: Szymon Maniak 5TI
