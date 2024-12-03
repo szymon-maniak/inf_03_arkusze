@@ -26,6 +26,25 @@
                 <th>status</th>
             </tr>
             <!-- skrypt 1 -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'egzamin');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT czas, kierunek, nr_rejsu, status_lotu FROM `przyloty` ORDER BY czas ASC;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tab = mysqli_fetch_array($odpowiedz)){
+                        echo "<tr>";
+                            echo "<td>$tab[0]</td>";
+                            echo "<td>$tab[1]</td>";
+                            echo "<td>$tab[2]</td>";
+                            echo "<td>$tab[3]</td>";
+                        echo "</tr>";
+                    }
+                }
+                mysqli_close($polaczenie)
+            ?>
         </table>
     </main>
     <footer id="stopka_1">
