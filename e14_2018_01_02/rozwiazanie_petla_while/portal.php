@@ -21,9 +21,7 @@
             else{
                 $zapytanie_1 = "SELECT id, imie, nazwisko, email FROM `uzytkownik` WHERE id < 4;";
                 $odpowiedz_1 = mysqli_query($polaczenie, $zapytanie_1);
-                $ile = mysqli_num_rows($odpowiedz_1);
-                for ($i=0; $i < $ile; $i++){ 
-                    $tablica_1 = mysqli_fetch_array($odpowiedz_1);
+                while($tablica_1 = mysqli_fetch_array($odpowiedz_1)){ 
                     $zapytanie_2 = "SELECT tytul FROM `ogloszenie` WHERE uzytkownik_id LIKE $tablica_1[0] LIMIT 1;";
                     $odpowiedz_2 = mysqli_query($polaczenie, $zapytanie_2);
                     $tablica_2 = mysqli_fetch_array($odpowiedz_2);
