@@ -12,6 +12,15 @@
     </header>
     <section id="ciasteczka">
         <!-- skrypt -->
+        <?php
+            if(empty($_COOKIE['ciastko'])){
+                setcookie('ciastko', 1, time() + 3600, 'localhost');
+                echo "<p>Witaj! Nasza strona używa ciasteczek</p>";
+            }
+            else{
+                echo "<p>Witaj ponownie na naszej stronie</p>";
+            }
+        ?>
     </section>
     <section id="lewy">
         <table>
