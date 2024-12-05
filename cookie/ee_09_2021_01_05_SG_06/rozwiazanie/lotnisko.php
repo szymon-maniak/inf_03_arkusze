@@ -26,10 +26,38 @@
                 <th>status</th>
             </tr>
             <!-- skrypt 1 -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '' , 'egzamin');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    $zapytanie = "SELECT czas, kierunek, nr_rejsu, status_lotu FROM `przyloty` ORDER BY czas ASC;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tab = mysqli_fetch_array($odpowiedz)){
+                        echo "<tr>";
+                            echo "<td>$tab[0]</td>";
+                            echo "<td>$tab[1]</td>";
+                            echo "<td>$tab[2]</td>";
+                            echo "<td>$tab[3]</td>";
+                        echo "</tr>";
+                    }
+                }
+                mysqli_close($polaczenie);
+            ?>
         </table>
     </div>
     <div id="footer1">
         <!-- skrypt 2 -->
+        <?php
+            if(!isset($_COOKIE['ciasteczko'])){
+                setcookie('ciasteczko', 1, time() + 7200);
+                echo "<p><b>Dzień dobry! Strona lotniska używa ciasteczek</b></p>";
+            }
+            else{
+                echo "<p><i>Witaj ponownie na stronie lotniska</i></p>";
+            }
+        ?>
     </div>
     <div id="footer2">
         Autor: Szymon Maniak 5TI
