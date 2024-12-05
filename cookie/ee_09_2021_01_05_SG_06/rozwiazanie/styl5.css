@@ -1,0 +1,7 @@
+#header1, #header2, #header3, #footer1, #footer2{
+    float: left;
+}
+
+#main{
+    clear: both;
+}
