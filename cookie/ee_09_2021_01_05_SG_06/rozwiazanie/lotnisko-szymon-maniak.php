@@ -53,9 +53,13 @@
             if(!isset($_COOKIE['ciasteczko'])){
                 setcookie('ciasteczko', 1, time() + 7200);
                 echo "<p><b>Dzień dobry! Strona lotniska używa ciasteczek</b></p>";
+                echo "<p>To jest twoje pierwsze wejście na stronę</p>";
             }
             else{
+                $wejscia = $_COOKIE['ciasteczko'] + 1;
+                setcookie('ciasteczko', $wejscia, time() + 7200);
                 echo "<p><i>Witaj ponownie na stronie lotniska</i></p>";
+                echo "<p>To jest twoje wejscie po raz: $wejscia</p>";
             }
         ?>
     </div>
