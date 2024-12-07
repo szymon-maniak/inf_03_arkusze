@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT nazwa, rzeka, stanAlarmowy FROM `wodowskazy` WHERE 1;
+Zapytanie 2:
+Zapytanie 3:
+Zapytanie 4:
