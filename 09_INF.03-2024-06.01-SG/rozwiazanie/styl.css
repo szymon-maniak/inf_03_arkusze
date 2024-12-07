@@ -1,11 +1,45 @@
+footer{
+    clear: both;
+    z-index: 1;
+}
+
+*{
+    font-family: Verdana, sans-serif;
+}
+
+img[src="motor.png"]{
+    display: block;
+    margin-left: 15%;
+    width: 70%;
+    z-index: 0;
+}
+
+header{
+    z-index: 1;
+    background-color: rgba(60, 120, 160, 0.9);
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+
 #lewy{
     float: left;
+    z-index: 1;
+    background-color: rgba(0, 100, 0, 0.6);
+    margin: 2%;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    overflow: auto;
+    box-shadow: 10px 10px 7px dimgray;
 }
 
 #prawy1, #prawy2{
     float: right;
-}
-
-footer{
-    clear: both;
+    z-index: 1;
+    background-color: rgba(0, 100, 0, 0.6);
+    margin: 1%;
+    width: 15%;
+    height: 300px;
+    box-shadow: 10px 10px 7px dimgray;
 }
