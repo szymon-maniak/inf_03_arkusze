@@ -21,6 +21,7 @@ footer{
 }
 
 .pracownicy{
+    float: left;
     background-color: azure;
     width: 30%;
     margin: 1%;
@@ -58,4 +59,12 @@ blockquote{
 
 #cytat2, #cytat3{
     display: none;
+}
+
+#cytaty{
+    clear: both;
+}
+
+body{
+    margin: 0;
 }
