@@ -1,10 +1,15 @@
 footer{
     clear: both;
     z-index: 1;
+    position: relative;
 }
 
 *{
     font-family: Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
 }
 
 img[src="motor.png"]{
@@ -12,10 +17,12 @@ img[src="motor.png"]{
     margin-left: 15%;
     width: 70%;
     z-index: 0;
+    position: absolute;
 }
 
 header{
     z-index: 1;
+    position: relative;
     background-color: rgba(60, 120, 160, 0.9);
     color: white;
     font-size: 150%;
@@ -25,6 +32,7 @@ header{
 #lewy{
     float: left;
     z-index: 1;
+    position: relative;
     background-color: rgba(0, 100, 0, 0.6);
     margin: 2%;
     width: 75%;
@@ -37,9 +45,33 @@ header{
 #prawy1, #prawy2{
     float: right;
     z-index: 1;
+    position: relative;
     background-color: rgba(0, 100, 0, 0.6);
     margin: 1%;
     width: 15%;
     height: 300px;
     box-shadow: 10px 10px 7px dimgray;
+}
+
+footer{
+    background-color: rgba(60, 120, 160, 0.9);
+    color: white;
+    padding: 10px;
+}
+
+h1, h2{
+    text-align: center;
+    font-style: italic;
+}
+
+dl a, dt{
+    color: white;
+}
+
+dd{
+    padding: 1%;
+}
+
+dd:hover{
+    background-color: lightgreen;
 }
