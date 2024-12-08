@@ -32,6 +32,16 @@
                 <th>Aktualny</th>
             </tr>
             <!-- skrypt -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'rzeki');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+
+                }
+                mysqli_close($polaczenie);
+            ?>
         </table>
     </section>
     <section id="prawy">
@@ -43,6 +53,20 @@
         </ul>
         <h3>Średnie stany wód</h3>
         <!-- skrypt 2 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'rzeki');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                $zapytanie = "SELECT dataPomiaru, AVG(stanWody) FROM `pomiary` GROUP BY dataPomiaru;";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                while($tab = mysqli_fetch_array($odpowiedz)){
+                    echo "<p>$tab[0]: $tab[1]</p>";
+                }
+            }
+            mysqli_close($polaczenie);
+        ?>
         <a href="http://komunikaty.pl">Dowiedz się więcej</a>
         <img src="obraz2.jpg" alt="rzeka">
     </section>
