@@ -15,9 +15,9 @@
     </header>
     <section id="menu">
         <form action="poziomRzek.php" method="post">
-            <span class="opcja"><input type="radio" name="wybor">Wszystkie</span>
-            <span class="opcja"><input type="radio" name="wybor">Ponad stan ostrzegawczy</span>
-            <span class="opcja"><input type="radio" name="wybor">Ponad stan alarmowy</span>
+            <span class="opcja"><input type="radio" name="wybor" value="1">Wszystkie</span>
+            <span class="opcja"><input type="radio" name="wybor" value="2">Ponad stan ostrzegawczy</span>
+            <span class="opcja"><input type="radio" name="wybor" value="3">Ponad stan alarmowy</span>
             <input type="submit" value="Pokaż">
         </form>
     </section>
@@ -38,7 +38,50 @@
                     exit();
                 }
                 else{
-
+                    @$wybor = $_POST['wybor'];
+                    if(isset($wybor)){
+                        switch($wybor){
+                            case 1:
+                                $zapytanie = "SELECT wodowskazy.nazwa, wodowskazy.rzeka, wodowskazy.stanOstrzegawczy, wodowskazy.stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE '2022-05-05';";
+                                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                                while($tab = mysqli_fetch_array($odpowiedz)){
+                                    echo "<tr>";
+                                        echo "<td>$tab[0]</td>";
+                                        echo "<td>$tab[1]</td>";
+                                        echo "<td>$tab[2]</td>";
+                                        echo "<td>$tab[3]</td>";
+                                        echo "<td>$tab[4]</td>";
+                                    echo "</tr>";
+                                }
+                                break;
+                            case 2:
+                                $zapytanie = "SELECT wodowskazy.nazwa, wodowskazy.rzeka, wodowskazy.stanOstrzegawczy, wodowskazy.stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE '2022-05-05' AND pomiary.stanWody > wodowskazy.stanOstrzegawczy;";
+                                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                                while($tab = mysqli_fetch_array($odpowiedz)){
+                                    echo "<tr>";
+                                        echo "<td>$tab[0]</td>";
+                                        echo "<td>$tab[1]</td>";
+                                        echo "<td>$tab[2]</td>";
+                                        echo "<td>$tab[3]</td>";
+                                        echo "<td>$tab[4]</td>";
+                                    echo "</tr>";
+                                }
+                                break;
+                            case 3:
+                                $zapytanie = "SELECT wodowskazy.nazwa, wodowskazy.rzeka, wodowskazy.stanOstrzegawczy, wodowskazy.stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE '2022-05-05' AND pomiary.stanWody > wodowskazy.stanAlarmowy;";
+                                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                                while($tab = mysqli_fetch_array($odpowiedz)){
+                                    echo "<tr>";
+                                        echo "<td>$tab[0]</td>";
+                                        echo "<td>$tab[1]</td>";
+                                        echo "<td>$tab[2]</td>";
+                                        echo "<td>$tab[3]</td>";
+                                        echo "<td>$tab[4]</td>";
+                                    echo "</tr>";
+                                }
+                                break;
+                        }
+                    }
                 }
                 mysqli_close($polaczenie);
             ?>
