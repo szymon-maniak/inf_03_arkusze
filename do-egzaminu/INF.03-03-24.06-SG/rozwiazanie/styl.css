@@ -1,0 +1,7 @@
+header, #lewy, #prawy{
+    float: left;
+}
+
+#menu, footer{
+    clear: both;
+}
