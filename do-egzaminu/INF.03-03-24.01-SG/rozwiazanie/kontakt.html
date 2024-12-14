@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <link rel="shortcut icon" href="logo.png" type="image/png">
     <title>Firma IT</title>
 </head>
@@ -45,10 +46,11 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="reset" value="Resetuj"><input type="submit" value="Prześlij"></td>
+                    <td><button type="reset">Resetuj</button><button type="submit" onclick="przeslij()">Prześlij</button></td>
                 </tr>
             </table>
             <hr>
+            <p id="wynik"></p>
         </main>
         <footer>
             Autor strony: <b>Szymon Maniak 5TI</b>

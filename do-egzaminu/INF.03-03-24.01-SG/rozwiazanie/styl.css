@@ -5,3 +5,57 @@
 header{
     clear: both;
 }
+
+body{
+    background-color: #eeeeee;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+#kontener{
+    width: 90%;
+    margin: auto;
+}
+
+#logo, #menu{
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    background-color: #dddddd;
+    height: 200px;
+}
+
+main{
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+
+footer{
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+button{
+    background-color: lightblue;
+    color: navy;
+}
+
+#menu a{
+    color: navy;
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+
+#menu a:hover{
+    border: 1px solid navy;
+}
