@@ -15,9 +15,9 @@
     </header>
     <section id="menu">
         <form action="poziomRzek.php" method="post">
-            <span class="wybor"><input type="radio" name="wybor">Wszystkie</span>
-            <span class="wybor"><input type="radio" name="wybor">Ponad stan ostrzegawczy</span>
-            <span class="wybor"><input type="radio" name="wybor">Ponad stan alarmowy</span>
+            <span class="wybor"><input type="radio" name="wybor" value="1">Wszystkie</span>
+            <span class="wybor"><input type="radio" name="wybor" value="2">Ponad stan ostrzegawczy</span>
+            <span class="wybor"><input type="radio" name="wybor" value="3">Ponad stan alarmowy</span>
             <input type="submit" value="Pokaż">
         </form>
     </section>
@@ -32,6 +32,55 @@
                 <th>Aktualny</th>
             </tr>
             <!-- skrypt -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'rzeki');
+                if(!$polaczenie){
+                    exit();
+                }
+                else{
+                    @$wybor = $_POST['wybor'];
+                    if($wybor == 1){
+                        $zapytanie = "SELECT wodowskazy.nazwa, wodowskazy.rzeka, wodowskazy.stanOstrzegawczy, wodowskazy.stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE '2022-05-05';";
+                        $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                        while($tab = mysqli_fetch_array($odpowiedz)){
+                            echo "<tr>";
+                                echo "<td>$tab[0]</td>";
+                                echo "<td>$tab[1]</td>";
+                                echo "<td>$tab[2]</td>";
+                                echo "<td>$tab[3]</td>";
+                                echo "<td>$tab[4]</td>";
+                            echo "</tr>";
+                        }
+                    }
+                    else if($wybor == 2){
+                        $zapytanie = "SELECT wodowskazy.nazwa, wodowskazy.rzeka, wodowskazy.stanOstrzegawczy, wodowskazy.stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE '2022-05-05' AND wodowskazy.stanOstrzegawczy < pomiary.stanWody;";
+                        $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                        while($tab = mysqli_fetch_array($odpowiedz)){
+                            echo "<tr>";
+                                echo "<td>$tab[0]</td>";
+                                echo "<td>$tab[1]</td>";
+                                echo "<td>$tab[2]</td>";
+                                echo "<td>$tab[3]</td>";
+                                echo "<td>$tab[4]</td>";
+                            echo "</tr>";
+                        }
+                    }
+                    else if($wybor == 3){
+                        $zapytanie = "SELECT wodowskazy.nazwa, wodowskazy.rzeka, wodowskazy.stanOstrzegawczy, wodowskazy.stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE '2022-05-05' AND wodowskazy.stanAlarmowy < pomiary.stanWody;";
+                        $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                        while($tab = mysqli_fetch_array($odpowiedz)){
+                            echo "<tr>";
+                                echo "<td>$tab[0]</td>";
+                                echo "<td>$tab[1]</td>";
+                                echo "<td>$tab[2]</td>";
+                                echo "<td>$tab[3]</td>";
+                                echo "<td>$tab[4]</td>";
+                            echo "</tr>";
+                        }
+                    }
+                }
+                mysqli_close($polaczenie);
+            ?>
         </table>
     </section>
     <section id="prawy">
@@ -43,6 +92,20 @@
         </ul>
         <h3>Średnie stany wód</h3>
         <!-- skrypt 2 -->
+        <?php
+            $polaczenie = mysqli_connect('localhost', 'root', '', 'rzeki');
+            if(!$polaczenie){
+                exit();
+            }
+            else{
+                $zapytanie = "SELECT dataPomiaru, AVG(stanWody) FROM `pomiary` GROUP BY dataPomiaru;";
+                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                while($tab = mysqli_fetch_array($odpowiedz)){
+                    echo "<p>$tab[0]: $tab[1]</p>";
+                }
+            }
+            mysqli_close($polaczenie);
+        ?>
         <a href="http://komunikaty.pl">Dowiedz się więcej</a>
         <img src="obraz2.jpg" alt="rzeka">
     </section>
