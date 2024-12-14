@@ -1,0 +1,7 @@
+#logo, #menu{
+    float: left;
+}
+
+header{
+    clear: both;
+}
