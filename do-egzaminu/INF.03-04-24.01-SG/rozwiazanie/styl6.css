@@ -22,6 +22,7 @@ header{
 }
 
 .kalendarz{
+    float: left;
     background-color: #9fa8da;
     width: 160px;
     height: 85px;
@@ -36,6 +37,7 @@ header{
 }
 
 footer{
+    clear: both;
     background-color: #6f79a8;
     color: white;
     padding: 5px;
@@ -44,4 +46,8 @@ footer{
 
 h6{
     text-align: center;
+}
+
+body{
+    margin: 0;
 }
