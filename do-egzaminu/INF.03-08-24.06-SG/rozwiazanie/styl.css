@@ -1,0 +1,11 @@
+aside{
+    float: left;
+}
+
+header, main, #postep{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
