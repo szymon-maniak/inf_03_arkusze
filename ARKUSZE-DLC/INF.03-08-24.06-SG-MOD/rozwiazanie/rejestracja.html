@@ -40,7 +40,7 @@
                 <p>Nazwisko</p>
                 <input type="text" name="nazwisko" onfocusout="zwiekszPasek()" id="nazwisko">
                 <p>Data urodzenia</p>
-                <input type="text" name="data_urodzenia" onfocusout="zwiekszPasek()" id="data_urodzenia">
+                <input type="date" name="data_urodzenia" onfocusout="zwiekszPasek()" id="data_urodzenia">
             </div>
             <div id="blok2">
                 <p>Ulica</p>
@@ -52,7 +52,7 @@
             </div>
             <div id="blok3">
                 <p>Numer komórkowy</p>
-                <input type="tel" name="numer_komorkowy" onfocusout="zwiekszPasek()" id="numer_komorkowy">
+                <input type="tel" name="numer_komorkowy" onfocusout="zwiekszPasek()" id="numer_komorkowy"><br>
                 <input type="checkbox" name="rodo" id="rodo">Akceptuję RODO<br>
                 <button type="button" onclick="zatwierdz()">Zatwierdź dane</button>
             </div>
@@ -63,6 +63,7 @@
     </section>
     <footer>
         <h4>Rejestrację do sklepu wykonał: Szymon Maniak 5TI</h4>
+        <p id="wynik"></p>
     </footer>
 </body>
 </html>
