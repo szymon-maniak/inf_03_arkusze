@@ -30,3 +30,11 @@ function zatwierdz(){
     // zrobiłem sobie takie coś bo nie chce mi się wchodzić w konsole cały czas
     document.getElementById('wynik').innerHTML = imie + ", " + nazwisko + ", " + data_urodzenia + ", " + ulica + ", " + numer + ", " + miasto + ", " + numer_komorkowy + ", " + rodo;
 }
+
+let szerokosc = 4;
+function zwiekszPasek(){
+    if(szerokosc < 100){
+        szerokosc += 12;
+        document.getElementById('pasek').style.width = szerokosc + "%";
+    }
+}
