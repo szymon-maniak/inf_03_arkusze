@@ -41,9 +41,14 @@ function walidacja(){
     let numer_komorkowy = document.getElementById('numer_komorkowy').value;
     let rodo = document.getElementById('rodo').value;
 
-    if(!imie == null || !imie == ""){
-        zwiekszPasek();
-    }
+    if(!imie == null || !imie == "") zwiekszPasek();
+    if(!nazwisko == null || !nazwisko == "") zwiekszPasek();
+    if(!data_urodzenia == null || !data_urodzenia == "") zwiekszPasek();
+    if(!ulica == null || !ulica == "") zwiekszPasek();
+    if(!numer == null || !numer == "") zwiekszPasek();
+    if(!miasto == null || !miasto == "") zwiekszPasek();
+    if(!numer_komorkowy == null || !numer_komorkowy == "") zwiekszPasek();
+    if(!rodo == null || !rodo == "") zwiekszPasek(); 
 }
 
 let szerokosc = 4;
