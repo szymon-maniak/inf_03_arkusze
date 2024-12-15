@@ -38,23 +38,23 @@
                 <p>Imię</p>
                 <input type="text" name="imie" placeholder="Wpisz dane..." onfocusout="walidacja()" id="imie">
                 <p>Nazwisko</p>
-                <input type="text" name="nazwisko" onfocusout="zwiekszPasek()" id="nazwisko">
+                <input type="text" name="nazwisko" onfocusout="walidacja()" id="nazwisko">
                 <p>Data urodzenia</p>
-                <input type="date" name="data_urodzenia" onfocusout="zwiekszPasek()" id="data_urodzenia">
+                <input type="date" name="data_urodzenia" onfocusout="walidacja()" id="data_urodzenia">
             </div>
             <div id="blok2">
                 <p>Ulica</p>
-                <input type="text" name="ulica" onfocusout="zwiekszPasek()" id="ulica">
+                <input type="text" name="ulica" onfocusout="walidacja()" id="ulica">
                 <p>Numer</p>
-                <input type="number" name="numer" onfocusout="zwiekszPasek()" id="numer">
+                <input type="number" name="numer" onfocusout="walidacja()" id="numer">
                 <p>Miasto</p>
-                <input type="text" name="miasto" onfocusout="zwiekszPasek()" id="miasto">
+                <input type="text" name="miasto" onfocusout="walidacja()" id="miasto">
             </div>
             <div id="blok3">
                 <p>Numer komórkowy</p>
-                <input type="tel" name="numer_komorkowy" onfocusout="zwiekszPasek()" id="numer_komorkowy"><br>
+                <input type="tel" name="numer_komorkowy" onfocusout="walidacja()" id="numer_komorkowy"><br>
                 <input type="checkbox" name="rodo" id="rodo">Akceptuję RODO<br>
-                <button type="button" onclick="zatwierdz()">Zatwierdź dane</button>
+                <button type="submit" onclick="zatwierdz()">Zatwierdź dane</button>
             </div>
         </form>
     </main>

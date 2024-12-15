@@ -13,7 +13,6 @@
             $numer = $_POST['numer'];
             $miasto = $_POST['miasto'];
             $numer_komorkowy = $_POST['numer_komorkowy'];
-            $rodo = $_POST['rodo'];
 
             $osoby = "INSERT INTO `osoby`(`imie`, `nazwisko`, `dataUr`) VALUES ('$imie','$nazwisko','$data_urodzenia');";
             mysqli_query($polaczenie, $osoby);
