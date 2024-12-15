@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Sklep - rejestracja</title>
 </head>
 <body>
@@ -32,28 +33,30 @@
         <button type="button" onclick="blok(1)">Klient</button>
         <button type="button" onclick="blok(2)">Adres</button>
         <button type="button" onclick="blok(3)">Kontakt</button>
-        <div id="blok1">
-            <p>Imię</p>
-            <input type="text" name="imie" placeholder="Wpisz dane..." onfocusout="zwiekszPasek()" id="imie">
-            <p>Nazwisko</p>
-            <input type="text" name="nazwisko" onfocusout="zwiekszPasek()" id="nazwisko">
-            <p>Data urodzenia</p>
-            <input type="text" name="data_urodzenia" onfocusout="zwiekszPasek()" id="data_urodzenia">
-        </div>
-        <div id="blok2">
-            <p>Ulica</p>
-            <input type="text" name="ulica" onfocusout="zwiekszPasek()" id="ulica">
-            <p>Numer</p>
-            <input type="number" name="numer" onfocusout="zwiekszPasek()" id="numer">
-            <p>Miasto</p>
-            <input type="text" name="miasto" onfocusout="zwiekszPasek()" id="miasto">
-        </div>
-        <div id="blok3">
-            <p>Numer komórkowy</p>
-            <input type="tel" name="numer_komorkowy" onfocusout="zwiekszPasek()" id="numer_komorkowy">
-            <input type="checkbox" name="rodo" id="rodo">Akceptuję RODO<br>
-            <button type="button" onclick="zatwierdz()">Zatwierdź dane</button>
-        </div>
+        <form action="formularz.php" method="post">
+            <div id="blok1">
+                <p>Imię</p>
+                <input type="text" name="imie" placeholder="Wpisz dane..." onfocusout="zwiekszPasek()" id="imie">
+                <p>Nazwisko</p>
+                <input type="text" name="nazwisko" onfocusout="zwiekszPasek()" id="nazwisko">
+                <p>Data urodzenia</p>
+                <input type="text" name="data_urodzenia" onfocusout="zwiekszPasek()" id="data_urodzenia">
+            </div>
+            <div id="blok2">
+                <p>Ulica</p>
+                <input type="text" name="ulica" onfocusout="zwiekszPasek()" id="ulica">
+                <p>Numer</p>
+                <input type="number" name="numer" onfocusout="zwiekszPasek()" id="numer">
+                <p>Miasto</p>
+                <input type="text" name="miasto" onfocusout="zwiekszPasek()" id="miasto">
+            </div>
+            <div id="blok3">
+                <p>Numer komórkowy</p>
+                <input type="tel" name="numer_komorkowy" onfocusout="zwiekszPasek()" id="numer_komorkowy">
+                <input type="checkbox" name="rodo" id="rodo">Akceptuję RODO<br>
+                <button type="button" onclick="zatwierdz()">Zatwierdź dane</button>
+            </div>
+        </form>
     </main>
     <section id="postep">
         <section></section>
