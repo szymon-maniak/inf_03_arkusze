@@ -1,7 +1,3 @@
-footer{
-    float: left;
-}
-
 *{
     font-family: Cambria, serif;
 }
@@ -18,7 +14,8 @@ main{
     height: 500px;
 }
 
-footer{
+section{
+    float: left;
     background-color: #c2185b;
     color: white;
     width: 25%;

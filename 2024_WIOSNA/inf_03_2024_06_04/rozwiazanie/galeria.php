@@ -10,7 +10,7 @@
     <header>
         <h1>Zdjęcia</h1>
     </header>
-    <main id="lewy">
+    <section id="lewy">
         <h2>Tematy zdjęć</h2>
         <ol>
             <li>Zwierzęta</li>
@@ -19,8 +19,8 @@
             <li>Przyroda</li>
             <li>Samochody</li>
         </ol>
-    </main>
-    <main id="srodkowy">
+    </section>
+    <section id="srodkowy">
         <!-- skrypt 1 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'galeria');
@@ -54,8 +54,8 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
-    <main id="prawy">
+    </section>
+    <section id="prawy">
         <h2>Najbardziej lubiane</h2>
         <!-- skrypt 2 -->
         <?php
@@ -75,7 +75,7 @@
             mysqli_close($polaczenie);
         ?>
         <b>Zobacz wszystkie nasze zdjęcia</b>
-    </main>
+    </section>
     <footer>
         <h5>Stronę wykonał: Szymon Maniak</h5>
     </footer>
