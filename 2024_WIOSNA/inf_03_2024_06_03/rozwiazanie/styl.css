@@ -1,4 +1,4 @@
-header, main{
+#baner_1, #baner_2, #lewy, #prawy{
     float: left;
 }
 
@@ -14,7 +14,7 @@ nav, footer{
     font-family: Georgia, serif;
 }
 
-header{
+#baner_1, #baner_2{
     background-color: navy;
     color: white;
     text-align: center;
@@ -37,7 +37,7 @@ nav{
     text-decoration: solid;
 }
 
-main{
+#lewy, #prawy{
     background-color: azure;
     height: 550px;
 }

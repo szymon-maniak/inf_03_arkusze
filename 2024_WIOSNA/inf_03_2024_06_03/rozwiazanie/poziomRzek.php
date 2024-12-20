@@ -7,11 +7,13 @@
     <title>Poziomy rzek</title>
 </head>
 <body>
-    <header id="baner_1">
-        <img src="obraz1.png" alt="Mapa polski">
-    </header>
-    <header id="baner_2">
-        <h1>Rzeki w województwie dolnośląskim</h1>
+    <header>
+        <section id="baner_1">
+            <img src="obraz1.png" alt="Mapa polski">
+        </section>
+        <section id="baner_2">
+            <h1>Rzeki w województwie dolnośląskim</h1>
+        </section>
     </header>
     <nav id="menu">
         <form action="poziomRzek.php" method="post">
@@ -21,7 +23,7 @@
             <input type="submit" value="Pokaż">
         </form>
     </nav>
-    <main id="lewy">
+    <section id="lewy">
         <h3>Stany na dzień 2022-05-05</h3>
         <table>
             <tr>
@@ -106,8 +108,8 @@
                 ?>
             </tr>
         </table>
-    </main>
-    <main id="prawy">
+    </section>
+    <section id="prawy">
         <h3>Informacje</h3>
         <ul>
             <li>Brak ostrzeżeń o burzach z gradem</li>
@@ -134,7 +136,7 @@
         ?>
         <a href="http://komunikaty.pl">Dowiedz się więcej</a>
         <img src="obraz2.jpg" alt="rzeka">
-    </main>
+    </section>
     <footer>
         <p>Stronę wykonał: Szymon Maniak 5TI</p>
     </footer>
