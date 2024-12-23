@@ -1,0 +1,11 @@
+#lewy1, #lewy2, #lewy3{
+    float: left;
+}
+
+#prawy1, #prawy2{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
