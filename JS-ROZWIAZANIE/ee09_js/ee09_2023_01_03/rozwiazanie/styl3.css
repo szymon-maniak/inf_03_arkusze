@@ -1,4 +1,4 @@
-main{
+article{
     float: left;
     width: 70%;
 }
@@ -24,7 +24,7 @@ button{
     width: 100%;
 }
 
-article{
+section{
     display: none;
 }
 
