@@ -1,8 +1,4 @@
-section, footer{
-    float: left;
-}
-
-main{
+#glowny{
     clear: both;
 }
 
@@ -11,20 +7,22 @@ body{
     margin: 0;
 }
 
-section{
+#lewy, #prawy{
+    float: left;
     background-color: rgb(255, 127, 80);
     color: white;
     height: 410px;
     width: 50%;
 }
 
-header, main{
+header, #glowny{
     background-color: rgb(220, 220, 220);
     padding: 20px;
     text-align: center;
 }
 
-footer{
+#lewa_stopka, #prawa_stopka{
+    float: left;
     background-color: rgb(255, 127, 80);
     color: white;
     width: 50%;
