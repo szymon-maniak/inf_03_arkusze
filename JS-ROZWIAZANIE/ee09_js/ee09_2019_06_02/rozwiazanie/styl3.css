@@ -1,17 +1,10 @@
-header, section{
-    float: left;
-}
-
-main, footer{
-    clear: both;
-}
-
 body{
     font-family: Helvetica, sans-serif;
     margin: 0;
 }
 
 #baner-lewy, #lewy{
+    float: left;
     background-color: rgb(130, 69, 85);
     color: white;
     width: 30%;
@@ -20,6 +13,7 @@ body{
 }
 
 #baner-prawy, #prawy{
+    float: left;
     background-color: rgb(130, 69, 85);
     color: white;
     width: 70%;
@@ -27,7 +21,8 @@ body{
     text-align: center;
 }
 
-main, footer{
+#glowny, footer{
+    clear: both;
     background-color: rgb(240, 234, 226);
     padding: 120px;
 }
