@@ -1,7 +1,3 @@
-main, header{
-    float: left;
-}
-
 body{
     font-family: Tahoma, sans-serif;
     color: white;
@@ -9,12 +5,14 @@ body{
 }
 
 #pierwszy, #trzeci, #czwarty{
+    float: left;
     background-color: #983713;
     width: 17%;
     height: 100px;
 }
 
 #drugi{
+    float: left;
     background-color: #983713;
     width: 49%;
     height: 100px;
@@ -22,12 +20,14 @@ body{
 }
 
 #lewy{
+    float: left;
     background-color: #ff7f50;
     width: 80%;
     height: 500px;
 }
 
 #prawy{
+    float: left;
     background-color: #ff7f50;
     width: 20%;
     height: 500px;
