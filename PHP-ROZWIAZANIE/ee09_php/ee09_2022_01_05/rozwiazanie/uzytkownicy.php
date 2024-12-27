@@ -7,27 +7,29 @@
     <title>Portal społecznościowy</title>
 </head>
 <body>
-    <header id="baner_lewy">
-        <h2>Nasze osiedle</h2>
-    </header>
-    <header id="baner_prawy">
-        <!-- skrypt 1 -->
-        <?php
-            $polaczenie = mysqli_connect('localhost', 'root', '', 'portal');
-            if(!$polaczenie){
-                exit();
-            }
-            else{
-                $zapytanie = "SELECT COUNT(*) FROM `dane` WHERE 1;";
-                $odpowiedz = mysqli_query($polaczenie, $zapytanie);
-                while($tablica = mysqli_fetch_row($odpowiedz)){
-                    echo "<h5>Liczba użytkowników portalu: $tablica[0]</h5>";
+    <header>
+        <section id="baner_lewy">
+            <h2>Nasze osiedle</h2>
+        </section>
+        <section id="baner_prawy">
+            <!-- skrypt 1 -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'portal');
+                if(!$polaczenie){
+                    exit();
                 }
-            }
-            mysqli_close($polaczenie);
-        ?>
+                else{
+                    $zapytanie = "SELECT COUNT(*) FROM `dane` WHERE 1;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tablica = mysqli_fetch_row($odpowiedz)){
+                        echo "<h5>Liczba użytkowników portalu: $tablica[0]</h5>";
+                    }
+                }
+                mysqli_close($polaczenie);
+            ?>
+        </section>
     </header>
-    <div id="lewy">
+    <section id="lewy">
         <h3>Logowanie</h3>
         <form action="uzytkownicy.php" method="post">
             login<br>
@@ -36,8 +38,8 @@
             <input type="password" name="haslo"><br>
             <input type="submit" value="Zaloguj">
         </form>
-    </div>
-    <div id="prawy">
+    </section>
+    <section id="prawy">
         <h3>Wizytówka</h3>
         <!-- skrypt 2 -->
         <?php
@@ -90,7 +92,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </div>
+    </section>
     <footer>
         Stronę wykonał: Szymon Maniak 5TI
     </footer>

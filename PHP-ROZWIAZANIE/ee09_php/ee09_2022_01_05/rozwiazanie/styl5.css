@@ -1,16 +1,8 @@
-header, #lewy, #prawy{
-    float: left;
-}
-
-footer{
-    clear: both;
-}
-
 body{
     font-family: Tahoma, sans-serif;
 }
 
-header{
+#baner_lewy, #baner_prawy{
     background-color: #003d33;
     color: white;
     text-align: center;
@@ -18,26 +10,31 @@ header{
 }
 
 #baner_lewy{
+    float: left;
     width: 70%;
 }
 
 #baner_prawy{
+    float: left;
     width: 30%;
 }
 
 #lewy{
+    float: left;
     background-color: #26a69a;
     height: 550px;
     width: 30%;
 }
 
 #prawy{
+    float: left;
     background-color: #26a69a;
     height: 550px;
     width: 70%;
 }
 
 footer{
+    clear: both;
     background-color: #003d33;
     color: white;
 }

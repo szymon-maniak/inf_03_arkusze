@@ -7,7 +7,7 @@
     <title>Sekretariat</title>
 </head>
 <body>
-    <main id="lewy">
+    <section id="lewy">
         <h1>Akta Pracownicze</h1>
         <!-- skrypt 1 -->
         <?php
@@ -66,8 +66,8 @@
                 mysqli_close($polaczenie);
             ?>
         </p>
-    </main>
-    <main id="prawy">
+    </section>
+    <section id="prawy">
         <!-- skrypt 3 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'firma');
@@ -96,7 +96,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
         Autorem aplikacji jest: Szymon Maniak 5TI
         <ol>

@@ -8,13 +8,13 @@ header{
     padding: 10px;
 }
 
-main{
+#glowny{
     background-color: seashell;
     height: 500px;
     overflow: auto;
 }
 
-footer{
+#stopka1, #stopka2, #stopka3, #stopka4{
     float: left;
     background-color: tomato;
     color: white;

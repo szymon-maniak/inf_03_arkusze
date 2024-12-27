@@ -13,7 +13,7 @@
     <aside>
         <img src="obraz.jpg" alt="foksterier">
     </aside>
-    <main>
+    <section id="glowny">
         <h2>Zapisz się</h2>
         <form action="logowanie.php" method="post">
             login: <input type="text" name="login"><br>
@@ -65,7 +65,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <nav>
         <h2>Zapraszamy wszystkich</h2>
         <ol>

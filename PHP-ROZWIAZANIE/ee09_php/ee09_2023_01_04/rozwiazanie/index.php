@@ -14,7 +14,7 @@
             <input type="submit" value="WYŚWIETL">
         </form>
     </header>
-    <main>
+    <section id="glowny">
         <!-- skrypt 1 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'firma');
@@ -34,33 +34,35 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
-    <footer id="lewy">
-        <img src="obraz.jpg" alt="pracownicy firmy">
-    </footer>
-    <footer id="srodkowy">
-        <p>Autorem wizytownika jest: Szymon Maniak 5TI</p>
-        <a href="http://agencjareklamowa543.pl/" target="_blank">Zobacz nasze realizacje</a>
-    </footer>
-    <footer id="prawy">
-        <p>Osoby proszone o podpisanie dokumentu RODO:</p>
-        <ol>
-            <!-- skrypt 2 -->
-            <?php
-                $polaczenie = mysqli_connect('localhost', 'root', '', 'firma');
-                if(!$polaczenie){
-                    exit();
-                }
-                else{
-                    $zapytanie = "SELECT imie, nazwisko FROM `pracownicy` WHERE czyRODO LIKE 0;";
-                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
-                    while($tablica = mysqli_fetch_array($odpowiedz)){
-                        echo "<li>$tablica[0] $tablica[1]</li>";
+    </section>
+    <footer>
+        <section id="lewy">
+            <img src="obraz.jpg" alt="pracownicy firmy">
+        </section>
+        <section id="srodkowy">
+            <p>Autorem wizytownika jest: Szymon Maniak 5TI</p>
+            <a href="http://agencjareklamowa543.pl/" target="_blank">Zobacz nasze realizacje</a>
+        </section>
+        <section id="prawy">
+            <p>Osoby proszone o podpisanie dokumentu RODO:</p>
+            <ol>
+                <!-- skrypt 2 -->
+                <?php
+                    $polaczenie = mysqli_connect('localhost', 'root', '', 'firma');
+                    if(!$polaczenie){
+                        exit();
                     }
-                }
-                mysqli_close($polaczenie);
-            ?>
-        </ol>
+                    else{
+                        $zapytanie = "SELECT imie, nazwisko FROM `pracownicy` WHERE czyRODO LIKE 0;";
+                        $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                        while($tablica = mysqli_fetch_array($odpowiedz)){
+                            echo "<li>$tablica[0] $tablica[1]</li>";
+                        }
+                    }
+                    mysqli_close($polaczenie);
+                ?>
+            </ol>
+        </section>
     </footer>
 </body>
 </html>

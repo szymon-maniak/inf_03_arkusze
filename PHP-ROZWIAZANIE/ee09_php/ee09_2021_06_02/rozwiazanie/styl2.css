@@ -1,17 +1,10 @@
-header{
-    float: left;
-}
-
-main{
-    clear: both;
-}
-
 body{
     font-family: garamond;
     margin: 0;
 }
 
 #baner_lewy{
+    float: left;
     background-color: #00600f;
     color: white;
     text-align: center;
@@ -20,13 +13,15 @@ body{
 }
 
 #baner_prawy{
+    float: left;
     background-color: #00600f;
     color: white;
     width: 25%;
     height: 90px;
 }
 
-main{
+#glowny{
+    clear: both;
     background-color: #c8e6c9;
     height: 600px;
     overflow: scroll;

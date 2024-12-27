@@ -17,7 +17,7 @@ aside{
     width: 40%;
 }
 
-main, nav{
+#glowny, nav{
     float: right;
     background-color: tan;
     height: 250px;

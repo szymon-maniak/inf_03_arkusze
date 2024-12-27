@@ -1,7 +1,3 @@
-section{
-    float: left;
-}
-
 body{
     font-family: Georgia, serif;
     margin: 0;
@@ -14,12 +10,13 @@ header{
     text-align: center;
 }
 
-main{
+#glowny{
     background-color: lightblue;
     padding: 100px;
 }
 
 #lewy{
+    float: left;
     background-color: dodgerblue;
     color: white;
     width: 20%;
@@ -27,6 +24,7 @@ main{
 }
 
 #srodkowy, #prawy{
+    float: left;
     background-color: dodgerblue;
     color: white;
     width: 40%;

@@ -10,7 +10,7 @@
     <header>
         <h1>Forum miłośników psów</h1>
     </header>
-    <article>
+    <section id="lewy">
         <img src="Avatar.png" alt="Użytkownik forum">
         <!-- skrypt 1 -->
         <?php
@@ -36,8 +36,8 @@
         <video controls loop>
             <source src="video.mp4" type="video/mp4">
         </video>
-    </article>
-    <main>
+    </section>
+    <section id="prawy">
         <form action="index.php" method="post">
             <textarea name="text" cols="40" rows="4"></textarea>
             <input type="submit" value="Dodaj odpowiedź">
@@ -80,7 +80,7 @@
                 mysqli_close($polaczenie);
             ?>
         </ol>
-    </main>
+    </section>
     <footer>
         Autor: Szymon Maniak 5TI
         <a href="http://mojestrony.pl/" target="_blank">Zobacz nasze realizacje</a>

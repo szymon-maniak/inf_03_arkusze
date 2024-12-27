@@ -7,17 +7,19 @@
     <title>Warzywniak</title>
 </head>
 <body>
-    <header id="baner_lewy">
-        <h1>Internetowy sklep z eko-warzywami</h1>
+    <header>
+        <section id="baner_lewy">
+            <h1>Internetowy sklep z eko-warzywami</h1>
+        </section>
+        <section id="baner_prawy">
+            <ol>
+                <li>warzywa</li>
+                <li>owoce</li>
+                <li><a href="http://terapiasokami.pl/" target="_blank">soki</a></li>
+            </ol>
+        </section>
     </header>
-    <header id="baner_prawy">
-        <ol>
-            <li>warzywa</li>
-            <li>owoce</li>
-            <li><a href="http://terapiasokami.pl/" target="_blank">soki</a></li>
-        </ol>
-    </header>
-    <main>
+    <section id="glowny">
         <!-- skypt 1 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'dane2');
@@ -39,7 +41,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
         <form action="sklep.php" method="post">
             Nazwa: <input type="text" name="nazwa">

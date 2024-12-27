@@ -10,7 +10,7 @@
     <header>
         <h1>Hurtownia spożywcza</h1>
     </header>
-    <main>
+    <section id="glowny">
         <h2>Opinie naszych klientów</h2>
         <!-- skrypt 1 -->
         <?php
@@ -31,37 +31,39 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
-    <footer id="footer1">
-        <h3>Współpracują z nami</h3>
-        <a href="http://sklep.pl/">Sklep 1</a>
-    </footer>
-    <footer id="footer2">
-        <h3>Nasi top klienci</h3>
-        <ol>
-            <!-- skrypt 2 -->
-            <?php
-                $polaczenie  = mysqli_connect('localhost', 'root', '', 'hurtownia');
-                if(!$polaczenie){
-                    exit();
-                }
-                else{
-                    $zapytanie = "SELECT imie , nazwisko, punkty FROM `klienci` ORDER BY punkty DESC LIMIT 3;";
-                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
-                    while($tab = mysqli_fetch_array($odpowiedz)){
-                        echo "<li>$tab[0] $tab[1], $tab[2]</li>";
+    </section>
+    <footer>
+        <section id="stopka1">
+            <h3>Współpracują z nami</h3>
+            <a href="http://sklep.pl/">Sklep 1</a>
+        </section>
+        <section id="stopka2">
+            <h3>Nasi top klienci</h3>
+            <ol>
+                <!-- skrypt 2 -->
+                <?php
+                    $polaczenie  = mysqli_connect('localhost', 'root', '', 'hurtownia');
+                    if(!$polaczenie){
+                        exit();
                     }
-                }
-                mysqli_close($polaczenie);
-            ?>
-        </ol>
-    </footer>
-    <footer id="footer3">
-        <h3>Skontaktuj się</h3>
-        <p>telefon: 111222333</p>
-    </footer>
-    <footer id="footer4">
-        <h3>Autor: Szymon Maniak 5TI</h3>
+                    else{
+                        $zapytanie = "SELECT imie , nazwisko, punkty FROM `klienci` ORDER BY punkty DESC LIMIT 3;";
+                        $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                        while($tab = mysqli_fetch_array($odpowiedz)){
+                            echo "<li>$tab[0] $tab[1], $tab[2]</li>";
+                        }
+                    }
+                    mysqli_close($polaczenie);
+                ?>
+            </ol>
+        </section>
+        <section id="stopka3">
+            <h3>Skontaktuj się</h3>
+            <p>telefon: 111222333</p>
+        </section>
+        <section id="stopka4">
+            <h3>Autor: Szymon Maniak 5TI</h3>
+        </section>
     </footer>
 </body>
 </html>

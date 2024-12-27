@@ -7,24 +7,26 @@
     <title>Video On Demand</title>
 </head>
 <body>
-    <header id="lewy">
-        <h1>Internetowa wypożyczalnia filmów</h1>
+    <header>
+        <section id="lewy">
+            <h1>Internetowa wypożyczalnia filmów</h1>
+        </section>
+        <section id="prawy">
+            <table>
+                <tr>
+                    <td>Kryminał</td>
+                    <td>Horro</td>
+                    <td>Przygodowy</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </section>
     </header>
-    <header id="prawy">
-        <table>
-            <tr>
-                <td>Kryminał</td>
-                <td>Horro</td>
-                <td>Przygodowy</td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>30</td>
-                <td>20</td>
-            </tr>
-        </table>
-    </header>
-    <main id="polecamy">
+    <section id="polecamy">
         <h3>Polecamy</h3>
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'dane3');
@@ -49,8 +51,8 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
-    <main id="fantastyczne">
+    </section>
+    <section id="fantastyczne">
         <h3>Filmy fantastyczne</h3>
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'dane3');
@@ -75,7 +77,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
         <form action="video.php" method="post">
             Usuń film nr.: <input type="number" name="usun">
