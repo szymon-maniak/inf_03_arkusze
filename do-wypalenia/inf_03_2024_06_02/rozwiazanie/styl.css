@@ -45,7 +45,7 @@ img{
     border: 1px solid tomato;
     margin: 15px;
     height: 470px;
-    overflow: visible;
+    overflow: scroll;
 }
 
 .jolka, .krzysiek{
