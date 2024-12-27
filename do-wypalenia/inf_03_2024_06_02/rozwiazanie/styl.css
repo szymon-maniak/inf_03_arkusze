@@ -1,0 +1,11 @@
+header, article{
+    float: left;
+}
+
+aside{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
