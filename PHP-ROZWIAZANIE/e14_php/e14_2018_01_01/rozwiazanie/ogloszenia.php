@@ -39,7 +39,7 @@
             </tr>
         </table>
     </aside>
-    <main>
+    <section id="glowny">
         <h2>Ogłoszenia kategorii książki</h2>
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'ogloszenia');
@@ -63,7 +63,7 @@
                 mysqli_close($polaczenie);
             }
         ?>
-    </main>
+    </section>
     <footer>
         Portal ogłoszeniowy opracował: Szymon Maniak 5TI
     </footer>

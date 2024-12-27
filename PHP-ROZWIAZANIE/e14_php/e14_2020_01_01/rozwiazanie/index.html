@@ -7,16 +7,18 @@
     <title>Nasz sklep komputerowy</title>
 </head>
 <body>
-    <header id="menu">
-        <a href="index.php">Główna</a>
-        <a href="procesory.html">Procesory</a>
-        <a href="ram.html">RAM</a>
-        <a href="grafika.html">Grafika</a>
+    <header>
+        <section id="menu">
+            <a href="index.php">Główna</a>
+            <a href="procesory.html">Procesory</a>
+            <a href="ram.html">RAM</a>
+            <a href="grafika.html">Grafika</a>
+        </section>
+        <section id="logo">
+            <h2>Podzespoły komputerowe</h2>
+        </section>
     </header>
-    <header id="logo">
-        <h2>Podzespoły komputerowe</h2>
-    </header>
-    <main>
+    <section id="glowny">
         <h1>Dzisiejsze promocje</h1>
         <table>
             <tr>
@@ -48,19 +50,21 @@
                 mysqli_close($polaczenie);
             ?>
         </table>
-    </main>
-    <footer id="pierwszy">
-        <img src="scalak.jpg" alt="promocje na procesory">
-    </footer>
-    <footer id="drugi">
-        <h4>Nasz Sklep Komputerowy</h4>
-        <p>Współpracujemy z hurtownią <a href="http://www.edata.pl/" target="_blank">edata</a></p>
-    </footer>
-    <footer id="trzeci">
-        <p>zadzwoń: 601 602 603</p>
-    </footer>
-    <footer id="czwarty">
-        <p>Stronę wykonał: Szymon Maniak 5TI</p>
+    </section>
+    <footer>
+        <section id="pierwszy">
+            <img src="scalak.jpg" alt="promocje na procesory">
+        </section>
+        <section id="drugi">
+            <h4>Nasz Sklep Komputerowy</h4>
+            <p>Współpracujemy z hurtownią <a href="http://www.edata.pl/" target="_blank">edata</a></p>
+        </section>
+        <section id="trzeci">
+            <p>zadzwoń: 601 602 603</p>
+        </section>
+        <section id="czwarty">
+            <p>Stronę wykonał: Szymon Maniak 5TI</p>
+        </section>
     </footer>
 </body>
 </html>

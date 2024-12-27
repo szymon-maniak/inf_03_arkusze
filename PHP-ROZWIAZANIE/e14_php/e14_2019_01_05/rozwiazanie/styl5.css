@@ -1,22 +1,17 @@
-header, main{
-    float: left;
-}
-
-footer{
-    clear: both;
-}
-
 body{
     font-family: Verdana, sans-serif;
+    margin: 0;
 }
 
 #miniatura{
+    float: left;
     background-color: sienna;
     height: 100px;
     width: 20%;
 }
 
 #tytulowe{
+    float: left;
     background-color: sienna;
     color: orange;
     height: 100px;
@@ -24,18 +19,21 @@ body{
 }
 
 #lewy{
+    float: left;
     background-color: burlywood;
     height: 700px;
     width: 70%;
 }
 
 #prawy{
+    float: left;
     background-color: burlywood;
     height: 700px;
     width: 30%;
 }
 
 footer{
+    clear: both;
     background-color: sienna;
     color: orange;
     text-align: center;

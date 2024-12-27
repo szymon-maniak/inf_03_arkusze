@@ -7,13 +7,15 @@
     <title>Grzybobranie</title>
 </head>
 <body>
-    <header id="miniatura">
-        <a href="borowik.jpg"><img src="borowik-miniaturka.jpg" alt="Grzybobranie"></a>
+    <header>
+        <section id="miniatura">
+            <a href="borowik.jpg"><img src="borowik-miniaturka.jpg" alt="Grzybobranie"></a>
+        </section>
+        <section id="tytulowe">
+            <h1>Idziemy na grzyby!</h1>
+        </section>
     </header>
-    <header id="tytulowe">
-        <h1>Idziemy na grzyby!</h1>
-    </header>
-    <main id="lewy">
+    <section id="lewy">
         <!-- skrypt 1 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'dane2');
@@ -31,8 +33,8 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
-    <main id="prawy">
+    </section>
+    <section id="prawy">
         <h2>Grzyby jadalne</h2>
         <!-- skrypt 2 -->
         <?php
@@ -72,7 +74,7 @@
             }
             mysqli_close($polaczenie);
             ?>        
-    </main>
+    </section>
     <footer>
         <p>Autor: Szymon Maniak 5TI</p>
     </footer>
