@@ -10,7 +10,7 @@
     <header>
         <h1>Biblioteka w Książkowicach Małych</h1>
     </header>
-    <main id="lewy">
+    <section id="lewy">
         <h4>Dodaj czytelnika</h4>
         <form action="biblioteka.php" method="post">
             imię: <input type="text" name="imie"><br>
@@ -36,13 +36,13 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
-    <main id="srodkowy">
+    </section>
+    <section id="srodkowy">
         <img src="biblioteka.png" alt="biblioteka">
         <h6>ul. Czytelników&nbsp;15; Książkowice Małe</h6>
         <a href="mailto:biuro@bib.pl"><p>Czy masz jakieś uwagi?</p></a>
-    </main>
-    <main id="prawy">
+    </section>
+    <section id="prawy">
         <h4>Nasi czytelnicy:</h4>
         <ol>
             <?php
@@ -66,7 +66,7 @@
                 mysqli_close($polaczenie);
             ?>
         </ol>
-    </main>
+    </section>
     <footer>
         <p>Projekt witryny: Szymon Maniak 5TI</p>   
     </footer>

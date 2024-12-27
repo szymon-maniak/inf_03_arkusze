@@ -7,34 +7,33 @@
     <title>Zadania na lipiec</title>
 </head>
 <body>
-    <header id="baner_1">
-        <img src="logo1.png" alt="lipiec">
-    </header>
-    <header id="baner_2">
-        <h1>TERMINARZ</h1>
-        <p>najbliższe zadania:
-            <?php
-                $polaczenie = mysqli_connect('localhost', 'root', '', 'terminarz');
-                if(!$polaczenie){
-                    exit();
-                }
-                else{
-                    $zapytanie = "SELECT DISTINCT wpis FROM `zadania` WHERE dataZadania >= '2020-07-01' AND dataZadania <= '2020-07-07' AND wpis != '';";
-
-                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
-
-                    $text = "";
-                    while($row = mysqli_fetch_row($odpowiedz)){
-                        $text .= $row[0]."; ";
+    <header>
+        <section id="baner_1">
+            <img src="logo1.png" alt="lipiec">
+        </section>
+        <section id="baner_2">
+            <h1>TERMINARZ</h1>
+            <p>najbliższe zadania:
+                <?php
+                    $polaczenie = mysqli_connect('localhost', 'root', '', 'terminarz');
+                    if(!$polaczenie){
+                        exit();
                     }
-                    echo $text;
-                }
-                mysqli_close($polaczenie);
-            ?>
-        </p>
+                    else{
+                        $zapytanie = "SELECT DISTINCT wpis FROM `zadania` WHERE dataZadania >= '2020-07-01' AND dataZadania <= '2020-07-07' AND wpis != '';";
+                        $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                        $text = "";
+                        while($row = mysqli_fetch_row($odpowiedz)){
+                            $text .= $row[0]."; ";
+                        }
+                        echo $text;
+                    }
+                    mysqli_close($polaczenie);
+                ?>
+            </p>
+        </section>
     </header>
-    <div style="clear: both;"></div>
-    <main id="glowny">
+    <section id="glowny">
                 <?php
                     $polaczenie = mysqli_connect('localhost', 'root', '', 'terminarz');
                     if(!$polaczenie){
@@ -42,16 +41,13 @@
                     }
                     else{
                         $zapytanie = "SELECT `dataZadania`, `wpis` FROM `zadania` WHERE miesiac = 'lipiec';";
-
                         $odpowiedz = mysqli_query($polaczenie, $zapytanie);
-
                         /*
                             <div>
                             <h6>data</h6>
                             <p>opis</p>
                             </div>
                         */
-
                         $text = "";
                         while($row = mysqli_fetch_assoc($odpowiedz)){
                             $text .= '<div>';
@@ -59,14 +55,12 @@
                             $text .= '<p>'.$row['wpis'].'</p>';
                             $text .= '</div>';
                         }
-
                         echo $text;
                     }
                     mysqli_close($polaczenie);
                 ?>
-    </main>
-    <div style="clear: both;"></div>
-    <footer id="stopka">
+    </section>
+    <footer>
         <a href="sierpien.html">Terminasz na sierpień</a>
         <p>Stronę wykonał: Szymon Maniak 5TI</p>
     </footer>

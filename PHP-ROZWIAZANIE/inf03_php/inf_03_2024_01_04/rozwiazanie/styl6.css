@@ -32,7 +32,8 @@
     color: white;
 }
 
-#stopka{
+footer{
+    clear: both;
     background-color: #6F79A8;
     color: white;
     padding: 5px;
@@ -41,4 +42,8 @@
 
 h6{
     text-align: center;
+}
+
+body{
+    margin: 0;
 }

@@ -2,8 +2,8 @@
     font-family: Tahoma, sans-serif;
 }
 
-main{
-    float: left;
+body{
+    margin: 0;
 }
 
 footer{
@@ -18,12 +18,14 @@ header, footer{
 }
 
 #lewy, #prawy{
+    float: left;
     background-color: tan;
     height: 400px;
     width: 40%;
 }
 
 #srodkowy{
+    float: left;
     background-color: wheat;
     height: 400px;
     width: 20%;
