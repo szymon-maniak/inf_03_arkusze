@@ -2,6 +2,10 @@
     font-family: Garamond;
 }
 
+body{
+    margin: 0;
+}
+
 header{
     float: left;
     background-color: tomato;
