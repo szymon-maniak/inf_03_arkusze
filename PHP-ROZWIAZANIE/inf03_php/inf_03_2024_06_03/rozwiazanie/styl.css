@@ -1,16 +1,9 @@
-header, #lewy, #prawy{
-    float: left;
-}
-
-#menu, footer{
-    clear: both;
-}
-
 *{
     font-family: Georgia, serif;
 }
 
-header{
+#baner_lewy, #baner_prawy{
+    float: left;
     background-color: navy;
     color: white;
     text-align: center;
@@ -19,6 +12,7 @@ header{
 }
 
 #menu{
+    clear: both;
     background-color: navy;
     padding: 20px;
 }
@@ -39,14 +33,17 @@ header{
 }
 
 #lewy{
+    float: left;
     width: 70%;
 }
 
 #prawy{
+    float: left;
     width: 30%;
 }
 
 footer{
+    clear: both;
     background-color: navy;
     color: white;
 }

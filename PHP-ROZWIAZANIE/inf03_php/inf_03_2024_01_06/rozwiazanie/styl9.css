@@ -15,7 +15,7 @@ body{
     float: right;
 }
 
-#baner, #stopka{
+header, footer{
     background-color: #ba6b6c;
     color: white;
     padding: 7px;
@@ -34,6 +34,7 @@ body{
 }
 
 #dane{
+    clear: both;
     background-color: mistyrose;
     padding: 50px;
 }

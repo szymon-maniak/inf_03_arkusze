@@ -1,15 +1,3 @@
-nav{
-    float: left;
-}
-
-main{
-    float: left;
-}
-
-section{
-    float: right;
-}
-
 footer{
     clear: both;
 }
@@ -26,19 +14,23 @@ header, footer{
 }
 
 nav{
+    float: left;
     background-color: peru;
     width: 80%;
     height: 40px;
     padding-top: 20px;
 }
 
-main{
+#glowny{
+    float: left;
     width: 80%;
     height: 700px;
     font-family: 120%;
     overflow: auto;
 }
-section{
+
+#sekcja{
+    float: right;
     background-color: peru;
     color: white;
     width: 20%;

@@ -7,10 +7,10 @@
     <title>Poznaj Europę</title>
 </head>
 <body>
-    <div id="baner">
+    <header>
         <h1>BIURO PODRÓŻY</h1>
-    </div>
-    <div id="lewy">
+    </header>
+    <section id="lewy">
         <h2>Promocje</h2>
         <table>
             <tr>
@@ -26,8 +26,8 @@
                 <td>od 1200zł</td>
             </tr>
         </table>
-    </div>
-    <div id="srodkowy">
+    </section>
+    <section id="srodkowy">
         <h2>W tym roku jedziemy do...</h2>
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'pozdroze');
@@ -45,14 +45,13 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </div>
-    <div id="prawy">
+    </section>
+    <section id="prawy">
         <h2>Kontakt</h2>
         <a href="mailto:biuro@wycieczki.pl">napisz do nas</a>
         <p>telefon: 444555666</p>
-    </div>
-    <div style="clear: both;"></div>
-    <div id="dane">
+    </section>
+    <section id="dane">
         <h3>W poprzednich latach byliśmy...</h3>
         <ol>
             <?php
@@ -74,9 +73,9 @@
                 mysqli_close($polaczenie);
             ?>
         </ol>
-    </div>
-    <div id="stopka">
+    </section>
+    <footer>
         <p>Stronę wykonał: Szymon Maniak 5TI</p>
-    </div>
+    </footer>
 </body>
 </html>

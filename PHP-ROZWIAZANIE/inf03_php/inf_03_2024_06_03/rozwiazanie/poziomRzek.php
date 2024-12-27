@@ -7,11 +7,13 @@
     <title>Poziomy rzek</title>
 </head>
 <body>
-    <header id="baner_lewy">
-        <img src="obraz1.png" alt="Mapa Polski">
-    </header>
-    <header id="baner_prawy">
-        <h1>Rzeki w województwie dolnośląskim</h1>
+    <header>
+        <section id="baner_lewy">
+            <img src="obraz1.png" alt="Mapa Polski">
+        </section>
+        <section id="baner_prawy">
+            <h1>Rzeki w województwie dolnośląskim</h1>
+        </section>
     </header>
     <section id="menu">
         <form action="poziomRzek.php" method="post">

@@ -7,11 +7,13 @@
     <title>Ważenie samochodów ciężarowych</title>
 </head>
 <body>
-    <header id="pierwszy">
-        <h1>Ważenie pojazdów we Wrocławiu</h1>
-    </header>
-    <header id="drugi">
-        <img src="obraz1.png" alt="waga">
+    <header>
+        <section id="pierwszy">
+            <h1>Ważenie pojazdów we Wrocławiu</h1>
+        </section>
+        <section id="drugi">
+            <img src="obraz1.png" alt="waga">
+        </section>
     </header>
     <section id="lewy">
         <h2>Lokalizacje wag</h2>
