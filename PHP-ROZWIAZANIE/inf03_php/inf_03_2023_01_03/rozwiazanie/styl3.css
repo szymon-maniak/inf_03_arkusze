@@ -1,7 +1,3 @@
-nav, main{
-    float: left;
-}
-
 footer{
     clear: both;
 }
@@ -22,13 +18,15 @@ header, footer{
 }
 
 nav{
+    float: left;
     background-color: #ff8a65;
     width: 25%;
     height: 500px;
     padding-top: 50px;
 }
 
-main{
+#glowny{
+    float: left;
     background-color: snow;
     width: 75%;
     height: 500px;

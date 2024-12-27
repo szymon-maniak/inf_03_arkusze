@@ -7,10 +7,10 @@
     <title>Biblioteka publiczna</title>
 </head>
 <body>
-    <div id="baner">
+    <header>
         <h1>Biblioteka w Książkowicach Wielkich</h1>
-    </div>
-    <div id="lewy">
+    </header>
+    <section id="lewy">
         <h3>Polecamy dzieła autorów</h3>
         <ol>
             <?php
@@ -34,13 +34,13 @@
                 mysqli_close($polaczenie);
             ?>
         </ol>
-    </div>
-    <div id="srodkowy">
+    </section>
+    <section id="srodkowy">
         <h3>ul. Czytelnicza 25, Ksiąkowice&nbsp;Wielkie</h3>
         <a href="mailto:sekretariat@biblioteka.pl"><p>Napisz do nas</p></a>
         <img src="biblioteka.png" alt="książki">
-    </div>
-    <div id="prawy_1">
+    </section>
+    <section id="prawy_1">
         <h3>Dodaj czytelnika</h3>
         <form action="biblioteka.php" method="post">
             imię: <input type="text" name="imie"><br>
@@ -48,8 +48,8 @@
             symbol: <input type="number" name="symbol"><br>
             <input type="submit" value="DODAJ">
         </form>
-    </div>
-    <div id="prawy_2">
+    </section>
+    <section id="prawy_2">
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'biblioteka');
             if(!$polaczenie){
@@ -68,10 +68,9 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </div>
-    <div style="clear: both;"></div>
-    <div id="stopka">
+    </section>
+    <footer>
         <p>Projekt strony: Szymon Maniak 5TI</p>
-    </div>
+    </footer>
 </body>
 </html>

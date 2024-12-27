@@ -1,7 +1,3 @@
-#lewy, #srodkowy, #prawy{
-    float: left;
-}
-
 footer{
     clear: both;
 }
@@ -12,6 +8,7 @@ footer{
 }
 
 body{
+    margin: 0;
     background-color: lavender;
 }
 
@@ -22,6 +19,7 @@ header, footer{
 }
 
 #lewy, #srodkowy, #prawy{
+    float: left;
     background-color: #e1bee7;
     width: 30%;
     height: 500px;

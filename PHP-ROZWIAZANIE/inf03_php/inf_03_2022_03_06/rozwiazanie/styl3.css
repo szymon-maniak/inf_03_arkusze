@@ -2,6 +2,10 @@
     font-family: Verdana, sans-serif;
 }
 
+body{
+    margin: 0;
+}
+
 #lewy{
     float: left;
     background-color: seagreen;

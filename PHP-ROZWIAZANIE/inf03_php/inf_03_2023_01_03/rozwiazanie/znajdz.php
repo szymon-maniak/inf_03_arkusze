@@ -25,7 +25,7 @@
             </li>
         </ol>
     </nav>
-    <main>
+    <section id="glowny">
         <h2>Znajdź kwiaciarnię</h2>
         <form action="znajdz.php" method="post">
             Podaj nazwę miasta: <input type="text" name="miasto"><br>
@@ -48,7 +48,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
         <p>Stronę opracował: Szymon Maniak 5TI</p>
     </footer>

@@ -7,33 +7,35 @@
     <title>Sierpniowy kalendarz</title>
 </head>
 <body>
-    <header id="baner_1">
-        <h1>Organizer: SIERPIEŃ</h1>
-    </header>
-    <header id="baner_2">
-        <form action="organizer.php" method="post">
-            Zapisz wydarzenie:<input type="text" name="wydarzenie">
-            <button type="submit">OK</button>
-        </form>
-        <?php
-            $polaczenie = mysqli_connect('localhost', 'root', '', 'kalendarz');
-            if(!$polaczenie){
-                exit();
-            }
-            else{
-                if(isset($_POST['submit'])){
-                    $wydarzenie = $_POST['wydarzenie'];
-                    $zapytanie = "UPDATE `zadania` SET `wpis`='$wydarzenie' WHERE dataZadania LIKE '2020-08-09';";
-                    mysqli_query($polaczenie, $zapytanie);
+    <header>
+        <section id="baner_1">
+            <h1>Organizer: SIERPIEŃ</h1>
+        </section>
+        <section id="baner_2">
+            <form action="organizer.php" method="post">
+                Zapisz wydarzenie:<input type="text" name="wydarzenie">
+                <button type="submit">OK</button>
+            </form>
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '', 'kalendarz');
+                if(!$polaczenie){
+                    exit();
                 }
-            }
-            mysqli_close($polaczenie);
-        ?>
+                else{
+                    if(isset($_POST['submit'])){
+                        $wydarzenie = $_POST['wydarzenie'];
+                        $zapytanie = "UPDATE `zadania` SET `wpis`='$wydarzenie' WHERE dataZadania LIKE '2020-08-09';";
+                        mysqli_query($polaczenie, $zapytanie);
+                    }
+                }
+                mysqli_close($polaczenie);
+            ?>
+        </section>
+        <section id="baner_3">
+            <img src="logo2.png" alt="sierpień">
+        </section>
     </header>
-    <header id="baner_3">
-        <img src="logo2.png" alt="sierpień">
-    </header>
-    <main>
+    <section id="glowny">
         <!-- skrypt 1 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'kalendarz');
@@ -57,7 +59,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
         <p>Stronę wykonał: Szymon Maniak 5TI</p>
     </footer>

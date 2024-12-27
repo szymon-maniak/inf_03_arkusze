@@ -10,7 +10,7 @@
     <header>
         <h1>Dzisiejsze promocje naszego sklepu</h1>
     </header>
-    <div id="lewy">
+    <section id="lewy">
         <h2>Taniej o 30%</h2>
         <ol>
             <!-- skrypt 1 -->
@@ -31,8 +31,8 @@
                 mysqli_close($polaczenie);
             ?>
         </ol>
-    </div>
-    <div id="srodkowy">
+    </section>
+    <section id="srodkowy">
         <h2>Sprawdź cenę</h2>
         <form action="index.php" method="post">
             <select name="towar">
@@ -65,12 +65,12 @@
                 mysqli_close($polaczenie);
             ?>
         </div>
-    </div>
-    <div id="prawy">
+    </section>
+    <section id="prawy">
         <h2>Kontakt</h2>
         <p>e-mail: <a href="mailto:bok@sklep.pl">bok@sklep.pl</a></p>
         <img src="promocja.png" alt="promocja">
-    </div>
+    </section>
     <footer>
         <h4>Autor strony: Szymon Maniak 5TI</h4>
     </footer>

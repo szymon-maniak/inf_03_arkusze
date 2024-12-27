@@ -1,13 +1,9 @@
-#lewy, #prawy{
-    float: left;
-}
-
 body{
     background-color: #f6e5dc;
     font-family: Verdana, sans-serif;
 }
 
-#baner{
+header{
     background-color: #2f180c;
     text-align: center;
     color: khaki;
@@ -15,21 +11,24 @@ body{
 }
 
 #lewy{
+    float: left;
     width: 60%;
 }
 
 #prawy{
+    float: left;
     font-size: 150%;
     padding: 70px;
 }
 
 #dolny{
+    clear: both;
     background-color: #d0b6a8;
     text-align: center;
     padding: 30px;
 }
 
-#stopka{
+footer{
     background-color: #2f180c;
     color: khaki;
     height: 60px;

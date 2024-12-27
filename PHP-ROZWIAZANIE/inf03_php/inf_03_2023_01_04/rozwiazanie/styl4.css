@@ -1,13 +1,13 @@
-aside, main, nav{
-    float: left;
-}
-
 footer{
     clear: both;
 }
 
 *{
     font-family: Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
 }
 
 header, footer{
@@ -17,7 +17,7 @@ header, footer{
     padding: 5px;
 }
 
-section{
+#sekcja{
     background-color: #ffffce;
     color: olive;
     padding-top: 10px;
@@ -27,13 +27,15 @@ section{
 }
 
 aside, nav{
+    float: left;
     background-color: #e6ee9c;
     width: 25%;
     height: 450px;
     text-align: center;
 }
 
-main{
+#glowny{
+    float: left;
     background-color: #ffffce;
     width: 50%;
     height: 450px;

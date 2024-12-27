@@ -1,4 +1,4 @@
-main{
+#glowny{
     clear: both;
 }
 
@@ -6,7 +6,11 @@ main{
     font-family: Tahoma, sans-serif;
 }
 
-header{
+body{
+    margin: 0;
+}
+
+#baner_1, #baner_2, #baner_3{
     float: left;
     background-color: #7da453;
     color: white;

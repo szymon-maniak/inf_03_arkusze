@@ -10,11 +10,11 @@
     <header>
         <h1>Pensjonat pod dobrym humorem</h1>
     </header>
-    <div id="lewy">
+    <section id="lewy">
         <a href="index.html">GŁÓWNA</a>
         <img src="1.jpg" alt="pokoje">
-    </div>
-    <div id="srodkowy">
+    </section>
+    <section id="srodkowy">
         <a href="cennik.php">CENNIK</a>
         <table>
             <!-- skrypt -->
@@ -39,11 +39,11 @@
                 mysqli_close($polaczenie);
             ?>
         </table>
-    </div>
-    <div id="prawy">
+    </section>
+    <section id="prawy">
         <a href="kalkulator.html">KALKULATOR</a>
         <img src="3.jpg" alt="pokoje">
-    </div>
+    </section>
     <footer>
         <p>Stronę opracował: Szymon Maniak 5TI</p>
     </footer>

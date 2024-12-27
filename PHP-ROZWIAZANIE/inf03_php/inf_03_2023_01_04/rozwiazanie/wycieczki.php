@@ -10,7 +10,7 @@
     <header>
         <h1>BIURO TURYSTYCZNE</h1>
     </header>
-    <section>
+    <section id="sekcja">
         <h3>Wycieczki, na które są wolne miejsca</h3>
         <ul>
             <!-- skrypt 1 -->
@@ -51,7 +51,7 @@
             </tr>
         </table>
     </aside>
-    <main>
+    <section id="glowny">
         <h2>Nasze zdjęcia</h2>
         <!-- skrypt 2 -->
         <?php
@@ -70,7 +70,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <nav>
         <h2>Skontaktuj się</h2>
         <a href="mailto:turysta@wycieczki.pl">napisz do nas</a>

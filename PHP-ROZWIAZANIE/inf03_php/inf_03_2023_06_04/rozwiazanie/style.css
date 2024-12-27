@@ -24,7 +24,7 @@ body{
     background-color: #b2dfdb;
 }
 
-#baner, #stopka{
+header, footer{
     background-color: #004d40;
     color: white;
     padding: 10px;
