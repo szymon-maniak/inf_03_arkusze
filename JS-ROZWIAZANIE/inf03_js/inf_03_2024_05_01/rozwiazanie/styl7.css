@@ -1,5 +1,9 @@
 *{
-    font-family: Cambria, serif;
+    font-family: Cambria;
+}
+
+body{
+    margin: 0;
 }
 
 aside{
@@ -27,7 +31,7 @@ header{
     letter-spacing: 5px;
 }
 
-main{
+#glowny{
     float: left;
     width: 75%;
     font-size: 170%;
@@ -36,7 +40,8 @@ main{
     height: 580px;
 }
 
-#stopka{
+footer{
+    clear: both;
     background-color: #9C64A6;
     color: white;
     padding: 10px;
