@@ -10,7 +10,7 @@
     <header>
         <h1>Portal Społecznościowy - moje konto</h1>
     </header>
-    <main>
+    <section id="glowny">
         <h2>Moje zainteresowania</h2>
         <ul>
             <li>muzyka</li>
@@ -25,7 +25,7 @@
                 exit();
             }
             else{
-                $zapytanie = "SELECT imie, nazwisko, opis, zdjecie FROM `osoby` WHERE id IN(1,2,6);";
+                $zapytanie = "SELECT imie, nazwisko, opis, zdjecie FROM osoby WHERE Hobby_id IN (1, 2 ,6);";
                 $odpowiedz = mysqli_query($polaczenie, $zapytanie);
                 $text = " ";
                 while($tablica = mysqli_fetch_row($odpowiedz)){
@@ -44,12 +44,14 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
-        Stronę wykonał: Szymon Maniak 5TI
-    </footer>
-    <footer>
-        <a href="mailto:ja@portal.pl">napisz do mnie</a>
+        <section id="stopka1">
+            Stronę wykonał: Szymon Maniak 5TI
+        </section>
+        <section id="stopka2">
+            <a href="mailto:ja@portal.pl">napisz do mnie</a>
+        </section>
     </footer>
 </body>
 </html>

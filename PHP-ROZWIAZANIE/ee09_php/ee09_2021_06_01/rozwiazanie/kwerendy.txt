@@ -1,4 +1,4 @@
-Zapytanie 1: SELECT imie, nazwisko, opis, zdjecie FROM `osoby` WHERE id IN(1,2,6);
+Zapytanie 1: SELECT imie, nazwisko, opis, zdjecie FROM osoby WHERE Hobby_id IN (1, 2 ,6);
 Zapytanie 2: SELECT osoby.id, osoby.nazwisko, hobby.nazwa FROM `osoby` JOIN hobby ON osoby.Hobby_id = hobby.id WHERE osoby.rok_urodzenia > 2000;
 Zapytanie 3: SELECT id, zdjecie FROM `osoby` WHERE imie LIKE "Monika" LIMIT 5;
 Zapytanie 4: CREATE TABLE wpisy( id int unsigned AUTO_INCREMENT NOT null PRIMARY KEY, wpis text, uzytkownik_id int unsigned NOT null );
