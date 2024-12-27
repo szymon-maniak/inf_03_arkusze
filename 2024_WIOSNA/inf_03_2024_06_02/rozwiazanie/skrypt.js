@@ -1,4 +1,9 @@
-let odp_krzysia = [ 
+function wyslij(){
+    document.getElementById('chat').innerHTML += "<section class='jolka'><img src='Jolka.jpg' alt='Jolanta Nowak'><p>" + document.getElementById('wiadomosc').value + "</p></section>";
+    document.getElementById('chat').scrollTop = document.getElementById('chat').scrollWidth;
+}
+
+let odp_tab = [
     "Świetnie!",
     "Kto gra główną rolę?",
     "Lubisz filmy Tego reżysera?",
@@ -7,16 +12,11 @@ let odp_krzysia = [
     "Ja wolę Colę",
     "Zaproszę jeszcze Grześka",
     "Tydzień temu też byłem w kinie na Diunie",
-    "Ja funduję bilety"];
+    "Ja funduję bilety"
+];
 
-function wyslij(){
-    let wiadomosc = document.getElementById('wiadomosc').value;
-    document.getElementById('czat').innerHTML += "<div class='jolanta'>" + "<img src='Jolka.jpg'>" + "<p>" + wiadomosc + "</p>" + "</div>";
-    document.getElementById('czat').scrollTop = document.getElementById('czat').scrollHeight;
-}
-
-function losowanie(){
+function odpowiedz(){
     let liczba = Math.floor(Math.random() * 9);
-    document.getElementById('czat').innerHTML += "<div class='krzysiek'>" + "<img src='Krzysiek.jpg'>" + "<p>" + odp_krzysia[liczba] + "</p>" + "</div>";
-    document.getElementById('czat').scrollTop = document.getElementById('czat').scrollHeight;
+    document.getElementById('chat').innerHTML += "<section class='krzysiek'><img src='Krzysiek.jpg' alt='Krzysztof Łukasiński'><p>" + odp_tab[liczba] + "</p></section>";
+    document.getElementById('chat').scrollTop = document.getElementById('chat').scrollHeight;
 }
