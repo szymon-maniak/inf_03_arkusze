@@ -9,29 +9,30 @@ body{
     margin: auto;
 }
 
-#baner{
+header{
     background-color: #00838F;
     height: 200px;
 }
 
-#menu{
+nav{
     background-color: #006064;
     padding: 15px;
 }
 
-#menu a{
+nav a{
     color: white;
     text-decoration: none;
     font-size: 150%;
 }
 
-#glowny_1, #glowny_2, #glowny_3{
+section{
     float: left;
     height: 350px;
     width: 33%;
 }
 
-#stopka{
+footer{
+    clear: both;
     background-color: #006064;
     color: white;
     text-align: right;
