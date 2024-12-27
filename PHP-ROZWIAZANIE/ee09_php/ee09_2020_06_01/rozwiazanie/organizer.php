@@ -7,34 +7,36 @@
     <title>Organizer</title>
 </head>
 <body>
-    <header id="baner_1">
-        <h2>MÓJ ORGANIZER</h2>
-    </header>
-    <header id="baner_2">
-        <form action="" method="post">
-            Wpis wydarzenia: <input type="text" name="wydarzenia">
-            <button type="submit" name="zapisz">ZAPISZ</button>
-        </form>
-        <!-- formularz kalendarz -->
-        <?php
-            $polaczenie = mysqli_connect('localhost', 'root', '' , 'egzamin6');
-            if(!$polaczenie){
-                exit();
-            }
-            else{
-                if(isset($_POST['zapisz'])){
-                    $wydarzenia = $_POST['wydarzenia'];
-                    $zapytanie = "UPDATE `zadania` SET `wpis`='$wydarzenia' WHERE dataZadania LIKE '2020-08-27';";
-                    mysqli_query($polaczenie, $zapytanie);
+    <header>
+        <section id="baner_1">
+            <h2>MÓJ ORGANIZER</h2>
+        </section>
+        <section id="baner_2">
+            <form action="" method="post">
+                Wpis wydarzenia: <input type="text" name="wydarzenia">
+                <button type="submit" name="zapisz">ZAPISZ</button>
+            </form>
+            <!-- formularz kalendarz -->
+            <?php
+                $polaczenie = mysqli_connect('localhost', 'root', '' , 'egzamin6');
+                if(!$polaczenie){
+                    exit();
                 }
-            }
-            mysqli_close($polaczenie);
-        ?>
+                else{
+                    if(isset($_POST['zapisz'])){
+                        $wydarzenia = $_POST['wydarzenia'];
+                        $zapytanie = "UPDATE `zadania` SET `wpis`='$wydarzenia' WHERE dataZadania LIKE '2020-08-27';";
+                        mysqli_query($polaczenie, $zapytanie);
+                    }
+                }
+                mysqli_close($polaczenie);
+            ?>
+        </section>
+        <section id="baner_3">
+            <img src="logo2.png" alt="Mój organizer">
+        </section>
     </header>
-    <header id="baner_3">
-        <img src="logo2.png" alt="Mój organizer">
-    </header>
-    <main>
+    <section id="glowny">
         <!-- skrypt 1 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'egzamin6');
@@ -57,7 +59,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
         <!-- skrypt 2 -->
         <?php

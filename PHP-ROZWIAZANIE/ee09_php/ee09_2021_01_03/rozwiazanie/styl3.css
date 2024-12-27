@@ -1,18 +1,17 @@
-header, section{
-    float: left;
-}
-
-main, footer{
-    clear: both;
+header{
+    margin: 0;
+    padding: 0;
 }
 
 #logo{
+    float: left;
     background-color: #ff7f50;
     width: 25%;
     height: 100px;
 }
 
 #baner{
+    float: left;
     background-color: #ff7f50;
     text-align: center;
     width: 75%;
@@ -20,23 +19,27 @@ main, footer{
     font-size: 130%;
 }
 
-main{
+#glowny{
+    clear: both;
     background-color: #ff7f50;
     padding: 70px;
 }
 
 #lewy{
+    float: left;
     width: 40%;
     height: 400px;
 }
 
 #prawy{
+    float: left;
     width: 60%;
     height: 400px;
     text-align: right;
 }
 
 footer{
+    clear: both;
     background-color: #ff7f50;
     padding: 20px;
 }

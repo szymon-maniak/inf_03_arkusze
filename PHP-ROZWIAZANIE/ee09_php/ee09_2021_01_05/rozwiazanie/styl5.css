@@ -1,35 +1,32 @@
-header, footer{
-    float: left;
-}
-
-main{
-    clear: both;
-}
-
 #pierwszy, #trzeci{
+    float: left;
     width: 25%;
     height: 200px;
 }
 
 #drugi{
+    float: left;
     text-align: center;
     width: 50%;
     height: 200px;
     font-size: 250%;
 }
 
-main{
+#glowny{
+    clear: both;
     background-color: rgb(0, 0, 128);
     padding: 60px;
     text-transform: uppercase;
 }
 
 #stopka_1{
+    float: left;
     text-align: center;
     width: 50%;
 }
 
 #stopka_2{
+    float: left;
     text-align: right;
     width: 50%;
     padding-top: 100px;

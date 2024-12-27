@@ -32,7 +32,7 @@
             mysqli_close($polaczenie);
         ?>
     </section>
-    <main id="lewy">
+    <section id="lewy">
         <h3>NAJTANIEJ...</h3>
         <table>
             <tr>
@@ -48,8 +48,8 @@
                 <td>od 1400 zł</td>
             </tr>
         </table>
-    </main>
-    <main id="srodkowy">
+    </section>
+    <section id="srodkowy">
         <h3>TU BYLIŚMY</h3>
         <!-- skrypt 2 -->
         <?php
@@ -69,12 +69,12 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
-    <main id="prawy">
+    </section>
+    <section id="prawy">
         <h3>SKONTAKTUJ SIĘ</h3>
         <a href="mailto:wycieczki@wycieczki.pl">napisz do nas</a>
         <p>telefon: 555666777</p>
-    </main>
+    </section>
     <footer>
         <p>Stronę wykonał: Szymon Maniak 5TI</p>
     </footer>

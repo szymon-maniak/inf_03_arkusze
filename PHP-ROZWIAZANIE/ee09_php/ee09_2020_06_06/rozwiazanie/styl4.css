@@ -1,13 +1,10 @@
-main{
-    float: left;
-}
-
 footer{
     clear: both;
 }
 
 body{
     font-family: tahoma;
+    margin: 0;
 }
 
 header, footer{
@@ -23,12 +20,14 @@ header, footer{
 }
 
 #lewy, #prawy{
+    float: left;
     background-color: rgb(255, 239, 213);
     width: 27%;
     height: 550px;
 }
 
 #srodkowy{
+    float: left;
     background-color: rgb(255, 239, 213);
     width: 46%;
     height: 550px;

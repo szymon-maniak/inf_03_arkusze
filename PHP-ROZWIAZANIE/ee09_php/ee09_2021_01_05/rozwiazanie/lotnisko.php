@@ -7,17 +7,19 @@
     <title>Port Lotniczy</title>
 </head>
 <body>
-    <header id="pierwszy">
-        <img src="zad5.png" alt="logo lotnisko">
+    <header>
+        <section id="pierwszy">
+            <img src="zad5.png" alt="logo lotnisko">
+        </section>
+        <section id="drugi">
+            <h1>Przyloty</h1>
+        </section>
+        <section id="trzeci">
+            <h3>przydatne linki</h3>
+            <a href="kwerendy.txt">Pobierz...</a>
+        </section>
     </header>
-    <header id="drugi">
-        <h1>Przyloty</h1>
-    </header>
-    <header id="trzeci">
-        <h3>przydatne linki</h3>
-        <a href="kwerendy.txt">Pobierz...</a>
-    </header>
-    <main>
+    <section id="glowny">
         <table>
             <tr>
                 <th>czas</th>
@@ -47,20 +49,22 @@
                 }
             ?>
         </table>
-    </main>
-    <footer id="stopka_1">
-        <?php
-            if(isset($_COOKIE['ciasteczko'])){
-                echo "<p><i>Witaj ponownie na stronie lotnisko</i></p>";
-            }
-            else{
-                setcookie('ciasteczko', 1, time() + 7200 );
-                echo "<p><i>Dzień dobry! Strona lotnisko używa ciasteczek</i></p>";
-            }
-        ?>
-    </footer>
-    <footer id="stopka_2">
-        Autor: Szymon Maniak 5TI
+    </section>
+    <footer>
+        <section id="stopka_1">
+            <?php
+                if(isset($_COOKIE['ciasteczko'])){
+                    echo "<p><i>Witaj ponownie na stronie lotnisko</i></p>";
+                }
+                else{
+                    setcookie('ciasteczko', 1, time() + 7200 );
+                    echo "<p><i>Dzień dobry! Strona lotnisko używa ciasteczek</i></p>";
+                }
+            ?>
+        </section>
+        <section id="stopka_2">
+            Autor: Szymon Maniak 5TI
+        </section>
     </footer>
 </body>
 </html>

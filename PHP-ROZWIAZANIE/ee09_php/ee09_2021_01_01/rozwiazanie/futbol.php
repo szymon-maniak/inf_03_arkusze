@@ -39,9 +39,9 @@
             mysqli_close($polaczenie);
         ?>
     </section>
-    <main>
+    <section id="glowny">
         <h2>Reprezentacja Polski</h2>
-    </main>
+    </section>
     <section id="lewy">
         <p>Podaj pozycję zawodników (1-bramkarze, 2-obrońcy, 3-pomocnicy, 4-napastnicy):</p>
         <form action="futbol.php" method="post">

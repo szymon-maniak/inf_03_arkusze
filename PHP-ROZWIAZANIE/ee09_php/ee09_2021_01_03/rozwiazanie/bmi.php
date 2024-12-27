@@ -7,13 +7,15 @@
     <title>Twoje BMI</title>
 </head>
 <body>
-    <header id="logo">
-        <img src="wzor.png" alt="wzór BMI">
+    <header>
+        <section id="logo">
+            <img src="wzor.png" alt="wzór BMI">
+        </section>
+        <section id="baner">
+            <h1>Oblicz swoje BMI</h1>
+        </section>
     </header>
-    <header id="baner">
-        <h1>Oblicz swoje BMI</h1>
-    </header>
-    <main>
+    <section id="glowny">
         <table>
             <tr>
                 <th>Interpretacja BMI</th>
@@ -42,7 +44,7 @@
                 mysqli_close($polaczenie);
             ?>
         </table>
-    </main>
+    </section>
     <section id="lewy">
         <h2>Podaj wagę i wzrost</h2>
         <form action="bmi.php" method="post">
