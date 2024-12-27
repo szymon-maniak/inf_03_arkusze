@@ -8,33 +8,35 @@
     <title>Ciągi liczbowe</title>
 </head>
 <body>
-    <header id="pierwszy">
-        <h2>Poznaj Ciągi Liczbowe</h2>
+    <header>
+        <section id="pierwszy">
+            <h2>Poznaj Ciągi Liczbowe</h2>
+        </section>
+        <section id="drugi">
+            <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+        </section>
+        <section id="trzeci">
+            <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+        </section>
+        <section id="czwarty">
+            <img src="obraz1.png" alt="Fibonacci">
+        </section>
     </header>
-    <header id="drugi">
-        <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
-    </header>
-    <header id="trzeci">
-        <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
-    </header>
-    <header id="czwarty">
-        <img src="obraz1.png" alt="Fibonacci">
-    </header>
-    <main id="lewy">
+    <section id="lewy">
         <ol>
             <li>ciągi arytmetyczne</li>
             <li>ciągi geometryczne</li>
             <li>ciąg Fibonacciego</li>
         </ol>
-    </main>
-    <main id="prawy">
+    </section>
+    <section id="prawy">
         <h2>Generowanie ciągu arytmetycznego</h2>
         Pierwszy wyraz A1: <input type="number" id="wyraz_A1"><br>
         Różnica ciągu R: <input type="number" id="roznica_R"><br>
         Liczba wyrazów ciągu N: <input type="number" id="liczba_N"><br>
         <button onclick="oblicz()">Generuj Ciąg</button>
         <p id="wynik"></p>
-    </main>
+    </section>
     <footer>
         <p>Autor: Szymon Maniak 5TI</p>
     </footer>
