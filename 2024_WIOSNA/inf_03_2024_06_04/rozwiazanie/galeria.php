@@ -77,7 +77,7 @@
         <b>Zobacz wszystkie nasze zdjęcia</b>
     </section>
     <footer>
-        <h5>Stronę wykonał: Szymon Maniak</h5>
+        <h5>Stronę wykonał: Szymon Maniak 5TI</h5>
     </footer>
 </body>
 </html>
