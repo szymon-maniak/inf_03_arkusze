@@ -38,7 +38,6 @@ let ulica_wypelnione = false;
 let numer_wypelnione = false;
 let miasto_wypelnione = false;
 let numer_komorkowy_wypelnione = false;
-let rodo_wypelnione = false;
 
 function walidacja() {
     let imie = document.getElementById('imie').value;
@@ -58,6 +57,70 @@ function walidacja() {
     }
     else{
         imie_wypelnione = false;
+    }
+
+    if(nazwisko !== ""){
+        if(!nazwisko_wypelnione){
+            zwiekszPasek();
+            nazwisko_wypelnione = true;
+        }
+    }
+    else{
+        nazwisko_wypelnione = false;
+    }
+
+    if(data_urodzenia !== ""){
+        if(!data_urodzenia_wypelnione){
+            zwiekszPasek();
+            data_urodzenia_wypelnione = true;
+        }
+    }
+    else{
+        data_urodzenia_wypelnione = false;
+    }
+
+    if(ulica !== ""){
+        if(!ulica_wypelnione){
+            zwiekszPasek();
+            ulica_wypelnione = true;
+        }
+    }
+    else{
+        ulica_wypelnione = false;
+    }
+
+    if(numer !== ""){
+        if(!numer_wypelnione){
+            zwiekszPasek();
+            numer_wypelnione = true;
+        }
+    }
+    else{
+        numer_wypelnione = false;
+    }
+
+    if(miasto !== ""){
+        if(!miasto_wypelnione){
+            zwiekszPasek();
+            miasto_wypelnione = true;
+        }
+    }
+    else{
+        miasto_wypelnione = false;
+    }
+
+    if(numer_komorkowy !== ""){
+        if(!numer_komorkowy_wypelnione){
+            zwiekszPasek();
+            numer_komorkowy_wypelnione = true;
+        }
+    }
+    else{
+        numer_komorkowy_wypelnione = false;
+    }
+
+    if(rodo == true){
+        zwiekszPasek();
     }
 }
 
