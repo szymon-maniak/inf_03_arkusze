@@ -2,7 +2,7 @@ aside{
     float: left;
 }
 
-header, main, #postep{
+header, #glowny, #postep{
     float: right;
 }
 
@@ -36,7 +36,7 @@ header{
     height: 80px;
 }
 
-main{
+#glowny{
     width: 73%;
     height: 400px;
 }

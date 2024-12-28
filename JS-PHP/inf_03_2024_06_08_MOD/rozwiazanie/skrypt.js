@@ -31,8 +31,15 @@ function zatwierdz(){
     document.getElementById('wynik').innerHTML = imie + ", " + nazwisko + ", " + data_urodzenia + ", " + ulica + ", " + numer + ", " + miasto + ", " + numer_komorkowy + ", " + rodo;
 }
 
-let arg = 0;
-// dziala ale tak średnio
+let imie_wypelnione = false;
+let nazwisko_wypelnione = false;
+let data_urodzenia = false;
+let ulica_wypelnione = false;
+let numer_wypelnione = false;
+let miasto_wypelnione = false;
+let numer_komorkowy_wypelnione = false;
+let rodo_wypelnione = false;
+
 function walidacja() {
     let imie = document.getElementById('imie').value;
     let nazwisko = document.getElementById('nazwisko').value;
@@ -43,33 +50,15 @@ function walidacja() {
     let numer_komorkowy = document.getElementById('numer_komorkowy').value;
     let rodo = document.getElementById('rodo').checked;
 
-    switch (arg) {
-        case 0:
-            if (imie) zwiekszPasek();
-            break;
-        case 1:
-            if (nazwisko) zwiekszPasek();
-            break;
-        case 2:
-            if (data_urodzenia) zwiekszPasek();
-            break;
-        case 3:
-            if (ulica) zwiekszPasek();
-            break;
-        case 4:
-            if (numer) zwiekszPasek();
-            break;
-        case 5:
-            if (miasto) zwiekszPasek();
-            break;
-        case 6:
-            if (numer_komorkowy) zwiekszPasek();
-            break;
-        case 7:
-            if (rodo) zwiekszPasek();
-            break;
+    if(imie !== ""){
+        if(!imie_wypelnione){
+            zwiekszPasek();
+            imie_wypelnione = true;
+        }
     }
-    arg++;
+    else{
+        imie_wypelnione = false;
+    }
 }
 
 let szerokosc = 4;
