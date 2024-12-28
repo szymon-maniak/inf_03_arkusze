@@ -15,7 +15,7 @@
         <a href="american.php">Rasa American</a>
         <a href="crested.php">Rasa Crested</a>
     </nav>
-    <section>
+    <section id="sekcja">
         <h3>Poznaj wszystkie rasy świnek morskich</h3>
         <ol>
             <!-- skrypt 1 -->
@@ -37,7 +37,7 @@
             ?>
         </ol>
     </section>
-    <main>
+    <section id="glowny">
         <img src="peruwianka.jpg" alt="Świnka morska rasy peruwianka">
         <!-- skrypt 2 -->
         <?php
@@ -78,7 +78,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <footer>
         <p>Stronę wykonał: Szymon Maniak  5TI</p>
     </footer>

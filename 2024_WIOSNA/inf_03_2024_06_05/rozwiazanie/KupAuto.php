@@ -39,7 +39,7 @@
             mysqli_close($polaczenie);
         ?>
     </article>
-    <main>
+    <section id="glowny">
         <h2>Oferty Wyróżnione</h2>
         <!-- skrypt 2 -->
         <?php
@@ -69,7 +69,7 @@
             }
             mysqli_close($polaczenie);
         ?>
-    </main>
+    </section>
     <nav>
         <h2>Wybierz markę</h2>
         <form action="" method="post">

@@ -2,7 +2,7 @@ aside{
     float: left;
 }
 
-header, main, section{
+#pasek{
     float: right;
 }
 
@@ -26,6 +26,7 @@ aside, header, footer{
 }
 
 aside{
+    float: left;
     width: 25%;
     height: 510px;
     margin: 0 1% 0 1%;
@@ -33,11 +34,13 @@ aside{
 }
 
 header{
+    float: right;
     width: 73%;
     height: 80px;
 }
 
-main{
+#glowny{
+    float: right;
     width: 73%;
     height: 400px;
 }

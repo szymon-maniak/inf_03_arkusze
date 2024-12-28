@@ -29,33 +29,33 @@
     <header>
         <h1>Zarekestruj się w sklepie</h1>
     </header>
-    <main>
+    <section id="glowny">
         <button onclick="aktywuj(1)">Klient</button>
         <button onclick="aktywuj(2)">Adres</button>
         <button onclick="aktywuj(3)">Kontakt</button>
-        <div id="pierwszy">
+        <section id="pierwszy">
             <p>Imię</p>
             <input type="text" id="imie" placeholder="Wpisz dane..." onfocusout="zwiekszPasek()">
             <p>Nazwisko</p>
             <input type="text" id="nazwisko" onfocusout="zwiekszPasek()">
             <p>Data urodzenia</p>
             <input type="date" id="data_urodzenia" onfocusout="zwiekszPasek()">
-        </div>
-        <div id="drugi">
+        </section>
+        <section id="drugi">
             <p>Ulica</p>
             <input type="text" id="ulica" onfocusout="zwiekszPasek()">
             <p>Numer</p>
             <input type="number" id="numer" onfocusout="zwiekszPasek()">
             <p>Miasto</p>
             <input type="text" id="miasto" onfocusout="zwiekszPasek()">
-        </div>
-        <div id="trzeci">
+        </section>
+        <section id="trzeci">
             <p>Numer komórkowy</p>
             <input type="tel" id="nr_telefonu" onfocusout="zwiekszPasek()"><br>
             <input type="checkbox" id="RODO">Akceptacja RODO<br>
             <button type="button" onclick="zatwierdzenie()">Zatwierdź dane</button>
-        </div>
-    </main>
+        </section>
+    </section>
     <section id="pasek">
         <section id="pusty"></section>
     </section>

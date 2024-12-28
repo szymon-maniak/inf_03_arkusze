@@ -1,12 +1,4 @@
-section{
-    float: left;
-}
-
-main{
-    clear: both;
-}
-
-footer{
+#glowny{
     clear: both;
 }
 
@@ -18,7 +10,8 @@ body{
     margin: 0;
 }
 
-section{
+#baner1, #baner2{
+    float: left;
     background-color: darkcyan;
     color: white;
     width: 50%;
@@ -27,6 +20,7 @@ section{
 }
 
 footer{
+    clear: both;
     background-color: darkcyan;
     color: white;
 }
