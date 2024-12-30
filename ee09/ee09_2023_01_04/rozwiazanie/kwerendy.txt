@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT id, imie, nazwisko, adres, miasto FROM `pracownicy` WHERE id LIKE 1;
+Zapytanie 2: SELECT imie, nazwisko FROM `pracownicy` WHERE czyRODO LIKE 0;
+Zapytanie 3: SELECT id, nazwisko FROM `pracownicy` WHERE czyBadania LIKE 0 AND dataUr > "1970-01-01" AND dataUr < "1979-12-31";
+Zapytanie 4: ALTER TABLE pracownicy ADD COLUMN umiejetnosci text;
