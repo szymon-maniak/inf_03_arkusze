@@ -1,0 +1,50 @@
+header{
+    background-color: #1c59a7;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+#lewy{
+    float: left;
+    background-color: #3a70b5;
+    width: 33%;
+    height: 200px;
+}
+
+#srodkowy{
+    float: left;
+    background-color: #5a8ac8;
+    width: 33%;
+    height: 200px;
+}
+
+#prawy{
+    float: left;
+    background-color: #86acdd;
+    text-align: center;
+    width: 34%;
+    height: 200px;
+}
+
+#glowny{
+    clear: both;
+    background-color: #86acdd;
+    text-align: center;
+    height: 300px;
+}
+
+footer{
+    background-color: #1c59a7;
+    color: white;
+}
+
+#prawy a{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+
+body{
+    margin: 0;
+}

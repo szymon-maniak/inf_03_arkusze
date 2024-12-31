@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <script src="skrypt.js"></script>
+    <title>Uslugi informatyczne</title>
+</head>
+<body>
+    <main>
+        <header id="logo">
+            <img src="logo.png" alt="logo firmy">
+        </header>
+        <header id="menu">
+            <a href="index.html">O nas</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </header>
+        <section id="baner">
+            <img src="animacja.gif">
+        </section>
+        <article>
+            <hr>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="text" id="e-mail"></td>
+                    </tr>
+                    <tr>
+                        <td>Usługa:</td>
+                        <td><textarea id="usluga"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" id="zgoda">Zapoznałam/em się z regulaminem</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="reset">Resetuj</button>
+                            <button type="button" onclick="formularz()">Prześlij</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p id="wynik"></p>
+            <hr>
+        </article>
+        <footer>
+            <p>Autor strony: <i>Szymon Maniak 5TI</i></p>
+        </footer>
+    </main>
+</body>
+</html>

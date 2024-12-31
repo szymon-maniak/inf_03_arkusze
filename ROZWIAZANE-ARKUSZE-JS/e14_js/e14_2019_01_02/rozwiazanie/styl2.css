@@ -1,0 +1,63 @@
+body{
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+header{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#gorny_1, #gorny_2{
+    float: left;
+    background-color: #a26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+}
+
+#gorny_3{
+    float: left;
+    background-color: #a26475;
+    color: white;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+}
+
+#glowny{
+    clear: both;
+    background-color: #f0eae2;
+    padding: 50px;
+}
+
+footer{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+table, td, th{
+    border: 2px solid #69283a;
+    padding: 7px;
+    border-collapse: collapse;
+}
+
+ul{
+    list-style-type: square;
+}
+
+#czerwony{
+    background-color: red;
+}
+
+#zielony{
+    background-color: green;
+}
+
+#niebieski{
+    background-color: blue;
+}

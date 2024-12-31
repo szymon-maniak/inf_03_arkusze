@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl5.css">
+    <script src="skrypt.js"></script>
+    <title>Galeria zdjęć</title>
+</head>
+<body>
+    <header>
+        <h1>Zdjęcia psów</h1>
+    </header>
+    <section id="lewy">
+        <h2>Kategorie</h2>
+        <ul>
+            <li><a href="psy.html">Psy</a></li>
+            <li><a href="koty.html">Koty</a></li>
+            <li>Gryzonie</li>
+            <li>Jaszczurki</li>
+            <li>Inne zdjęcia</li>
+        </ul>
+        <h4><a href="index.html">Powrót do strony głównej</a></h4>
+    </section>
+    <section id="prawy_1">
+        <h1>Wybierz zdjęcie</h1>
+        <img src="pies1.jpg" alt="pies1" id="pies1" onclick="klik('pies1', 'pies1.jpg')" onmouseover="najechanie('pies1', 'pies1-szary.jpg')" onmouseout="opuszczenie('pies1', 'pies1.jpg')">
+        <img src="pies2.jpg" alt="pies2" id="pies2" onclick="klik('pies2', 'pies2.jpg')" onmouseover="najechanie('pies2', 'pies2-szary.jpg')" onmouseout="opuszczenie('pies2', 'pies2.jpg')">
+        <img src="pies3.jpg" alt="pies3" id="pies3" onclick="klik('pies3', 'pies3.jpg')" onmouseover="najechanie('pies3', 'pies3-szary.jpg')" onmouseout="opuszczenie('pies3', 'pies3.jpg')">
+    </section>
+    <section id="prawy_2">
+        <p><img src="pies1.jpg" id="duzy" alt="pies-duży"></p>
+    </section>
+    <footer>
+        Galerię zdjęć opracował: Szymon Maniak 5TI
+    </footer>
+</body>
+</html>

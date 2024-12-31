@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT id, nazwa, opis, cena FROM `podzespoly` WHERE cena < 1000;
+Zapytanie 2: SELECT nazwa, opis FROM `podzespoly` WHERE dostepnosc LIKE 1 AND producenci_id LIKE 1;
+Zapytanie 3: SELECT podzespoly.nazwa, producenci.nazwa FROM `podzespoly` JOIN producenci ON podzespoly.producenci_id = producenci.id;
+Zapytanie 4: UPDATE `producenci` SET `nazwa`='PATRIOT' WHERE nazwa LIKE "Patriot";

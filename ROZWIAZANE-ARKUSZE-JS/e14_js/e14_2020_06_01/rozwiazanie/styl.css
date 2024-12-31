@@ -1,0 +1,44 @@
+header{
+    background-color: #829eb9;
+    height: 80px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+}
+
+nav{
+    float: left;
+    background-color: #b3c6d9;
+    height: 500px;
+    width: 25%;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#glowny{
+    float: left;
+    background-color: #e0e9f1;
+    height: 500px;
+    width: 75%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+footer{
+    clear: both;
+    background-color: yellow;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 50px;
+}
+
+img{
+    margin: 30px;
+    padding: 10px;
+}
+
+body{
+    margin: 0;
+}
