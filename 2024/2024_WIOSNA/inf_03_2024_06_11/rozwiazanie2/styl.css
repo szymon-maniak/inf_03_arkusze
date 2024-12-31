@@ -1,0 +1,15 @@
+#menu{
+    float: left;
+}
+
+#glowny{
+    float: left;
+}
+
+#prawy{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
