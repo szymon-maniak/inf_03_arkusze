@@ -1,0 +1,46 @@
+#glowny{
+    clear: both;
+}
+
+body{
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+#baner_1, #baner_2{
+    float: left;
+    background-color: #3cb371;
+    color: white;
+    height: 100px;
+    width: 40%;
+}
+
+#baner_3{
+    float: left;
+    background-color: #3cb371;
+    height: 100px;
+    width: 20%;
+}
+
+.dzien{
+    float: left;
+    background-color: #ffdab9;
+    width: 170px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid #3cb371;
+}
+
+footer{
+    clear: both;
+    background-color: #3cb371;
+    color: white;
+}
+
+h6{
+    text-align: right;
+}
+
+form{
+    padding: 30px;
+}

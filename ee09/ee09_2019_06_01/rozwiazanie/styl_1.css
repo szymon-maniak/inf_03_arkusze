@@ -1,0 +1,37 @@
+section{
+    float: left;
+}
+
+footer{
+    clear: both;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+}
+
+header, footer{
+    background-color: #4682B4;
+    color: white;
+    padding: 20px;
+    font-size: 120%;
+    text-align: center;
+}
+
+#lewy{
+    background-color: #40e0d0;
+    width: 40%;
+    height: 500px;
+}
+
+#prawy{
+    background-color: #40e0d0;
+    width: 60%;
+    height: 500px;
+}
+
+img{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #000080;
+}

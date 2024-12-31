@@ -1,0 +1,96 @@
+aside{
+    float: left;
+}
+
+#pasek{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
+
+*{
+    font-family: Cambria, serif;
+}
+
+body{
+    margin: 0;
+    background-color: linen;
+}
+
+aside, header, footer{
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+
+aside{
+    float: left;
+    width: 25%;
+    height: 510px;
+    margin: 0 1% 0 1%;
+    box-shadow: 4px 4px 5px dimgray;
+}
+
+header{
+    float: right;
+    width: 73%;
+    height: 80px;
+}
+
+#glowny{
+    float: right;
+    width: 73%;
+    height: 400px;
+}
+
+button{
+    background-color: steelblue;
+    color: white;
+    width: 20%;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 130%;
+    border: none;
+}
+
+button:hover{
+    background-color: navy;
+}
+
+#pierwszy, #drugi, #trzeci{
+    background-color: lightblue;
+    margin-right: 80px;
+    padding: 10px;
+}
+
+#pierwszy{
+    display: block;
+}
+
+#drugi{
+    display: none;
+}
+
+#trzeci{
+    display: none;
+}
+
+#pasek{
+    background-color: lightgrey;
+    width: 73%;
+    margin-bottom: 10px;
+}
+
+#pasek>section{
+    background-color: navy;
+    width: 4%;
+    height: 30px;
+    float: left;
+}
+
+table{
+    width: 100%;
+    border: 1px dotted navy;
+}

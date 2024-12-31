@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl3.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <header>
+        <section id="baner-lewy">
+            <h1>Stacja Paliw</h1>
+        </section>
+        <section id="baner-prawy">
+            <a href="stacja.html"><img src="home.png"></a>
+            <a href="obliczenia.html"><img src="znak.png"></a>
+        </section>
+    </header>
+    <section id="glowny">
+        <h3>Oblicz koszt paliwa</h3>
+        Rodzaj paliwa (1-benzyna, 2-olej napędowy)<br>
+        <input type="number" id="rodzaj"><br>
+        Ile litrów<br>
+        <input type="number" id="ilosc"><br>
+        <input type="submit" value="OBLICZ" onclick="oblicz()">
+        <p id="wynik"></p>
+    </section>
+    <section id="lewy">
+        <a href="kwerendy.txt">Pobierz kwerendy</a>
+    </section>
+    <section id="prawy">
+        <img src="samochod.png" alt="samochód">
+    </section>
+    <footer>
+        <p>Stronę opracował: Szymon Maniak 5TI</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <title>Firma IT</title>
+</head>
+<body>
+    <div class="kontener">
+        <div class="logo">
+            <img src="logo.png" alt="firma it">
+        </div>
+        <div class="menu">
+            <a href="index.html">Strona Główna</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="baner">
+            <img src="animacja.gif" alt="Usługi informatyczne">            
+        </div>
+        <div class="glowny">
+            <h2>Kontakt</h2>
+            <form method="get">
+                <table>
+                    <tr>
+                        <td>Imię</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Zgłoszenie</td>
+                        <td><textarea id="zgloszenie" cols="40" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" id="zgadzam_sie">Zapoznałam/em się z regulaminem</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Resetuj"><input type="button" value="Prześlij" onclick="przeslij()"></td>
+                    </tr>
+                </table>
+            </form>
+            <hr>
+            <p id="wynik"></p>
+        </div>
+        <div class="stopka">
+            Autor strony: <strong>Szymon Maniak 5TI</strong>
+        </div>
+    </div>
+</body>
+</html>

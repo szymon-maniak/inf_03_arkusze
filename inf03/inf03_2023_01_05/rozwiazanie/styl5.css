@@ -1,0 +1,55 @@
+#glowny{
+    clear: both;
+}
+
+*{
+    font-family: Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+#baner_1, #baner_2, #baner_3{
+    float: left;
+    background-color: #7da453;
+    color: white;
+    height: 120px;
+}
+
+#baner_1, #baner_2{
+    width: 40%;
+}
+
+#baner_3{
+    width: 20%;
+}
+
+.kalendarz{
+    float: left;
+    background-color: #aed581;
+    width: 200px;
+    height: 100px;
+    margin: 7px;
+    border: 1px solid #7da453;
+}
+
+.kalendarz:hover{
+    background-color: #7da453;
+    color: white;
+}
+
+footer{
+    clear: both;
+    background-color: #7da453;
+    color: white;
+    padding: 5px;
+}
+
+h5{
+    text-align: center;
+}
+
+form{
+    padding-top: 50px;
+}

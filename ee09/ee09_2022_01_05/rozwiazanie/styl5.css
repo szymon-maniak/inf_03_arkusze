@@ -1,0 +1,63 @@
+body{
+    font-family: Tahoma, sans-serif;
+}
+
+#baner_lewy, #baner_prawy{
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+#baner_lewy{
+    float: left;
+    width: 70%;
+}
+
+#baner_prawy{
+    float: left;
+    width: 30%;
+}
+
+#lewy{
+    float: left;
+    background-color: #26a69a;
+    height: 550px;
+    width: 30%;
+}
+
+#prawy{
+    float: left;
+    background-color: #26a69a;
+    height: 550px;
+    width: 70%;
+}
+
+footer{
+    clear: both;
+    background-color: #003d33;
+    color: white;
+}
+
+#wizytowka{
+    width: 400px;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid #003d33;
+}
+
+#wizytowka button{
+    background-color: #003d33;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+#wizytowka button:hover{
+    background-color: #004c40;
+}
+
+body{
+    margin: 0;
+}

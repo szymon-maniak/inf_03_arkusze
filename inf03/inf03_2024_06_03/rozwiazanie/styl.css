@@ -1,0 +1,67 @@
+*{
+    font-family: Georgia, serif;
+}
+
+#baner_lewy, #baner_prawy{
+    float: left;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
+
+#menu{
+    clear: both;
+    background-color: navy;
+    padding: 20px;
+}
+
+.opcja{
+    color: silver;
+    margin: 50px;
+}
+
+.opcja:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#lewy, #prawy{
+    background-color: azure;
+    height: 550px;
+}
+
+#lewy{
+    float: left;
+    width: 70%;
+}
+
+#prawy{
+    float: left;
+    width: 30%;
+}
+
+footer{
+    clear: both;
+    background-color: navy;
+    color: white;
+}
+
+table{
+    border: 1px solid navy;
+    margin: auto;
+    width: 70%;
+}
+
+tr:hover{
+    background-color: skyblue;
+}
+
+#prawy img{
+    width: 90%;
+}
+
+body{
+    margin: 0;
+}

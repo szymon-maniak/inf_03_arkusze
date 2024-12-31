@@ -1,0 +1,65 @@
+*{
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+#lewy, #srodkowy{
+    float: left;
+}
+
+#prawy{
+    float: right;
+}
+
+header, footer{
+    background-color: #ba6b6c;
+    color: white;
+    padding: 7px;
+}
+
+#lewy, #prawy{
+    background-color: #ef9a9a;
+    width: 20%;
+    height: 500px;
+}
+
+#srodkowy{
+    background-color: mistyrose;
+    width: 60%;
+    height: 500px;
+}
+
+#dane{
+    clear: both;
+    background-color: mistyrose;
+    padding: 50px;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+li{
+    text-align: left;
+}
+
+h2::first-letter{
+    font-size: 170%;
+    color: maroon;
+}
+
+table{
+    margin: auto;
+    width: 80%;
+    border: 1px solid maroon;
+}
+
+img{
+    height: 120px;
+    margin: 7px;
+    box-shadow: 7px 7px 7px dimgray;
+}

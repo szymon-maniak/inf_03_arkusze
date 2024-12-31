@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl7.css">
+    <script src="skrypt.js"></script>
+    <title>Salon kosmetyczny</title>
+</head>
+<body>
+    <aside>
+        <section id="maly_lewy_1">
+            <h2>Nasza oferta</h2>
+            <ol>
+                <li><a href="twarz.html">Oczyszczenie twarzy</a>
+                    <ul>
+                        <li>Peeling</li>
+                        <li>Maska</li>
+                    </ul>
+                </li>
+                <li>Masaż</li>
+                <li>Makijaż</li>
+            </ol>
+            <a href="index.html" id="glowna">Strona główna</a>
+        </section>
+        <section id="maly_lewy_2">        
+            <img src="obraz1.jpg" alt="Personel">
+        </section>
+    </aside>
+    <header>
+        <h1>Usługi kosmetyczne</h1>
+    </header>
+    <section id="glowny">
+        <h3>Kalkulator ceny wizyty</h3>
+        <input type="checkbox" id="peeling">Peeling<br>
+        <input type="checkbox" id="maska">Maska<br>
+        <input type="checkbox" id="masaz_twarzy">Masaż twarzy<br>
+        <input type="checkbox" id="makijaz">Makijaż<br>
+
+        <button onclick="oblicz()">Oblicz cenę</button>
+        <p id="wynik"></p>
+    </section>
+    <footer>
+        <p>Autor: Szymon Maniak 5TI</p>
+    </footer>
+</body>
+</html>

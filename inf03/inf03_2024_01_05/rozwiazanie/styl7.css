@@ -1,0 +1,70 @@
+*{
+    font-family: Cambria;
+}
+
+body{
+    margin: 0;
+}
+
+aside{
+    float: left;
+    width: 25%;
+    background-color: #E1BEE7;
+}
+
+#maly_lewy_1{
+    height: 400px;
+}
+
+#maly_lewy_2{
+    height: 330px;
+}
+
+header{
+    float: left;
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+    background-color: #9C64A6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+}
+
+#glowny{
+    float: left;
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+    color: indigo;
+    height: 580px;
+}
+
+footer{
+    clear: both;
+    background-color: #9C64A6;
+    color: white;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+img{
+    padding: 4px;
+    margin: 15px;
+}
+
+img:hover{
+    padding: 3px;
+    border: 1px dashed indigo;
+}
+
+a#glowna{
+    padding: 25px;
+}

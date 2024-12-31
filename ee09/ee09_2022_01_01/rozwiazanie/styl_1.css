@@ -1,0 +1,40 @@
+body{
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+header{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#glowny{
+    background-color: lightblue;
+    padding: 100px;
+}
+
+#lewy{
+    float: left;
+    background-color: dodgerblue;
+    color: white;
+    width: 20%;
+    height: 220px;
+}
+
+#srodkowy, #prawy{
+    float: left;
+    background-color: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 220px;
+    text-align: center;
+}
+
+a{
+    border: 1px dotted dimgray;
+    background-color: gold;
+    color: darkred;
+    padding: 10px;
+}

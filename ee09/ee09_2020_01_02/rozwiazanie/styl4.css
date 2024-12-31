@@ -1,0 +1,40 @@
+#glowny{
+    clear: both;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#lewy, #prawy{
+    float: left;
+    background-color: rgb(255, 127, 80);
+    color: white;
+    height: 410px;
+    width: 50%;
+}
+
+header, #glowny{
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    text-align: center;
+}
+
+#lewa_stopka, #prawa_stopka{
+    float: left;
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+
+table, td{
+    border: 1px solid rgb(255, 127, 80);
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    color: white;
+}

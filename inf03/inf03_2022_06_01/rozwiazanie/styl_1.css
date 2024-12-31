@@ -1,0 +1,67 @@
+#lewy1, #lewy2{
+    float: left;
+}
+
+footer{
+    clear: both;
+}
+
+*{
+    font-family: Helvetica;
+}
+
+header, footer{
+    background-color: #00838f;
+    color: white;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+}
+
+#lewy1, #lewy2{
+    background-color: #efefef;
+    width: 55%;
+}
+
+#lewy1{
+    height: 150px;
+}
+
+#lewy2{
+    height: 300px;
+}
+
+#prawy{
+    float: right;
+    background-color: #4fb3bf;
+    width: 45%;
+    height: 450px;
+    text-align: center;
+}
+
+img{
+    box-shadow: 10px 10px 7px dimgray;
+    margin: 20px;
+}
+
+table, td, th{
+    border: 1px solid #4fb3bf;
+    border-collapse: collapse;
+}
+
+table{
+    margin: auto;
+    width: 80%;
+}
+
+td, th{
+    padding: 4px;
+}
+
+td:hover{
+    background-color: #4fb3bf;
+}
+
+body{
+    margin: 0;
+}

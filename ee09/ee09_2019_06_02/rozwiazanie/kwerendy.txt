@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT marka, model FROM `samochody` WHERE kolor LIKE "czerwony";
+Zapytanie 2: UPDATE `samochody` SET `stan`='dobry' WHERE rocznik LIKE 2003;
+Zapytanie 3: CREATE USER 'andrzej'@'localhost' IDENTIFIED BY 'andrzej1@';
+Zapytanie 4: GRANT SELECT, UPDATE ON `samochody`.`samochody` TO 'andrzej'@'localhost';

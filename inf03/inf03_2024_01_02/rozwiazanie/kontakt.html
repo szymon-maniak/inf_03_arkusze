@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Komputery</title>
+</head>
+<body>
+    <div id="kontener">
+        <header>
+            <img src="animacja.gif" alt="Pogotowie komputerowe">
+        </header>
+        <nav>
+            <a href="index.html">Strona Główna</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <section></section>
+        <section>
+            <h2>Kontakt</h2>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td>Zgłoszenie:</td>
+                        <td>
+                            <select id="usluga">
+                                <option value="naprawa komputerów">naprawa komputerów</option>
+                                <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                                <option value="wirusy">wirusy</option>
+                                <option value="konfiguracja LAN">konfiguracja LAN</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" checked>Wyślij kopię wiadomości</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Czyść"><input type="button" value="Wyślij" onclick="wyslij()"></td>
+                    </tr>
+                </table>
+            </form>
+            <hr>
+            <p id="wynik"></p>
+        </section>
+        <section></section>
+        <footer>
+            Autor: <i>Szymon Maniak 5TI</i>
+        </footer>
+    </div>
+</body>
+</html>

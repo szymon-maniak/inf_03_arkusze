@@ -1,0 +1,58 @@
+*{
+    font-family: Garamond, serif;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(#97b498, #c8e6c9);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#lewy{
+    float: left;
+    background-color: #c8e6c9;
+    color: #005005;
+    width: 40%;
+    height: 600px;
+}
+
+#prawy{
+    float: left;
+    color: #005005;
+    width: 60%;
+    height: 600px;
+    overflow: scroll;
+}
+
+footer{
+    clear: both;
+    background: linear-gradient(#c8e6c9, #97b498);
+    color: white;
+    padding: 12px;
+}
+
+video{
+    width: 100%;
+}
+
+form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+input[type="button"]{
+    background-color: #97b498;
+    color: white;
+}
+
+input[type="buton"]:hover{
+    background-color: white;
+    color: #97b498;
+}

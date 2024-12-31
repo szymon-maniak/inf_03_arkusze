@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT imie, nazwisko, adres, miasto, czyRODO, czyBadania FROM `pracownicy` WHERE id LIKE 2;
+Zapytanie 2: SELECT COUNT(*) FROM `pracownicy` WHERE 1;
+Zapytanie 3: SELECT id, imie, nazwisko FROM `pracownicy` WHERE id LIKE 2;
+Zapytanie 4: SELECT pracownicy.id, stanowiska.nazwa, stanowiska.opis FROM `pracownicy` JOIN stanowiska ON pracownicy.stanowiska_id = stanowiska.id WHERE pracownicy.id LIKE 2;
