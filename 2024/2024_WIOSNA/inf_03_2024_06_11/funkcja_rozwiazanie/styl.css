@@ -1,0 +1,58 @@
+*{
+    font-family: Helvetica;
+}
+
+body{
+    margin: 0;
+}
+
+header, footer{
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+footer{
+    clear: both;
+}
+
+#menu{
+    float: left;
+    background-color: peru;
+    width: 80%;
+    height: 40px;
+    padding-top: 20px;    
+}
+
+#glowny{
+    float: left;
+    width: 80%;
+    height: 700px;
+    font-size: 120%;
+    overflow: auto;
+}
+
+#prawy{
+    float: right;
+    background-color: peru;
+    color: white;
+    width: 20%;
+    height: 760px;
+}
+
+a{
+    color: #ddd;
+    padding-left: 90px;
+    font-size: 140%;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+img{
+    float: left;
+    margin: 30px;
+}
