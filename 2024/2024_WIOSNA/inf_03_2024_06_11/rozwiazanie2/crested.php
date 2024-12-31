@@ -36,7 +36,7 @@
         </ol>
     </section>
     <section id="glowny">
-        <img src="peruwianka.jpg" alt="Świnka morska rasy peruwianka">
+        <img src="crested.jpg" alt="Świnka morska rasy crested">
         <!-- skrypt 2 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'hodowla');
@@ -44,7 +44,7 @@
                 exit();
             }
             else{
-                $zapytanie = "SELECT DISTINCT(data_ur), miot, rasy.rasa FROM `swinki` JOIN rasy ON swinki.rasy_id = rasy.id WHERE rasy.id LIKE 1;";
+                $zapytanie = "SELECT DISTINCT(data_ur), miot, rasy.rasa FROM `swinki` JOIN rasy ON swinki.rasy_id = rasy.id WHERE rasy.id LIKE 7;";
                 $odpowiedz = mysqli_query($polaczenie, $zapytanie);
                 while($tab = mysqli_fetch_array($odpowiedz)){
                     echo "<h2>Rasa: $tab[2]</h2>";
@@ -63,7 +63,7 @@
                 exit();
             }
             else{
-                $zapytanie = "SELECT imie, cena, opis FROM `swinki` WHERE rasy_id LIKE 1;";
+                $zapytanie = "SELECT imie, cena, opis FROM `swinki` WHERE rasy_id LIKE 7;";
                 $odpowiedz = mysqli_query($polaczenie, $zapytanie);
                 while($tab = mysqli_fetch_array($odpowiedz)){
                     echo "<h3>$tab[0] - $tab[1] zł</h3>";
