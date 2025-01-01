@@ -2,6 +2,10 @@
     font-family: Helvetica;
 }
 
+body{
+    margin: 0;
+}
+
 header, footer{
     background-color: sienna;
     color: white;
@@ -17,9 +21,14 @@ header, footer{
 }
 
 #srodkowy{
+    float: left;
     width: 70%;
     height: 700px;
-    overflow: visible;
+    overflow: scroll;
+}
+
+footer{
+    clear: both;
 }
 
 img{
