@@ -19,6 +19,21 @@ header{
 
 #lewy{
     float: left;
+    background-color: rgba(0, 100, 0, 0.6);
+    margin: 2%;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    overflow: auto;
+    box-shadow: 10px 10px 7px dimgray;
+}
+
+#prawy1, #prawy2{
+    background-color: rgba(0, 100, 0, 0.6);
+    margin: 1%;
+    width: 15%;
+    height: 300px;
+    box-shadow: 10px 10px 7px dimgray;
 }
 
 aside{
@@ -27,4 +42,24 @@ aside{
 
 footer{
     clear: both;
+    background-color: rgba(60, 120, 160, 0.9);
+    color: white;
+    padding: 10px;
+}
+
+h1, h2{
+    text-align: center;
+    font-style: italic;
+}
+
+a, dt{
+    color: white;
+}
+
+dd{
+    padding: 1%;
+}
+
+dd:hover{
+    background-color: lightgreen;
 }
