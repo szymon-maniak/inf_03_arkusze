@@ -2,6 +2,10 @@
     font-family: Verdana;
 }
 
+body{
+    margin: 0;
+}
+
 img[src="motor.png"]{
     display: block;
     position: absolute;
@@ -29,15 +33,12 @@ header{
 }
 
 #prawy1, #prawy2{
+    float: right;
     background-color: rgba(0, 100, 0, 0.6);
     margin: 1%;
     width: 15%;
     height: 300px;
     box-shadow: 10px 10px 7px dimgray;
-}
-
-aside{
-    float: right;
 }
 
 footer{
