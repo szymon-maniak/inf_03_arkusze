@@ -1,12 +1,27 @@
+*{
+    font-family: Verdana;
+}
+
+img[src="motor.png"]{
+    display: block;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    z-index: -1;
+}
+
+header{
+    background-color: rgba(60, 120, 160, 0.9);
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+
 #lewy{
     float: left;
 }
 
-#prawy1{
-    float: right;
-}
-
-#prawy2{
+aside{
     float: right;
 }
 
