@@ -24,7 +24,7 @@
                     $zapytanie = "SELECT nazwa, opis, poczatek, zdjecia.zrodlo FROM `wycieczki` JOIN zdjecia ON zdjecia_id = zdjecia.id;";
                     $odpowiedz = mysqli_query($polaczenie, $zapytanie);
                     while($tab = mysqli_fetch_array($odpowiedz)){
-                        echo "<dt>$tab[0], rozpoczyna się $tab[2], <a href='$tab[3]'>zobacz zdjęcie</a></dt>";
+                        echo "<dt>$tab[0], rozpoczyna się $tab[2], <a href='$tab[3].jpg'>zobacz zdjęcie</a></dt>";
                         echo "<dd>$tab[1]</dd>";
                     }
                 }
