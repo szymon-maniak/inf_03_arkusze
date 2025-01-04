@@ -1,23 +1,67 @@
-#baner1{
-    float: left;
+*{
+    font-family: Georgia;
 }
 
-#baner2{
+body{
+    margin: 0;
+}
+
+#baner1, #baner2{
     float: left;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
 }
 
 #menu{
     clear: both;
+    background-color: navy;
+    padding: 20px;
+}
+
+.text{
+    color: silver;
+    margin: 50px;
+}
+
+.text:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#lewy, #prawy{
+    background-color: azure;
+    height: 550px;
 }
 
 #lewy{
     float: left;
+    width: 70%;
 }
 
 #prawy{
     float: left;
+    width: 30%;
 }
 
 footer{
     clear: both;
+    background-color: navy;
+    color: white;
+}
+
+table{
+    border: 1px solid navy;
+    margin: auto;
+    width: 70%;
+}
+
+tr:hover{
+    background-color: skyblue;
+}
+
+#prawy img{
+    width: 90%;
 }
