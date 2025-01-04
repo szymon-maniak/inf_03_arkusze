@@ -16,16 +16,40 @@
         </section>
     </header>
     <nav id="menu">
-
+        <form action="poziomRzek.php" method="post">
+            <label><input type="radio" name="buzik">Wszystkie</label>
+            <label><input type="radio" name="buzik">Ponad stan ostrzegawczy</label>
+            <label><input type="radio" name="buzik">Ponad stan alarmowy</label>
+            <input type="submit" value="Pokaż">
+        </form>
     </nav>
     <article id="lewy">
-
+        <h3>Stany na dzień 2022-05-05</h3>
+        <table>
+            <tr>
+                <th>Wodomierz</th>
+                <th>Rzeka</th>
+                <th>Ostrzegawczy</th>
+                <th>Alarmowy</th>
+                <th>Aktualny</th>
+            </tr>
+            <!-- skrypt -->
+        </table>
     </article>
     <aside id="prawy">
-
+        <h3>Informacje</h3>
+        <ul>
+            <li>Brak ostrzeń o burzach z gradem</li>
+            <li>Smog w mieście Wrocław</li>
+            <li>Silny wiatr w Karkonoszach</li>
+        </ul>
+        <h3>Średnie stany wód</h3>
+        <!-- skrypt 2 -->
+        <a href="http://komunikaty.pl">Dowiedz się więcej</a>
+        <img src="obraz2.jpg" alt="rzeka">
     </aside>
     <footer>
-
+        <p>Stronę wykonał: Szymon Maniak 5TI</p>
     </footer>
 </body>
 </html>
