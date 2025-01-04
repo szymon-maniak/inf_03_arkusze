@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT nazwa, rzeka, stanAlarmowy FROM `wodowskazy` WHERE 1;
+Zapytanie 2: SELECT nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE "2022-05-05";
+Zapytanie 3: SELECT nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, pomiary.stanWody FROM `wodowskazy` JOIN pomiary ON wodowskazy.id = pomiary.wodowskazy_id WHERE pomiary.dataPomiaru LIKE "2022-05-05" AND stanOstrzegawczy > pomiary.stanWody;
+Zapytanie 4: SELECT dataPomiaru, AVG(stanWody) FROM `pomiary` GROUP BY dataPomiaru;
