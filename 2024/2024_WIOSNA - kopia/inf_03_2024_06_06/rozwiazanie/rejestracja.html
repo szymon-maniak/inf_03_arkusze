@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Rejestracja</title>
 </head>
 <body>
@@ -15,19 +16,19 @@
             <h2>Dane osobowe</h2>
             <input type="text" id="imie" placeholder="Wpisz imię..." required>
             <input type="text" id="nazwisko" placeholder="Wpisz nazwisko..." required>
-            <button type="button" onclick="">Następna karta</button>
+            <button type="button" onclick="zmianaBloku(2)">Następna karta</button>
         </section>
         <section id="blok2">
             <h2>Dane kontaktowe</h2>
             <input type="email" id="email" placeholder="Twój e-mail...">
             <input type="tel" id="tel" placeholder="Twój numer telefonu...">
-            <button type="button" onclick="">Następna karta</button>
+            <button type="button" onclick="zmianaBloku(3)">Następna karta</button>
         </section>
         <section id="blok3">
             <h2>Hasło do logowania</h2>
             <input type="password" id="haslo1" placeholder="Podaj hasło">
             <input type="password" id="haslo2" placeholder="Powtórz hasło">
-            <button type="button" onclick="">Następna karta</button>
+            <button type="button" onclick="zatwierdz()">Zatwierdź</button>
         </section>
     </article>
     <footer>
