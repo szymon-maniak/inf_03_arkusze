@@ -42,7 +42,18 @@
                     exit();
                 }
                 else{
-
+                    $zapytanie = "SELECT nazwa, samochody.model, samochody.rocznik, samochody.cena, samochody.zdjecie FROM `marki` JOIN samochody ON marki.id = samochody.marki_id WHERE samochody.wyrozniony LIKE 1 LIMIT 4;";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    $ile = mysqli_num_rows($odpowiedz);
+                    for ($i=0; $i < $ile; $i++) { 
+                        $tab = mysqli_fetch_array($odpowiedz);
+                        echo "<section class='oferta'>";
+                        echo "<img src='$tab[4]' alt='$tab[1]'>";
+                        echo "<h4>$tab[0] $tab[1]</h4>";
+                        echo "<p>Rocznik: $tab[2]</p>";
+                        echo "<h4>Cena: $tab[3]</h4>";
+                        echo "</section>";
+                    }
                 }
                 mysqli_close($polaczenie);
             ?>
@@ -50,7 +61,7 @@
         <section id="glowny3">
             <h2>Wybierz markę</h2>
             <form action="KupAuto.php" method="post">
-                <select name="">
+                <select name="nazwa">
                     <!-- skrypt 3 -->
                     <?php
                         $polaczenie = mysqli_connect('localhost', 'root', '', 'kupauto');
@@ -67,6 +78,7 @@
                         mysqli_close($polaczenie);
                     ?>
                 </select>
+                <input type="submit" value="Wyszukaj">
             </form>
             <!-- skrypt 4 -->
             <?php
@@ -75,7 +87,16 @@
                     exit();
                 }
                 else{
-
+                    @$nazwa = $_POST['nazwa'];
+                    $zapytanie = "SELECT model, cena, zdjecie FROM `samochody` JOIN marki ON samochody.marki_id = marki.id WHERE marki.nazwa LIKE '$nazwa';";
+                    $odpowiedz = mysqli_query($polaczenie, $zapytanie);
+                    while($tab = mysqli_fetch_array($odpowiedz)){
+                        echo "<section class='oferta'>";
+                        echo "<img src='$tab[2]' alt='$tab[0]'>";
+                        echo "<h4>$nazwa $tab[0]</h4>";
+                        echo "<h4>Cena: $tab[1]</h4>";
+                        echo "</section>";
+                    }
                 }
                 mysqli_close($polaczenie);
             ?>
