@@ -2,6 +2,10 @@
     font-family: 'Bookman Old Style', serif;
 }
 
+body{
+    margin: 0;
+}
+
 #baner1, #baner2{
     float: left;
     background-color: darkcyan;
