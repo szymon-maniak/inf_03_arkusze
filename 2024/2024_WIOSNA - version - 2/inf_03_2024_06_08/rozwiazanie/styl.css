@@ -1,0 +1,19 @@
+aside{
+    float: left;
+}
+
+header{
+    float: right;
+}
+
+#glowny{
+    float: right;
+}
+
+#pasek{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
