@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Biuro turystyczne</title>
 </head>
 <body>
@@ -12,13 +13,13 @@
     </header>
     <main>
         <section id="lewy">
-            <button type="button" onclick="">&lt;</button>
+            <button type="button" onclick="poprzedni()">&lt;</button>
         </section>
         <section id="srodkowy">
-            <img src="1.jpg" alt="Aktywne zdjęcie">
+            <img src="1.jpg" alt="Aktywne zdjęcie" id="aktywne_zdjecie">
         </section>
         <section id="prawy">
-            <button type="button" onclick="">&gt;</button>
+            <button type="button" onclick="nastepny()">&gt;</button>
         </section>
         <section id="miniatury">
             <img src="1.jpg" alt="Gdańsk">

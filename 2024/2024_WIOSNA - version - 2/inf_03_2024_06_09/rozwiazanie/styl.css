@@ -1,15 +1,77 @@
-#lewy{
+*{
+    font-family: Georgia;
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+header, footer{
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+
+#lewy, #srodkowy, #prawy{
     float: left;
+    background-color: lightsalmon;
+    height: 527px;
+}
+
+#lewy, #prawy{
+    width: 15%;
 }
 
 #srodkowy{
-    float: left;
-}
-
-#prawy{
-    float: left;
+    width: 70%;
 }
 
 #miniatury{
     clear: both;
+    background-color: maroon;
+    height: 70px;
+}
+
+button{
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+
+#miniatury img{
+    height: 70px;
+    animation: przesuniecie 4s ease-in-out;
+}
+
+@keyframes przesuniecie{
+    from{
+        padding-left: 50px;
+    }
+    to{
+        padding-left: 0px;
+    }
+}
+
+#srodkowy img{
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+
+#srodkowy img:hover{
+    animation: skalowanie 5s ease-in-out;
+}
+
+@keyframes skalowanie{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }
