@@ -34,21 +34,32 @@
         <button type="button" onclick="">Kontakt</button>
         <section id="blok1">
             <p>Imię</p>
-            <input type="text" id="imie" placeholder="Wpisz dane...">
+            <input type="text" id="imie" placeholder="Wpisz dane..." onfocusout="">
             <p>Nazwisko</p>
-            <input type="text" id="nazwisko">
+            <input type="text" id="nazwisko" onfocusout="">
             <p>Data urodzenia</p>
-            <input type="date" id="data_urodzenia">
+            <input type="date" id="data_urodzenia" onfocusout="">
         </section>
         <section id="blok2">
-
+            <p>Ulica</p>
+            <input type="text" id="ulica" onfocusout="">
+            <p>Numer</p>
+            <input type="number" id="numer" onfocusout="">
+            <p>Miasto</p>
+            <input type="text" id="miasto" onfocusout="">
+        </section>
+        <section id="blok3">
+            <p>Numer komórkowy</p>
+            <input type="tel" id="numer_komorkowy" onfocusout="">
+            <label><input type="checkbox" id="rodo" onfocusout="">Akceptuję RODO</label>
+            <button type="button" onclick="">Zatwierdź dane</button>
         </section>
     </article>
     <section id="pasek">
-
+        <section></section>
     </section>
     <footer>
-
+        <h4>Rejestrację do sklepu wykonał: Szymon Maniak 5TI</h4>
     </footer>
 </body>
 </html>
