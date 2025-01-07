@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
     <title>Efekty obrazu</title>
 </head>
 <body>
@@ -12,26 +13,26 @@
     </header>
     <main>
         <section>
-            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku"><br>
-            <label><input type="radio" name="wybor">Blur</label><br>
-            <label><input type="radio" name="wybor">Sepia</label><br>
-            <label><input type="radio" name="wybor">Negatyw</label><br>
-            <button type="button" onclick="">Zastosuj</button>
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="pszczola"><br>
+            <label><input type="radio" name="wybor" id="blur">Blur</label><br>
+            <label><input type="radio" name="wybor" id="sepia">Sepia</label><br>
+            <label><input type="radio" name="wybor" id="negatyw">Negatyw</label><br>
+            <button type="button" onclick="zastosuj(1)">Zastosuj</button>
         </section>
         <section>
-            <img src="pomarancza.jpg" alt="drzewo pomarańczy"><br>
-            <button type="button" onclick="">Kolorowy</button>
-            <button type="button" onclick="">Czarno-biały</button>
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="pomarancza"><br>
+            <button type="button" onclick="zastosuj(2)">Kolorowy</button>
+            <button type="button" onclick="zastosuj(3)">Czarno-biały</button>
         </section>
         <section>
-            <img src="owoce.jpg" alt="Kosz pełen owoców">
+            <img src="owoce.jpg" alt="Kosz pełen owoców" id="owoce">
             <input type="range" id="przezroczystosc" min="0" max="100" value="100"><br>
-            <button type="button" onclick="">Zastosuj</button>
+            <button type="button" onclick="zastosuj(4)">Zastosuj</button>
         </section>
         <section>
-            <img src="zolw.jpg" alt="Żółw w wodzie">
-            <input type="range" id="" min="0" max="250"><br>
-            <button type="button" onclick="">Zastosuj</button>
+            <img src="zolw.jpg" alt="Żółw w wodzie" id="zolw">
+            <input type="range" id="filtr_jasnosci" min="0" max="250"><br>
+            <button type="button" onclick="zastosuj(5)">Zastosuj</button>
         </section>
     </main>
     <footer>
