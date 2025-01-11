@@ -17,9 +17,9 @@ if (!isset($_SESSION['imie']) || !isset($_SESSION['nazwisko'])) {
 </head>
 <body>
     <h1>Potwierdzenie rejestracji</h1>
-    <p>Dziękujemy za rejestrację, <strong><?php echo htmlspecialchars($_SESSION['imie'] . ' ' . $_SESSION['nazwisko']); ?></strong>!</p>
-    <p>Twój e-mail: <?php echo htmlspecialchars($_SESSION['email']); ?></p>
-    <p>Twój numer telefonu: <?php echo htmlspecialchars($_SESSION['tel']); ?></p>
+    <p>Dziękujemy za rejestrację, <strong><?php echo $_SESSION['imie'] . ' ' . $_SESSION['nazwisko']; ?></strong></p>
+    <p>Twój e-mail: <?php echo $_SESSION['email']; ?></p>
+    <p>Twój numer telefonu: <?php echo $_SESSION['tel']; ?></p>
     <p><a href="index.php">Powrót do formularza</a></p>
 </body>
 </html>
