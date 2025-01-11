@@ -1,0 +1,67 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+    <title>Rejestracja</title>
+</head>
+<body>
+    <header>
+        <h1>Formularz rejestracyjny konferencji <em>Nasze Kwiaty</em></h1>
+    </header>
+    <article id="glowny">
+        <form action="process.php" method="post">
+            <section id="blok1">
+                <h2>Dane osobowe</h2>
+                <input type="text" name="imie" placeholder="Wpisz imię..." required>
+                <input type="text" name="nazwisko" placeholder="Wpisz nazwisko..." required>
+                <button type="button" onclick="zmianaBloku(2)">Następna karta</button>
+            </section>
+            <section id="blok2">
+                <h2>Dane kontaktowe</h2>
+                <input type="email" name="email" placeholder="Twój e-mail...">
+                <input type="tel" name="tel" placeholder="Twój numer telefonu...">
+                <button type="button" onclick="zmianaBloku(3)">Następna karta</button>
+            </section>
+            <section id="blok3">
+                <h2>Hasło do logowania</h2>
+                <input type="password" name="haslo1" placeholder="Podaj hasło">
+                <input type="password" name="haslo2" placeholder="Powtórz hasło">
+                <button type="submit">Zatwierdź</button>
+            </section>
+        </form>
+    </article>
+    <footer>
+        <section id="stopka1">
+            <video controls>
+                <source src="motyl.mp4">
+                Przeglądarka nie obsługuje tego formatu
+            </video>
+        </section>
+        <section id="stopka2">
+            <h3>Plan konferencji</h3>
+            <table>
+                <tr>
+                    <td>9:00 - 12:00</td>
+                    <td>Pielęgnacja roślin</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Targi kwiatowe</td>
+                </tr>
+            </table>
+        </section>
+        <section id="stopka3">
+            <p><a href="http://kwiaty.pl/">Internetowa kwiaciarnia</a></p>
+        </section>
+        <section id="stopka4">
+            <p>Formularz wykonał: Szymon Maniak 5TI</p>
+        </section>
+    </footer>
+</body>
+</html>
