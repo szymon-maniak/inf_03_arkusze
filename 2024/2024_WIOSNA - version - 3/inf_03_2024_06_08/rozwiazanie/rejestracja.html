@@ -32,7 +32,7 @@
         <button type="button" onclick="aktywacja(1)">Klient</button>
         <button type="button" onclick="aktywacja(2)">Adres</button>
         <button type="button" onclick="aktywacja(3)">Kontakt</button>
-        <section id="blok1">
+        <section id="blok1" class="blok">
             <p>Imię</p>
             <input type="text" id="imie" placeholder="Wpisz dane..." onfocusout="zwiekszPasek()">
             <p>Nazwisko</p>
@@ -40,7 +40,7 @@
             <p>Data urodzenia</p>
             <input type="date" id="data_urodzenia" onfocusout="zwiekszPasek()">
         </section>
-        <section id="blok2">
+        <section id="blok2" class="blok">
             <p>Ulica</p>
             <input type="text" id="ulica" onfocusout="zwiekszPasek()">
             <p>Numer</p>
@@ -48,7 +48,7 @@
             <p>Miasto</p>
             <input type="text" id="miasto" onfocusout="zwiekszPasek()">
         </section>
-        <section id="blok3">
+        <section id="blok3" class="blok">
             <p>Numer komórkowy</p>
             <input type="tel" id="numer_komorkowy" onfocusout="zwiekszPasek()"><br>
             <label><input type="checkbox" id="rodo" onfocusout="zwiekszPasek()">Akceptuje RODO</label><br>
