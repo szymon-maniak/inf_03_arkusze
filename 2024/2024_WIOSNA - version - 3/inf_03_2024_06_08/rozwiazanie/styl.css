@@ -1,0 +1,19 @@
+aside{
+    float: left;
+}
+
+header{
+    float: right;
+}
+
+#glowny{
+    float: right;
+}
+
+#blok_paska{
+    float: right;
+}
+
+footer{
+    clear: both;
+}
