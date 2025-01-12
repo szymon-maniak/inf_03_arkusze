@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Efekty obrazu</title>
+</head>
+<body>
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+    <main>
+        <section>
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku">
+            <label><input type="radio" name="efekt" id="blur">Blur</label><br>
+            <label><input type="radio" name="efekt" id="sepia">Sepia</label><br>
+            <label><input type="radio" name="efekt" id="negatyw">Negatyw</label><br>
+            <button type="button" onclick="obraz1()">Zastosuj</button>
+        </section>
+        <section>
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy">
+            <button type="button" onclick="obraz2(1)">Kolorowy</button>
+            <button type="button" onclick="obraz2(2)">Czarno-biały</button>
+        </section>
+        <section>
+            <img src="owoce.jpg" alt="Kosz pełen owoców">
+            <input type="range" id="przezroczystosc" min="0" max="100" value="100">
+            <button type="button" onclick="obraz3()">Zastosuj</button>
+        </section>
+        <section>
+            <img src="zolw.jpg" alt="Żółw w wodzie">
+            <input type="range" id="" min="0" max="250">
+            <button type="button" onclick="obraz4()">Zastosuj</button>
+        </section>
+    </main>
+    <footer>
+        <p><a href="http://css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: Szymon Maniak 5TI</p>
+    </footer>
+</body>
+</html>
