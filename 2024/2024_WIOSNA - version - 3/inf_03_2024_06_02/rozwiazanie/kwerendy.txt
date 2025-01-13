@@ -1,5 +1,0 @@
-Zapytanie 1: INSERT INTO `logowanie`(`id`, `nick`, `haslo`) VALUES ('3','Jeremi','Jer123');
-Zapytanie 2: SELECT floor(AVG(rokUr)) AS "Średni rok urodzenia" FROM `uczestnicy` WHERE 1;
-Zapytanie 3: SELECT imie, nazwisko, logowanie.nick, logowanie.haslo FROM `uczestnicy` JOIN logowanie ON logowanie_id = logowanie.id WHERE imie LIKE "J%";
-Zapytanie 4: CREATE USER 'uczestnik'@'localhost' IDENTIFIED BY 'Ucz123&';
-Zapytanie 5: GRANT SELECT, UPDATE ON `chat`.`uczestnicy` TO 'uczestnik'@'localhost';
