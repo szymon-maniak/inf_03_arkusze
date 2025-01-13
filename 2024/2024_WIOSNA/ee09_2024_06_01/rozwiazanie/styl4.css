@@ -1,0 +1,53 @@
+body{
+    font-family: Garamond;
+    margin: 0;
+}
+
+header{
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+#lewy{
+    float: left;
+    background-color: tan;
+    height: 500px;
+    width: 40%;
+}
+
+#prawy1, #prawy2{
+    float: right;
+    background-color: tan;
+    height: 250px;
+    width: 60%;
+}
+
+footer{
+    clear: both;
+    background-color: saddlebrown;
+    color: white;
+}
+
+form{
+    background-color: saddlebrown;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 300px;
+}
+
+input[type="text"], input[type="password"]{
+    margin: 5px;
+}
+
+p::before{
+    content: "STATUS:";
+}
+
+h1{
+    margin: 0;
+}
