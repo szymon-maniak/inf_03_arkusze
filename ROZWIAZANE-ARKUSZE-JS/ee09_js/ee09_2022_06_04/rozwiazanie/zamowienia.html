@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl4.css">
+    <title>Zamówienia hurtowe</title>
+</head>
+<body>
+    <header>
+        <h1>Sieci komputerowe</h1>
+    </header>
+    <main>
+        <section id="lewy">
+            <h2>Aktualizacja i zamówienia materiałów</h2>
+            <p>Do wewnętrznego użytku firmy</p>
+            <img src="obraz.png" alt="sieć komputerowa">
+        </section>
+        <section id="prawy">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Jednostka</th>
+                        <th>Dostępna ilość</th>
+                        <th>Aktualizacja</th>
+                        <th>Zamówienie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="prod1">Skrętka U/UTP drut</td>
+                        <td>metr</td>
+                        <td id="pole1">20</td>
+                        <td><button type="button" onclick="aktualizuj(1)">Aktualizuj</button></td>
+                        <td><button type="button" onclick="zamow(1)">Zamów</button></td>
+                    </tr>
+                    <tr>
+                        <td id="prod2">Skrętka U/UTP linka</td>
+                        <td>metr</td>
+                        <td id="pole2">2</td>
+                        <td><button type="button" onclick="aktualizuj(2)">Aktualizuj</button></td>
+                        <td><button type="button" onclick="zamow(2)">Zamów</button></td>
+                    </tr>
+                    <tr>
+                        <td id="prod3">Wtyki 8P8C</td>
+                        <td>sztuki</td>
+                        <td id="pole3">10</td>
+                        <td><button type="button" onclick="aktualizuj(3)">Aktualizuj</button></td>
+                        <td><button type="button" onclick="zamow(3)">Zamów</button></td>
+                    </tr>
+                    <tr>
+                        <td id="prod4">Moduły Keystone</td>
+                        <td>sztuki</td>
+                        <td id="pole4">30</td>
+                        <td><button type="button" onclick="aktualizuj(4)">Aktualizuj</button></td>
+                        <td><button type="button" onclick="zamow(4)">Zamów</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <a href="http://sieci.pl/" target="_blank">Nasza strona internetowa</a>
+        <p>Stronę przygotował: Szymon Maniak 5TI</p>
+    </footer>
+    <script src="skrypt.js"></script>
+</body>
+</html>
