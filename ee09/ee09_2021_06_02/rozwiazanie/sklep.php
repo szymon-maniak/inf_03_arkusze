@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <section id="baner_lewy">
+        <section id="baner1">
             <h1>Internetowy sklep z eko-warzywami</h1>
         </section>
-        <section id="baner_prawy">
+        <section id="baner2">
             <ol>
                 <li>warzywa</li>
                 <li>owoce</li>
@@ -19,46 +19,46 @@
             </ol>
         </section>
     </header>
-    <section id="glowny">
-        <!-- skypt 1 -->
+    <article id="glowny">
+        <!-- skrypt 1 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'dane2');
             if(!$polaczenie){
                 exit();
-            }
+            } 
             else{
                 $zapytanie = "SELECT nazwa, ilosc, opis, cena, zdjecie FROM `produkty` WHERE Rodzaje_id IN(1,2);";
                 $odpowiedz = mysqli_query($polaczenie, $zapytanie);
-                while($tablica = mysqli_fetch_row($odpowiedz)){
-                    echo "<div class='produkt'>";
-                    echo "<img src='$tablica[4]' alt='warzywniak'>";
-                    echo "<h5>$tablica[0]</h5>";
-                    echo "<p>opis: $tablica[2]</p>";
-                    echo "<p>na stanie: $tablica[1]</p>";
-                    echo "<h2>$tablica[3] zł</h2>";
-                    echo "</div>";
+                while($tab = mysqli_fetch_array($odpowiedz)){
+                    echo "<section class='produkt'>";
+                    echo "<img src='$tab[4]' alt='warzywniak'>";
+                    echo "<h5>$tab[0]</h5>";
+                    echo "<p>opis: $tab[2]</p>";
+                    echo "<p>na stanie: $tab[1]</p>";
+                    echo "<h2>$tab[3] zł</h2>";
+                    echo "</section>";
                 }
             }
             mysqli_close($polaczenie);
         ?>
-    </section>
+    </article>
     <footer>
         <form action="sklep.php" method="post">
-            Nazwa: <input type="text" name="nazwa">
-            Cena: <input type="text" name="cena">
-            <input type="submit" value="Dodaj produkt">
+            <label>Nazwa: <input type="text" name="nazwa"></label>
+            <label>Cena: <input type="text" name="cena"></label>
+            <button type="submit">Dodaj produkt</button>
         </form>
         <!-- skrypt 2 -->
         <?php
             $polaczenie = mysqli_connect('localhost', 'root', '', 'dane2');
             if(!$polaczenie){
                 exit();
-            }
+            } 
             else{
-                if(!empty($_POST['nazwa']) && !empty($_POST['cena'])){
+                if(isset($_POST['nazwa']) && isset($_POST['cena'])){
                     $nazwa = $_POST['nazwa'];
                     $cena = $_POST['cena'];
-                    $zapytanie = "INSERT INTO produkty VALUES (NULL, 1, 4, '$nazwa', 10, '', '$cena', 'owoce.jpg');";
+                    $zapytanie = "INSERT INTO `produkty`(`Rodzaje_id`, `Producenci_id`, `nazwa`, `ilosc`, `opis`, `cena`, `zdjecie`) VALUES ('1','4','$nazwa','10', '','$cena','owoce.jpg');";
                     mysqli_query($polaczenie, $zapytanie);
                 }
             }

@@ -1,9 +1,9 @@
 body{
-    font-family: garamond;
+    font-family: Garamond;
     margin: 0;
 }
 
-#baner_lewy{
+#baner1{
     float: left;
     background-color: #00600f;
     color: white;
@@ -12,7 +12,7 @@ body{
     height: 90px;
 }
 
-#baner_prawy{
+#baner2{
     float: left;
     background-color: #00600f;
     color: white;
@@ -47,6 +47,6 @@ h2{
 .produkt{
     float: left;
     margin: 10px;
-    border: 1px solid #00600f;
+    border: 1px solid  #00600f;
     width: 300px;
 }
